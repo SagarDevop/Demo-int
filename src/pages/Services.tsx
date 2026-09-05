@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Services() {
@@ -176,6 +177,12 @@ export default function Services() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="Interior Design & Turnkey Architecture Services Delhi | 4 Lotus"
+        description="Explore 14 specialized turnkey interior services: civil masonry, modular kitchens, HVAC, MEP, false ceilings, luxury residential remodeling, and corporate fitouts in Delhi-NCR."
+        keywords="interior design services delhi, turnkey civil contractor delhi, modular kitchen manufacturer janakpuri, false ceiling contractor delhi, commercial interior design gurgaon, office renovation noida"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

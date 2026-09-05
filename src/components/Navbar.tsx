@@ -65,7 +65,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           >
             <img
               src="/assets/logo.webp"
-              alt="4 Lotus Logo"
+              alt="4 Lotus Interior Architecture & Design Studio Official Logo"
               className="w-7 h-7 sm:w-8 sm:h-8 object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <span className="text-xl md:text-2xl font-bold tracking-[0.2em] text-[#111111] uppercase group-hover:opacity-80 transition-opacity">

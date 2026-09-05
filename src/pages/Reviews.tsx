@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { Star, CheckCircle, Quote, ArrowUpRight } from "lucide-react";
 
 export default function Reviews() {
@@ -58,10 +59,24 @@ export default function Reviews() {
       rating: 5,
       date: "Residential Villa",
     },
+    {
+      quote:
+        "Rashid Ali and his team are the best designers in Delhi. I would definitely recommend them. Outstanding attention to detailing and premium factory finishes on wardrobes and kitchen.",
+      author: "Villa Owner",
+      location: "Full Villa Renovation · Gurgaon",
+      rating: 5,
+      date: "Luxury Fitout",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="Client Reviews & Testimonials (4.9★) | 4 Lotus Interior Delhi"
+        description="Read authentic client reviews and testimonials for 4 Lotus Interior and Principal Architect Rashid Ali. 4.9-star rating across 81+ Google Reviews for residential and commercial projects in Delhi."
+        keywords="4 lotus interior reviews, rashid ali interior designer reviews, best rated interior designer delhi, top architects reviews dwarka janakpuri"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

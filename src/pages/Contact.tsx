@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import FaqSection from "@/components/FaqSection";
 import ConsultationModal from "@/components/ConsultationModal";
+import SEO from "@/components/SEO";
 import { Phone, Mail, Clock, Building, Factory, CheckCircle2 } from "lucide-react";
 
 export default function Contact() {
@@ -26,6 +27,12 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="Contact 4 Lotus Interior | Studio Janakpuri & Factory Kirti Nagar"
+        description="Book a consultation with Principal Architect Rashid Ali at our Janakpuri Studio (Plot No-18, Main Palam Dwarka Rd) or call +91 98106 98082 / +91 98113 63064."
+        keywords="contact 4 lotus interior, architect rashid ali phone, interior designer janakpuri contact, interior designer dwarka phone, kirti nagar furniture factory address"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

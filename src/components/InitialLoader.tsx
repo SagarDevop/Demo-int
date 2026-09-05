@@ -60,7 +60,7 @@ export default function InitialLoader() {
         <div className="flex items-center justify-center gap-3">
           <img
             src="/assets/logo.webp"
-            alt="4 Lotus Logo"
+            alt="4 Lotus Interior Architecture & Design Studio Official Logo"
             className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain drop-shadow-lg"
           />
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-[-0.03em] uppercase text-white font-sans">

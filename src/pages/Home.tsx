@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
+import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import Philosophy from "@/components/Philosophy";
 import ProjectHighlight from "@/components/ProjectHighlight";
@@ -21,6 +22,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="4 Lotus Interior | Luxury Architecture & Interior Design Studio Delhi"
+        description="Award-winning luxury interior design & architecture studio in Delhi-NCR led by Principal Architect Rashid Ali. 15+ years of bespoke residential, turnkey villas, and corporate interiors."
+        keywords="interior designer in delhi, luxury interior designer janakpuri, best architect dwarka, turnkey interior designer south delhi, interior design firm delhi ncr, modular kitchen manufacturer kirti nagar, 4 lotus interior"
+      />
+
       {/* Fixed Luxury Navbar */}
       <Navbar
         onOpenConsultation={() => setConsultationOpen(true)}

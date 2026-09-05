@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { MapPin, CheckCircle2, Building, Factory, ArrowUpRight } from "lucide-react";
 
 export default function Locations() {
@@ -43,35 +44,37 @@ export default function Locations() {
     },
     {
       title: "North & East Delhi",
-      description: "Full turnkey architectural remodeling and residential apartment makeovers.",
+      description: "Comprehensive turnkey architectural execution across North and East residential hubs.",
       areas: [
-        "Pitampura",
         "Rohini (All Sectors)",
-        "Rani Bagh & Shakurpur",
-        "Shakti Nagar & Kamla Nagar",
-        "Model Town & Gujranwala Town",
+        "Pitampura",
+        "Model Town",
         "Civil Lines",
-        "Preet Vihar & Nirman Vihar",
-        "Mayur Vihar (Phases 1, 2, 3)",
-        "Laxmi Nagar & IP Extension",
+        "Mayur Vihar",
+        "Preet Vihar & Laxmi Nagar",
       ],
     },
     {
-      title: "NCR Metropolitan Regions",
-      description: "Corporate offices, luxury high-rise penthouses, and farmhouse estates across NCR.",
+      title: "NCR & Satellite Cities",
+      description: "Dedicated project site engineers stationed across luxury condominiums and commercial high-rises.",
       areas: [
-        "Gurgaon (DLF Cyber City, Golf Course Rd & Ext)",
-        "Noida (Sectors 18, 62, 137, 150)",
-        "Greater Noida & Expressway",
+        "Gurgaon (DLF Phase 1-5, Golf Course Road, Cyber City)",
+        "Noida & Greater Noida (Sector 50, 75, 128, 150)",
         "Faridabad (Sector 14, 15, Greenfields)",
         "Ghaziabad (Indirapuram, Vaishali, Vasundhara)",
-        "Sonipat & Kundli (Industrial & Residential)",
+        "Sonipat & Kundli Expressway",
       ],
     },
   ];
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="Interior Design Service Locations Delhi-NCR (32 Hubs) | 4 Lotus"
+        description="4 Lotus Interior provides turnkey architecture and interior design services across 32 major hubs in Delhi-NCR, including Janakpuri, Dwarka, South Delhi, Gurgaon, and Noida."
+        keywords="interior designer janakpuri, interior designer dwarka, interior designer south delhi, interior designer gurgaon, interior design services noida, 4 lotus locations"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

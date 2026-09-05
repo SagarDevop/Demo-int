@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { Star, Factory, CheckCircle2 } from "lucide-react";
 
 export default function About() {
@@ -55,6 +56,12 @@ export default function About() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="About 4 Lotus Interior | 15+ Years Architecture Studio Delhi"
+        description="Learn about 4 Lotus Interior, our philosophy of Function First and Timeless Aesthetic, and Principal Architect Rashid Ali. Janakpuri Studio and Kirti Nagar manufacturing."
+        keywords="about 4 lotus interior, architect rashid ali delhi, best interior designer janakpuri, interior design history delhi, custom furniture manufacturer kirti nagar"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

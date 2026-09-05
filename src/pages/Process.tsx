@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { Compass, Layers, Hammer, ShieldCheck, CheckCircle2, Clock, Calculator, FileText } from "lucide-react";
 
 export default function Process() {
@@ -62,6 +63,12 @@ export default function Process() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+      <SEO
+        title="Our Turnkey Architectural Process | 4 Lotus Interior Delhi"
+        description="Discover our systematic 4-step interior architecture methodology: Spatial Discovery, 3D Schematics, Kirti Nagar Millwork Production, and Turnkey On-Site Delivery."
+        keywords="interior design process delhi, 3d interior rendering delhi, turnkey interior workflow, home interior execution steps, interior architect process"
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Page Header */}

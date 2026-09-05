@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ConsultationModal from "../components/ConsultationModal";
+import SEO from "../components/SEO";
 import { Home, Compass, PhoneCall } from "lucide-react";
 
 export default function NotFound() {
@@ -10,6 +11,11 @@ export default function NotFound() {
 
   return (
     <div className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between">
+      <SEO
+        title="404 — Space Not Found | 4 Lotus Interior"
+        description="The architectural page or archive you are looking for has been relocated. Explore 4 Lotus Interior studio services and portfolio in Delhi."
+      />
+
       <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
 
       <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24 sm:py-32 relative overflow-hidden">

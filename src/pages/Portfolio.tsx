@@ -6,6 +6,7 @@ import PageHeader from "@/components/PageHeader";
 import ConsultationModal from "@/components/ConsultationModal";
 import ProjectGalleryModal from "@/components/ProjectGalleryModal";
 import CtaSection from "@/components/CtaSection";
+import SEO from "@/components/SEO";
 import { Eye, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Portfolio() {
@@ -91,8 +92,18 @@ export default function Portfolio() {
 
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
-      <Navbar onOpenConsultation={() => setConsultationOpen(true)} />
+      <SEO
+        title="Luxury Interior Design Portfolio | 4 Lotus Projects Delhi-NCR"
+        description="Browse completed luxury residences, villas, duplexes, penthouses, and corporate interiors designed by 4 Lotus Interior across Delhi, Janakpuri, Dwarka, and South Delhi."
+        keywords="interior design portfolio delhi, luxury villa interiors dwarka, south delhi interior projects, modern living room designs delhi, architectural interior gallery"
+        ogImage="https://4lotusinterior.in/assets/curved_sofa_project.jpg"
+      />
 
+      <Navbar
+        onOpenConsultation={() => setConsultationOpen(true)}
+        onOpenProjects={() => setGalleryOpen(true)}
+      />
+      
       {/* Page Header */}
       <PageHeader
         eyebrow="ARCHITECTURAL PORTFOLIO & CASE STUDIES"

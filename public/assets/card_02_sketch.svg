@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350" fill="none" stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main Center Tabletop -->
+    <ellipse cx="150" cy="185" rx="85" ry="8" fill="#ffffff" />
+    <line x1="65" y1="185" x2="65" y2="189" />
+    <line x1="235" y1="185" x2="235" y2="189" />
+    <path d="M65 189 C 65 197, 235 197, 235 189" fill="#ffffff" />
+
+    <!-- Fluted Pedestal Column Base -->
+    <path d="M120 192 L120 248" />
+    <path d="M180 192 L180 248" />
+    <!-- Fluting ridges -->
+    <line x1="128" y1="193" x2="128" y2="249" />
+    <line x1="136" y1="194" x2="136" y2="250" />
+    <line x1="144" y1="194" x2="144" y2="251" />
+    <line x1="150" y1="194" x2="150" y2="251" />
+    <line x1="156" y1="194" x2="156" y2="251" />
+    <line x1="164" y1="194" x2="164" y2="250" />
+    <line x1="172" y1="193" x2="172" y2="249" />
+    <!-- Base curve -->
+    <path d="M120 248 C 120 254, 180 254, 180 248" />
+
+    <!-- Left Pouf/Stool -->
+    <ellipse cx="90" cy="218" rx="22" ry="4" fill="#ffffff" />
+    <line x1="68" y1="218" x2="68" y2="246" />
+    <line x1="112" y1="218" x2="112" y2="246" />
+    <path d="M68 246 C 68 250, 112 250, 112 246" />
+
+    <!-- Right Pouf/Stool -->
+    <ellipse cx="205" cy="220" rx="24" ry="4.5" fill="#ffffff" />
+    <line x1="181" y1="220" x2="181" y2="250" />
+    <line x1="229" y1="220" x2="229" y2="250" />
+    <path d="M181 250 C 181 254.5, 229 254.5, 229 250" />
+
+    <!-- Fluted Vase on Table -->
+    <line x1="136" y1="150" x2="136" y2="185" />
+    <line x1="152" y1="150" x2="152" y2="185" />
+    <ellipse cx="144" cy="150" rx="8" ry="2" />
+    <ellipse cx="144" cy="185" rx="8" ry="2" />
+    <!-- Vase flutes -->
+    <line x1="140" y1="151" x2="140" y2="185" />
+    <line x1="144" y1="152" x2="144" y2="186" />
+    <line x1="148" y1="151" x2="148" y2="185" />
+
+    <!-- Botanical Foliage / Branches -->
+    <!-- Center main branch -->
+    <path d="M144 150 Q142 110 138 75" />
+    <path d="M144 135 Q156 115 160 90" />
+    <path d="M142 115 Q128 95 125 78" />
+    <path d="M150 120 Q168 110 172 100" />
+    <path d="M138 85 Q148 70 152 60" />
+
+    <!-- Delicate leaves & berries on branches -->
+    <ellipse cx="138" cy="73" rx="2.5" ry="4" transform="rotate(-15 138 73)" fill="#ffffff" />
+    <ellipse cx="134" cy="82" rx="2" ry="3.5" transform="rotate(-35 134 82)" fill="#ffffff" />
+    <ellipse cx="142" cy="90" rx="2.5" ry="4" transform="rotate(25 142 90)" fill="#ffffff" />
+    <ellipse cx="160" cy="88" rx="2.5" ry="4" transform="rotate(30 160 88)" fill="#ffffff" />
+    <ellipse cx="156" cy="102" rx="2" ry="3.5" transform="rotate(45 156 102)" fill="#ffffff" />
+    <ellipse cx="125" cy="76" rx="2.5" ry="3.5" transform="rotate(-40 125 76)" fill="#ffffff" />
+    <ellipse cx="128" cy="88" rx="2" ry="3" transform="rotate(-30 128 88)" fill="#ffffff" />
+    <ellipse cx="172" cy="98" rx="2.5" ry="3.5" transform="rotate(50 172 98)" fill="#ffffff" />
+    <ellipse cx="152" cy="58" rx="2" ry="3.5" transform="rotate(15 152 58)" fill="#ffffff" />
+    <ellipse cx="145" cy="65" rx="2" ry="3" transform="rotate(-20 145 65)" fill="#ffffff" />
+
+    <!-- Books & Objects on Table -->
+    <!-- Left small book -->
+    <rect x="75" y="180" width="22" height="4" rx="0.5" fill="#ffffff" />
+    <!-- Right stack of books -->
+    <rect x="160" y="179" width="30" height="5" rx="0.5" fill="#ffffff" />
+    <rect x="162" y="174" width="26" height="5" rx="0.5" fill="#ffffff" />
+    <rect x="187" y="176" width="24" height="4" rx="0.5" transform="rotate(-4 187 176)" fill="#ffffff" />
+  </svg>

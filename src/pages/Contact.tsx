@@ -55,22 +55,41 @@ export default function Contact() {
 
             {/* Direct Phone & Email Cards */}
             <div className="space-y-4">
-              <a
-                href="tel:09810698082"
-                className="flex items-center gap-4 p-6 bg-white border border-black/[0.08] rounded-[4px] hover:border-black transition-colors group shadow-sm"
-              >
-                <div className="p-3 rounded-full bg-black text-white group-hover:bg-amber-600 transition-colors">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#777777] block">
-                    Direct Architect Helpline (Click to Call)
-                  </span>
-                  <span className="text-lg font-bold text-[#111111] group-hover:text-black">
-                    +91 98106 98082
-                  </span>
-                </div>
-              </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="tel:09810698082"
+                  className="flex items-center gap-4 p-5 bg-white border border-black/[0.08] rounded-[4px] hover:border-black transition-colors group shadow-sm"
+                >
+                  <div className="p-3 rounded-full bg-black text-white group-hover:bg-amber-600 transition-colors shrink-0">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-[#777777] block">
+                      Direct Line 1 (Call)
+                    </span>
+                    <span className="text-sm font-bold text-[#111111] group-hover:text-black">
+                      +91 98106 98082
+                    </span>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:09811363064"
+                  className="flex items-center gap-4 p-5 bg-white border border-black/[0.08] rounded-[4px] hover:border-black transition-colors group shadow-sm"
+                >
+                  <div className="p-3 rounded-full bg-black text-white group-hover:bg-amber-600 transition-colors shrink-0">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-[#777777] block">
+                      Direct Line 2 (Call)
+                    </span>
+                    <span className="text-sm font-bold text-[#111111] group-hover:text-black">
+                      +91 98113 63064
+                    </span>
+                  </div>
+                </a>
+              </div>
 
               <a
                 href="mailto:contact@4lotusinterior.in"

@@ -10,6 +10,13 @@
     --warm-border: rgba(0, 0, 0, 0.08);
   }
 
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   body {
     background-color: #f8f7f5;
     color: #141414;
@@ -33,6 +40,20 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #9d968a;
+}
+
+/* Shimmer animation for skeletons */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.8s infinite ease-in-out;
 }
 
 /* Subtle micro animations */

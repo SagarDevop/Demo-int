@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Phone, ArrowUpRight, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 
 interface NavbarProps {
-  onOpenConsultation: () => void;
+  onOpenConsultation?: () => void;
   onOpenProjects?: () => void;
 }
 
@@ -60,10 +60,17 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           {/* Logo */}
           <Link
             to="/"
-            className="text-xl md:text-2xl font-bold tracking-[0.2em] text-[#111111] uppercase hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2 group py-1"
             aria-label="4 Lotus Interior Homepage"
           >
-            4 LOTUS
+            <img
+              src="/assets/logo.webp"
+              alt="4 Lotus Logo"
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+            <span className="text-xl md:text-2xl font-bold tracking-[0.2em] text-[#111111] uppercase group-hover:opacity-80 transition-opacity">
+              LOTUS
+            </span>
           </Link>
 
           {/* Center Multi-page Navigation Links */}
@@ -86,23 +93,25 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             })}
           </nav>
 
-          {/* Right Action buttons */}
-          <div className="hidden sm:flex items-center space-x-4 md:space-x-6">
+          {/* Right Direct Phone Numbers (Consultation button removed as requested) */}
+          <div className="hidden sm:flex items-center space-x-3 md:space-x-4">
             <a
               href="tel:09810698082"
-              className="flex items-center gap-1.5 text-xs md:text-[13px] font-medium tracking-wide text-[#333333] hover:text-black transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs md:text-[13px] font-medium tracking-wide text-[#333333] hover:text-black hover:bg-black/5 rounded-full transition-all"
               aria-label="Call studio phone 098106 98082"
             >
-              <Phone className="w-3.5 h-3.5" />
+              <Phone className="w-3.5 h-3.5 text-amber-800" />
               <span>+91 98106 98082</span>
             </a>
-            <button
-              onClick={onOpenConsultation}
-              className="flex items-center gap-1.5 px-4 py-2 text-[12px] font-medium tracking-[0.1em] uppercase border border-black/25 hover:border-black hover:bg-black hover:text-white transition-all rounded-full shadow-sm"
+            <span className="text-black/20 text-xs font-light">|</span>
+            <a
+              href="tel:09811363064"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs md:text-[13px] font-medium tracking-wide text-[#333333] hover:text-black hover:bg-black/5 rounded-full transition-all"
+              aria-label="Call studio phone 098113 63064"
             >
-              <span>Consultation</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
+              <Phone className="w-3.5 h-3.5 text-amber-800" />
+              <span>+91 98113 63064</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -149,23 +158,25 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             })}
           </div>
 
+          {/* Mobile Direct Phone Numbers */}
           <div className="space-y-3 pt-4">
+            <span className="text-[11px] font-semibold uppercase tracking-widest text-[#777777] block text-center">
+              Direct Studio Lines
+            </span>
             <a
               href="tel:09810698082"
-              className="w-full flex items-center justify-center gap-2 py-3 bg-[#EAE6E1] text-black text-xs sm:text-sm tracking-widest uppercase font-semibold rounded-full"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-[#EAE6E1] text-black text-xs sm:text-sm tracking-widest uppercase font-semibold rounded-full hover:bg-black hover:text-white transition-all shadow-sm"
             >
-              <Phone className="w-4 h-4" />
-              <span>Call +91 98106 98082</span>
+              <Phone className="w-4 h-4 text-amber-800" />
+              <span>+91 98106 98082</span>
             </a>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenConsultation();
-              }}
-              className="w-full py-3.5 bg-black text-white text-xs sm:text-sm tracking-widest uppercase font-semibold rounded-full shadow-lg"
+            <a
+              href="tel:09811363064"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-white border border-black/15 text-black text-xs sm:text-sm tracking-widest uppercase font-semibold rounded-full hover:bg-black hover:text-white transition-all shadow-sm"
             >
-              Book Design Consultation ↗
-            </button>
+              <Phone className="w-4 h-4 text-amber-800" />
+              <span>+91 98113 63064</span>
+            </a>
           </div>
         </div>
       )}

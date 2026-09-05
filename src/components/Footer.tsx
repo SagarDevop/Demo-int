@@ -61,12 +61,21 @@ export default function Footer() {
 
           {/* Center Contact Numbers */}
           <div className="md:col-span-6 text-center space-y-2">
-            <a
-              href="tel:09810698082"
-              className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white hover:text-amber-300 transition-colors"
-            >
-              +91 98106 98082
-            </a>
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
+              <a
+                href="tel:09810698082"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white hover:text-amber-300 transition-colors"
+              >
+                +91 98106 98082
+              </a>
+              <span className="text-white/20 text-lg hidden sm:inline">|</span>
+              <a
+                href="tel:09811363064"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white hover:text-amber-300 transition-colors"
+              >
+                +91 98113 63064
+              </a>
+            </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-[#CCCCCC]">
               <a href="mailto:contact@4lotusinterior.in" className="hover:text-white transition-colors">
                 contact@4lotusinterior.in

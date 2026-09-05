@@ -1,13 +1,23 @@
-"use client";
-
-import React, { useState, useRef, useCallback } from "react";
-import Image from "next/image";
+import React, { useState, useRef, useCallback, useEffect } from "react";
+import Image from "@/components/Image";
 import { Sparkles, MoveHorizontal } from "lucide-react";
 
 export default function BeforeAfterSection() {
   const [sliderPos, setSliderPos] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState<number>(1200);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
 
   const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -56,7 +66,7 @@ export default function BeforeAfterSection() {
         {/* AFTER Image (Full Layer Below) */}
         <div className="absolute inset-0">
           <Image
-            src="/assets/hero_living_room.jpg"
+            src="/assets/after.png"
             alt="After - 4 Lotus Luxury Interior Transformation"
             fill
             className="object-cover object-center"
@@ -67,20 +77,23 @@ export default function BeforeAfterSection() {
           </div>
         </div>
 
-        {/* BEFORE Image (Clipped Layer on Top) */}
+        {/* BEFORE Image (Clipped Layer on Top with matched width) */}
         <div
           className="absolute inset-0 overflow-hidden"
           style={{ width: `${sliderPos}%` }}
         >
-          <div className="relative w-full h-full min-w-[100vw]">
+          <div
+            className="relative h-full"
+            style={{ width: `${containerWidth}px` }}
+          >
             <Image
-              src="/assets/card_function_first.jpg"
+              src="/assets/before.png"
               alt="Before - Raw Spatial Structure"
               fill
-              className="object-cover object-center filter grayscale contrast-125 brightness-90"
+              className="object-cover object-center"
             />
           </div>
-          <div className="absolute top-5 left-5 bg-neutral-900/85 backdrop-blur-md px-3.5 py-1.5 rounded-full text-white text-[11px] uppercase tracking-widest font-semibold z-10 border border-white/20">
+          <div className="absolute top-5 left-5 bg-neutral-900/85 backdrop-blur-md px-3.5 py-1.5 rounded-full text-white text-[11px] uppercase tracking-widest font-semibold z-10 border border-white/20 whitespace-nowrap">
             <span>Before: Raw Unfinished State</span>
           </div>
         </div>

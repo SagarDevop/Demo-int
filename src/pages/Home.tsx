@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -7,9 +5,11 @@ import Philosophy from "@/components/Philosophy";
 import ProjectHighlight from "@/components/ProjectHighlight";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import ProcessSection from "@/components/ProcessSection";
-import WhatWereKnownFor from "@/components/WhatWereKnownFor";
-import GoogleReviewsSection from "@/components/GoogleReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
+import WhatWereKnownFor from "@/components/WhatWereKnownFor";
+import LocationsCoverage from "@/components/LocationsCoverage";
+import GoogleReviewsSection from "@/components/GoogleReviewsSection";
+import FaqSection from "@/components/FaqSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import ConsultationModal from "@/components/ConsultationModal";
@@ -27,7 +27,7 @@ export default function Home() {
         onOpenProjects={() => setGalleryOpen(true)}
       />
 
-      {/* Hero Section: TIMELESS COMFORT */}
+      {/* Hero Section */}
       <Hero
         onOpenConsultation={() => setConsultationOpen(true)}
         onOpenProjects={() => setGalleryOpen(true)}
@@ -45,14 +45,20 @@ export default function Home() {
       {/* 4-Step Architectural Methodology & Process */}
       <ProcessSection onOpenConsultation={() => setConsultationOpen(true)} />
 
-      {/* Studio Highlights & What We're Known For Editorial Table */}
+      {/* Comprehensive Specialized Services (14 Categories) */}
+      <ServicesSection onOpenConsultation={() => setConsultationOpen(true)} />
+
+      {/* Studio Leadership, 15+ Years Heritage & Manufacturing */}
       <WhatWereKnownFor />
+
+      {/* Regional Reach & 32 Delhi-NCR Service Hubs */}
+      <LocationsCoverage onOpenConsultation={() => setConsultationOpen(true)} />
 
       {/* Verified Google Reviews (4.9 ★ 81 Reviews) */}
       <GoogleReviewsSection />
 
-      {/* Studio Specialized Services */}
-      <ServicesSection onOpenConsultation={() => setConsultationOpen(true)} />
+      {/* Comprehensive Frequently Asked Questions */}
+      <FaqSection />
 
       {/* Fireplace CTA Banner: Start Your Project */}
       <CtaSection onOpenConsultation={() => setConsultationOpen(true)} />

@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
+import Image from "@/components/Image";
 
 export default function Philosophy() {
   return (
@@ -24,7 +22,6 @@ export default function Philosophy() {
             src="/assets/card_function_first.jpg"
             alt="Function First - 4 Lotus Interior Space"
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-90"
           />
           {/* Subtle gradient */}

@@ -1,7 +1,5 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { X, ArrowRight, ArrowLeft, Layers, MapPin, Calendar, Sparkles } from "lucide-react";
 
 interface ProjectGalleryModalProps {

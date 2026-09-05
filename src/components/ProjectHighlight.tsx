@@ -1,7 +1,6 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
+import { Link } from "react-router-dom";
+import Image from "@/components/Image";
 import { ArrowUpRight } from "lucide-react";
 
 interface ProjectHighlightProps {
@@ -38,13 +37,19 @@ export default function ProjectHighlight({ onOpenProjects }: ProjectHighlightPro
             Completed a comprehensive home transformation that defined 4 Lotus&apos;s material-led and timeless approach.
           </p>
 
-          <div>
-            <button
-              onClick={onOpenProjects}
+          <div className="flex items-center gap-6">
+            <Link
+              to="/portfolio"
               className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-black uppercase tracking-wider border-b border-black pb-1 hover:opacity-70 transition-opacity"
             >
-              <span>Explore Transformation</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <span>Explore Portfolio ↗</span>
+            </Link>
+
+            <button
+              onClick={onOpenProjects}
+              className="text-xs md:text-sm font-medium text-[#777777] uppercase tracking-wider hover:text-black transition-colors"
+            >
+              Quick Preview
             </button>
           </div>
         </div>
@@ -55,12 +60,13 @@ export default function ProjectHighlight({ onOpenProjects }: ProjectHighlightPro
             src="/assets/curved_sofa_project.jpg"
             alt="Completed 4 Lotus Luxury Interior Transformation in Delhi"
             fill
-            sizes="(max-width: 1024px) 100vw, 60vw"
             className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-[4px] flex items-center justify-between text-[11px] md:text-xs font-medium text-black tracking-wide border border-black/5">
             <span>Residence & Lounge · South Delhi</span>
-            <span className="text-neutral-500">Completed 2025</span>
+            <Link to="/portfolio" className="text-black font-semibold hover:underline">
+              View Specs ↗
+            </Link>
           </div>
         </div>
       </div>

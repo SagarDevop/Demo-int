@@ -10,6 +10,7 @@ export default function GoogleReviewsSection() {
       author: "Verified Homeowner",
       location: "Flat Renovation · Dwarka, Delhi",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
       quote:
@@ -17,6 +18,7 @@ export default function GoogleReviewsSection() {
       author: "Residential Client",
       location: "Complete Home Interior · Delhi-NCR",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
       quote:
@@ -24,6 +26,7 @@ export default function GoogleReviewsSection() {
       author: "Homeowner",
       location: "Interior Decoration & Staging · Delhi",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     },
     {
       quote:
@@ -31,6 +34,7 @@ export default function GoogleReviewsSection() {
       author: "Builder Floor Owner",
       location: "4BHK Luxury Turnkey Floor · South West Delhi",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
     },
     {
       quote:
@@ -38,6 +42,7 @@ export default function GoogleReviewsSection() {
       author: "Corporate Enterprise",
       location: "Corporate Office & Commercial Fit-Out",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/men/46.jpg",
     },
     {
       quote:
@@ -45,6 +50,7 @@ export default function GoogleReviewsSection() {
       author: "Villa Resident",
       location: "Luxury Living Suite · Janakpuri",
       rating: 5,
+      avatar: "https://randomuser.me/api/portraits/women/49.jpg",
     },
   ];
 
@@ -87,12 +93,13 @@ export default function GoogleReviewsSection() {
         </div>
       </div>
 
-      {/* 6 Reviews Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {allReviews.map((rev, idx) => (
+      {/* Compact review marquee: the duplicate set makes the loop seamless. */}
+      <div className="reviews-marquee" aria-label="Client reviews carousel">
+        <div className="reviews-track">
+          {[...allReviews, ...allReviews].map((rev, idx) => (
           <div
-            key={idx}
-            className="bg-white border border-black/[0.08] p-7 md:p-8 rounded-[4px] flex flex-col justify-between space-y-6 card-hover-effect"
+            key={`${rev.author}-${idx}`}
+            className="review-card bg-white border border-black/[0.08] p-5 rounded-[4px] flex flex-col justify-between gap-4"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">
@@ -109,9 +116,17 @@ export default function GoogleReviewsSection() {
             </div>
 
             <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs text-[#777777]">
-              <div>
-                <p className="font-semibold text-black">{rev.author}</p>
+              <div className="flex items-center gap-2.5 min-w-0">
+                <img
+                  src={rev.avatar}
+                  alt="Client portrait"
+                  className="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-[#f1efe9]"
+                  loading="lazy"
+                />
+                <div className="min-w-0">
+                  <p className="font-semibold text-black truncate">{rev.author}</p>
                 <p className="text-[11px] text-[#888888]">{rev.location}</p>
+                </div>
               </div>
               <span className="flex items-center gap-1 text-emerald-600 font-medium text-[11px]">
                 <CheckCircle className="w-3.5 h-3.5" />
@@ -119,7 +134,8 @@ export default function GoogleReviewsSection() {
               </span>
             </div>
           </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

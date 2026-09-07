@@ -7,7 +7,7 @@ interface ServicesSectionProps {
 }
 
 export default function ServicesSection({ onOpenConsultation }: ServicesSectionProps) {
-  const [activeTab, setActiveTab] = useState<"turnkey" | "residential" | "commercial">("turnkey");
+  const [activeTab, setActiveTab] = useState<"turnkey" | "residential" | "commercial">("residential");
 
   // Exact word-for-word turnkey solutions from https://4lotusinterior.in/
   const turnkeySolutions = [

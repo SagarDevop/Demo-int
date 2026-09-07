@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { createServer } from "vite";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -834,6 +835,135 @@ function buildLocalizedInventoryPage(item) {
   return buildStandardPage(data);
 }
 
+function buildHomepageStaticSeo(data, inventory) {
+  const sections = (data.sections || [])
+    .filter(section => section.text && section.text.length > 80)
+    .map((section, index) => {
+      const headings = (section.headings || []).map((heading, headingIndex) => {
+        const tag = index === 0 && headingIndex === 0 ? "h1" : headingIndex === 0 ? "h2" : "h3";
+        return `<${tag}>${escapeHtml(heading)}</${tag}>`;
+      }).join("\n");
+      return `<section class="seo-content-section">${headings}<p>${escapeHtml(section.text)}</p></section>`;
+    }).join("\n");
+
+  const services = [
+    ["Civil Works, Masonry & Plastering", "Masonry & Plastering, RCC Works, Screeding, and all types of Flooring/Cladding (Granite, Marble, Vitrified Tiles)."],
+    ["Plumbing & Sanitary Lines", "Complete Fresh Water & Sanitary Line installation, along with high-quality Sanitary Fixtures & Luxury Bath Accessories."],
+    ["Electrical & Smart Lighting", "Internal Electrification, Lighting, Power Outlets, DBs, External Electrification, HT Sub-stations, DG sets, and comprehensive electrical fittings."],
+    ["False Ceiling Solutions", "Modular Grid, Gypsum Board, POP Decorative, Metal, and Wooden or Glazed Architectural Ceilings."],
+    ["Joinery, Carpentry & Storage Units", "Wood and Gypsum Partitions, Paneling, Flush Doors, Custom Furniture, Storage Units, and Built-in Wardrobe Cabinets."],
+    ["Flooring & Architectural Surfaces", "False Flooring, Carpets, Hardwood and Engineered Wooden Flooring, Luxury Vinyl, Epoxy, and Imported Stone."],
+    ["Fabrication & Structural MS", "MS Structures, Structural Roofing, Stainless Steel and Aluminium Grills, Glass Railings, and Commercial Rolling Shutters."],
+    ["HVAC & Ventilation Engineering", "Split, Ductable and VRV air-conditioning, Precision AC for Server Rooms, and Office and Toilet Ventilation Systems."],
+    ["Architectural Glass Works", "Toughened Glass Partitions, Lacquered Glass, Anti-reflective Glazing, and Custom Painted Glass solutions."],
+    ["Data, Networking & Server Rooms", "Structured Cat-6 Cabling, Server Room Design, Rack Setup, and Wireless Enterprise Network solutions."],
+    ["Fire Safety & Electronic Security", "Fire Alarm Systems, Hydrants, Sprinklers, FM-200 Suppression, Biometric Access Control, and CCTV Surveillance."],
+    ["Finishing Touches & Artistry", "Painting, Wall Art, Melamine and PU Polishing, Texture Finishing, Signage, Glass Blocks, Indoor Waterfalls, and Artifacts."],
+  ];
+
+  const faqs = [
+    ["Who leads the architectural and design desk at 4 Lotus Interior?", "4 Lotus Interior is led by Principal Interior Architect Rashid Ali, bringing over 15+ years of design and execution expertise. Our multidisciplinary team includes CAD draftsmen, 3D visualizers, master carpenters, and dedicated site supervisors."],
+    ["What services do you provide under turnkey interior execution?", "We provide complete end-to-end turnkey solutions covering architectural spatial planning, 3D photorealistic visualization, structural civil remodeling, electrical and plumbing layouts, false ceiling elevations, modular kitchen installations, luxury bathroom transformations, and custom in-house furniture manufacturing."],
+    ["Do you manufacture your own custom furniture and modular fixtures?", "Yes. 4 Lotus operates its own specialized furniture manufacturing facility. We produce bespoke fluted consoles, solid teak dining tables, upholstered headboards, German-hardware modular kitchens, and custom wardrobes."],
+    ["Which areas in Delhi-NCR do you provide on-site services?", "We provide on-site visits across Janakpuri, Dwarka, South Delhi, West Delhi, North and East Delhi, Gurgaon, Noida, Faridabad, Ghaziabad, and Sonipat."],
+    ["How does the initial design consultation and 3D modeling work?", "The journey begins with an initial spatial consultation. We map lifestyle requirements and prepare 2D layout options, hyper-realistic 3D walkthrough renders, and physical material sample boards before site work begins."],
+    ["How do you ensure budget certainty and project timelines?", "Before signing, we provide a fixed-price itemized bill of quantities with zero hidden charges. Each project follows a milestone-linked timeline supervised by an on-site project manager."],
+  ];
+
+  const reviews = [
+    "It was an absolute pleasure working with 4 Lotus Interior. Very professional and friendly. They renovated our flat, and the process was simple. Highly recommended if you want quality.",
+    "My home was renovated by 4 Lotus. They are very professional and highly skilled. They totally changed my home interior as per my needs and within my budget.",
+    "4 Lotus Interior designed and decorated our home beautifully. Despite challenges like the lockdown, they completed the work on time and were budget-friendly.",
+    "My 4BHK builder floor was well interior designed and renovated in a completely new style. I am satisfied with the service and execution by 4 Lotus Interior.",
+    "My company took interior designing and contractor services from 4 Lotus. They have all interior-related solutions under one roof.",
+    "Awesome residential interior of my home by Delhi's best interior designers and decorators. Choose them, it will never disappoint you.",
+  ];
+
+  const locations = inventory
+    .filter(item => item.category === "Availability")
+    .map(item => `<li><a href="/${escapeHtml(item.slug)}.html">${escapeHtml(item.label)}</a></li>`)
+    .join("");
+
+  const portfolioImages = (data.images || [])
+    .filter(image => image.src && image.alt)
+    .slice(0, 24)
+    .map(image => `<figure><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy"><figcaption>${escapeHtml(image.alt)}</figcaption></figure>`)
+    .join("");
+
+  return `
+    <header class="seo-fallback-header">
+      <a href="/">4 LOTUS INTERIOR · DELHI-NCR</a>
+      <nav aria-label="Main navigation">
+        <a href="/interior-designers.html">Specialist</a>
+        <a href="/residential-interior.html">Residential</a>
+        <a href="/commercial-interior.html">Commercial</a>
+        <a href="/contact-us.html">Contact</a>
+      </nav>
+    </header>
+    <main class="seo-fallback-main">
+      ${sections}
+
+      <section class="seo-content-section" id="services">
+        <h2>Turnkey Interior Solutions in Delhi-NCR</h2>
+        <p>We handle complete interior design, renovation, and turnkey execution for residential, retail, commercial, corporate, and hospitality spaces across Delhi-NCR, Gurgaon, and Noida.</p>
+        <div class="seo-list-grid">
+          ${services.map(([title, description]) => `<article><h3>${escapeHtml(title)}</h3><p>${escapeHtml(description)}</p></article>`).join("")}
+        </div>
+      </section>
+
+      <section class="seo-content-section" id="reviews">
+        <h2>What Our Clients Say</h2>
+        <p>4.9 Rating from 81 Verified Google Reviews.</p>
+        <div class="seo-list-grid">
+          ${reviews.map(review => `<blockquote>“${escapeHtml(review)}”<cite>Verified 4 Lotus Interior client</cite></blockquote>`).join("")}
+        </div>
+      </section>
+
+      <section class="seo-content-section" id="portfolio">
+        <h2>Interior Design Portfolio</h2>
+        <p>Selected residential, commercial, retail, hospitality, bedroom, living room, bathroom, kitchen, clinic, and shop interior design work by 4 Lotus Interior.</p>
+        <div class="seo-image-grid">${portfolioImages}</div>
+      </section>
+
+      <section class="seo-content-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        ${faqs.map(([question, answer]) => `<article><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></article>`).join("")}
+      </section>
+
+      <section class="seo-content-section" id="locations">
+        <h2>Interior Design Service Areas</h2>
+        <p>Our architects and execution teams serve residential and commercial clients throughout Delhi-NCR.</p>
+        <ul class="seo-location-list">${locations}</ul>
+      </section>
+
+      <section class="seo-content-section" id="contact">
+        <h2>Contact 4 Lotus Interior</h2>
+        <p>Book a consultation with Principal Architect Rashid Ali for your residential, commercial, or turnkey interior project.</p>
+        <p><strong>Phone:</strong> <a href="tel:+919810698082">+91 98106 98082</a> · <a href="tel:+919811363064">+91 98113 63064</a></p>
+        <p><strong>Studio:</strong> Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi-110045.</p>
+        <p><strong>Factory:</strong> Plot No-57, W.H.S, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi-110015.</p>
+        <p><strong>Email:</strong> contact@4lotusinterior.in · <strong>Hours:</strong> Monday to Saturday, 10:00 AM to 6:00 PM.</p>
+      </section>
+    </main>
+    <footer class="seo-fallback-footer">© 2026 4 Lotus Interior. All Rights Reserved. Turnkey Architecture & Interior Renovation Delhi-NCR.</footer>`;
+}
+
+async function renderReactHomepage() {
+  const vite = await createServer({
+    root: rootDir,
+    configFile: path.resolve(rootDir, "vite.config.ts"),
+    server: { middlewareMode: true },
+    appType: "custom",
+  });
+
+  try {
+    const ssrModule = await vite.ssrLoadModule("/src/ssrHome.tsx");
+    return ssrModule.renderHome();
+  } finally {
+    await vite.close();
+  }
+}
+
 // Build dedicated Contact Us page
 function buildContactPage() {
   const data = {
@@ -923,6 +1053,19 @@ async function main() {
     const parsed = JSON.parse(raw);
     const slug = parsed.slug || file.replace(".json", "");
     jsonContentMap.set(slug, parsed);
+  }
+
+  const homepageData = jsonContentMap.get("homepage");
+  const indexFile = path.join(distDir, "index.html");
+  if (homepageData && fs.existsSync(indexFile)) {
+    const indexHtml = fs.readFileSync(indexFile, "utf-8");
+    const staticHomepage = await renderReactHomepage();
+    const updatedIndexHtml = indexHtml.replace(
+      /<!-- STATIC_SEO_FALLBACK_START -->[\s\S]*?<!-- STATIC_SEO_FALLBACK_END -->/,
+      staticHomepage
+    );
+    fs.writeFileSync(indexFile, updatedIndexHtml, "utf-8");
+    console.log("Generated: index.html with complete homepage SEO content.");
   }
 
   let count = 0;

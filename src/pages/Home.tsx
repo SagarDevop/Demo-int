@@ -65,9 +65,6 @@ export default function Home() {
       {/* Studio Leadership, 15+ Years Heritage & Manufacturing */}
       <WhatWereKnownFor />
 
-      {/* Regional Reach & 32 Delhi-NCR Service Hubs */}
-      <LocationsCoverage onOpenConsultation={() => setConsultationOpen(true)} />
-
       {/* Verified Google Reviews (4.9 ★ 81 Reviews) */}
       <GoogleReviewsSection />
 

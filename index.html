@@ -19,6 +19,15 @@
     <meta property="og:image" content="https://4lotusinterior.in/assets/images/index-meta.webp" />
     <meta property="og:url" content="https://4lotusinterior.in/" />
 
+    <!-- Hide static SEO markup until React mounts -->
+    <style>
+      #root > header,
+      #root > main,
+      #root > footer {
+        display: none !important;
+      }
+    </style>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

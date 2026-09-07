@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "@/components/Image";
-import { X, ArrowRight, ArrowLeft, Layers, MapPin, Calendar, Sparkles } from "lucide-react";
+import { X, ArrowRight, ArrowLeft, Layers, MapPin, Calendar } from "lucide-react";
 
 interface ProjectGalleryModalProps {
   isOpen: boolean;
@@ -15,15 +15,22 @@ export default function ProjectGalleryModal({
 }: ProjectGalleryModalProps) {
   const [activeIdx, setActiveIdx] = useState(0);
 
-  // Close on Escape key press
+  // Close on Escape key press and lock background scroll
   useEffect(() => {
+    if (!isOpen) return;
+
+    document.body.style.overflow = "hidden";
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) {
+      if (e.key === "Escape") {
         onClose();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
   }, [isOpen, onClose]);
 
   const projects = [
@@ -76,21 +83,29 @@ export default function ProjectGalleryModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="gallery-headline"
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-fade-in overflow-y-auto"
+      className="fixed inset-0 z-[9999] overflow-y-auto bg-black/85 backdrop-blur-md p-4 sm:p-6 md:p-10 flex justify-center items-start animate-fade-in"
+      onClick={(e) => {
+        // Close on clicking backdrop
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
     >
-      <div className="relative w-full max-w-5xl bg-[#141414] border border-white/15 text-white rounded-[8px] p-6 sm:p-10 shadow-2xl overflow-hidden my-6">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
-          aria-label="Close portfolio modal"
-        >
-          <X className="w-5 h-5" />
-        </button>
+      {/* Top Fixed Floating Close Pill */}
+      <button
+        onClick={onClose}
+        className="fixed top-4 right-4 sm:top-6 sm:right-6 z-[10000] flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/20 hover:bg-white text-white hover:text-black backdrop-blur-lg border border-white/30 transition-all duration-200 shadow-2xl text-xs uppercase tracking-widest font-semibold cursor-pointer"
+        aria-label="Close modal"
+      >
+        <X className="w-4 h-4" />
+        <span>Close (ESC)</span>
+      </button>
 
+      {/* Modal Card */}
+      <div className="relative w-full max-w-5xl bg-[#141414] border border-white/15 text-white rounded-[10px] p-6 sm:p-10 shadow-2xl my-8 sm:my-12">
         <div className="space-y-6">
           {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-white/10 pb-4 gap-2">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-white/10 pb-4 gap-2 pr-12">
             <div>
               <span className="text-[11px] font-semibold tracking-[0.2em] text-[#A09E9B] uppercase block">
                 {projects[activeIdx].category}
@@ -107,7 +122,7 @@ export default function ProjectGalleryModal({
           </div>
 
           {/* Project Image Display */}
-          <div className="relative w-full h-[260px] sm:h-[360px] md:h-[440px] rounded-[4px] overflow-hidden border border-white/10">
+          <div className="relative w-full h-[240px] sm:h-[340px] md:h-[420px] rounded-[6px] overflow-hidden border border-white/10 bg-black/40">
             <Image
               src={projects[activeIdx].image}
               alt={projects[activeIdx].title}
@@ -139,7 +154,7 @@ export default function ProjectGalleryModal({
             </div>
 
             {/* Material Palette */}
-            <div className="lg:col-span-5 space-y-2.5 bg-white/5 p-4 rounded-[4px] border border-white/10">
+            <div className="lg:col-span-5 space-y-2.5 bg-white/5 p-4 rounded-[6px] border border-white/10">
               <span className="text-[10px] font-semibold uppercase tracking-widest text-[#CCCCCC] block">
                 Curated Material Palette:
               </span>
@@ -157,26 +172,26 @@ export default function ProjectGalleryModal({
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-between pt-4 border-t border-white/10">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-white/10 gap-4">
+            <div className="flex items-center gap-2 w-full sm:w-auto justify-between sm:justify-start">
               <button
                 onClick={() =>
                   setActiveIdx((prev) => (prev > 0 ? prev - 1 : projects.length - 1))
                 }
-                className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center gap-1 text-xs"
+                className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider"
                 aria-label="Previous project"
               >
                 <ArrowLeft className="w-4 h-4" />
-                <span className="hidden sm:inline">Prev</span>
+                <span>Prev Project</span>
               </button>
               <button
                 onClick={() =>
                   setActiveIdx((prev) => (prev < projects.length - 1 ? prev + 1 : 0))
                 }
-                className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center gap-1 text-xs"
+                className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider"
                 aria-label="Next project"
               >
-                <span className="hidden sm:inline">Next</span>
+                <span>Next Project</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -186,7 +201,7 @@ export default function ProjectGalleryModal({
                 onClose();
                 onOpenConsultation();
               }}
-              className="px-5 py-2.5 bg-white text-black text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-neutral-200 transition-colors shadow-lg"
+              className="w-full sm:w-auto px-6 py-3 bg-white text-black text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-neutral-200 transition-colors shadow-lg text-center"
             >
               Inquire For Similar Space ↗
             </button>

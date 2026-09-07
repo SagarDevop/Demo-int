@@ -1,0 +1,143 @@
+{
+  "url": "https://4lotusinterior.in/apartment-interior.html",
+  "slug": "apartment-interior",
+  "canonical": "https://4lotusinterior.in/apartment-interior.html",
+  "seo": {
+    "title": "Apartment Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
+    "meta_description": "Transform your living space with 4 Lotus Interior. We offer expert apartment interior design, full renovation, and turnkey decor solutions across Delhi-NCR. Get a personalized consultation today.",
+    "og_card": "summary_large_image",
+    "og_image": "https://4lotusinterior.in/assets/images/apartment-interior-meta.webp",
+    "og_title": "Apartment Interior Design & Renovation Services in Delhi-NCR",
+    "robots": "index, follow"
+  },
+  "hero": {
+    "title": "Transform Your Apartment into a Dream Home in Delhi-NCR",
+    "description": "We specialize in creating stunning, functional apartment interiors tailored to your lifestyle. From modern space planning and smart lighting to bespoke furniture and complete renovations, our expert team handles everything with transparency and precision. Experience a seamless journey from concept to completion with transparent cost estimates.",
+    "image": "https://4lotusinterior.in/assets/images/157-480x540.webp",
+    "image_alt": "Luxury Apartment Interior Design"
+  },
+  "bespoke_design": {
+    "title": "Bespoke Apartment Design & Renovation",
+    "description": "Every apartment has unique potential. Our design process begins with understanding your vision and needs. We blend aesthetics with practicality, optimizing space through smart layouts, premium material selection (woodwork, flooring, lighting), and stylish decor to create a modern, luxurious living environment that reflects your personality.",
+    "image": "https://4lotusinterior.in/assets/images/158-480x640.webp",
+    "image_alt": "Apartment Interior Design",
+    "links": [
+      {
+        "label": "Apartment Interior Design Consultant in Delhi-NCR",
+        "href": "/apartment-interior.html"
+      },
+      {
+        "label": "Apartment Interior Designers in Delhi-NCR",
+        "href": "/apartment-interior.html"
+      },
+      {
+        "label": "Apartment Interior Renovation Contractors in Delhi-NCR",
+        "href": "/apartment-interior.html"
+      },
+      {
+        "label": "Apartment Interior Decorators in Delhi-NCR",
+        "href": "/apartment-interior.html"
+      }
+    ]
+  },
+  "callout": "We don't just renovate spaces; we elevate lifestyles. Our commitment is to deliver perfection, beauty, and enduring charm in every project we undertake, ensuring your apartment feels like home.",
+  "turnkey_solutions": {
+    "title": "Turnkey Apartment Solutions",
+    "subtitle": "Expert Designers, Decorators & Contractors in Delhi, Gurgaon & Noida",
+    "pillars": [
+      {
+        "title": "Expert Interior Designers",
+        "role": "Space Planning & Concepts",
+        "description": "We create innovative concepts, 3D views, and detailed layouts that maximize space and define the style of your modern home. We use the latest trends and durable materials to ensure a contemporary look that lasts.",
+        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+      },
+      {
+        "title": "Skilled Decorators",
+        "role": "Styling & Finishing Touches",
+        "description": "Decorating is the art of bringing a space to life. Our team curates the perfect mix of colors, textures, furniture, and accessories to create an enchanting atmosphere that matches your vision.",
+        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+      },
+      {
+        "title": "Reliable Contractors",
+        "role": "Complete Renovation Execution",
+        "description": "From civil work and electrical to plumbing and carpentry, our skilled contractors manage the entire renovation process. We ensure timely delivery and superior finish, transforming your old apartment into a stunning new home.",
+        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Seamless Design-to-Build Process",
+    "subtitle": "From concept to reality: providing end-to-end interior design, decor, and remodeling services across Delhi-NCR.",
+    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image_alt": "Design Build Process",
+    "tabs": [
+      {
+        "id": "design-phase",
+        "label": "Design Phase",
+        "content": "Client Brief & Concept: Brief Analysis, Layout Planning, Bill of Quantities (BOQ) & Specifications, Concept Design & Detailing, 3D Rendered Views, Material Sampling."
+      },
+      {
+        "id": "build-phase",
+        "label": "Build Phase",
+        "content": "Execution & Hand Over: Engineering & Production Drawings, On-site Project Management, Full Execution, Cost Control, Quality Control, Risk Management, Final Handover."
+      }
+    ]
+  },
+  "team_approach": [
+    {
+      "title": "Personalized Design Strategy",
+      "role": "Tailored to Your Lifestyle",
+      "description": "We don't believe in one-size-fits-all. Our designers collaborate closely with you to plan positive spaces that enhance your daily life, ensuring the final result is a perfect reflection of your taste, needs, and budget.",
+      "image": "https://4lotusinterior.in/assets/images/159-640x480.webp",
+      "image_alt": "Apartment Interior Design"
+    },
+    {
+      "title": "Flawless Execution",
+      "role": "Bringing Designs to Life",
+      "description": "A great design needs expert hands. Our integrated team of decorators and project managers ensures that the on-site reality matches the approved 3D concepts precisely, with zero compromise on quality or timelines.",
+      "image": "https://4lotusinterior.in/assets/images/160-640x480.webp",
+      "image_alt": "Apartment Interior Design"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Living Room Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/161-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/161-1280x720-800x450.webp",
+      "tag": "Awesome"
+    },
+    {
+      "title": "Dinning Kitchen Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/162-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/162-1280x720-800x450.webp",
+      "tag": "Responsive"
+    },
+    {
+      "title": "Dinning Room Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/163-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/163-1280x720-800x450.webp",
+      "tag": "Creative"
+    },
+    {
+      "title": "Guest Room Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/164-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/164-1280x720-800x450.webp",
+      "tag": "Animated"
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "phones": [
+      "+91 98106 98082",
+      "+91 98113 63064"
+    ],
+    "addresses": [
+      "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi, Delhi-110045",
+      "Plot No-57, W.h.s, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi, Delhi-110015"
+    ],
+    "email": "contact@4lotusinterior.in",
+    "timings": "Mon - Sat | 10 Am - 06 Pm",
+    "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
+    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+  }
+}

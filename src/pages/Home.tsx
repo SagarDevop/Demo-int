@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import Philosophy from "@/components/Philosophy";
 import ProjectHighlight from "@/components/ProjectHighlight";
+import HomePortfolioSection from "@/components/HomePortfolioSection";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import ProcessSection from "@/components/ProcessSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -45,6 +46,12 @@ export default function Home() {
 
       {/* Studio Project Highlight: Blueprint Plan + Curved Living Suite */}
       <ProjectHighlight onOpenProjects={() => setGalleryOpen(true)} />
+
+      {/* Curated Architectural Portfolio & Case Studies Showcase */}
+      <HomePortfolioSection
+        onOpenConsultation={() => setConsultationOpen(true)}
+        onOpenProjects={() => setGalleryOpen(true)}
+      />
 
       {/* Interactive Before & After Transformation Slider */}
       <BeforeAfterSection />

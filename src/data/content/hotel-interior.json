@@ -1,0 +1,129 @@
+{
+  "url": "https://4lotusinterior.in/hotel-interior.html",
+  "slug": "hotel-interior",
+  "canonical": "https://4lotusinterior.in/hotel-interior.html",
+  "seo": {
+    "title": "Expert Hotel Interior Design & Renovation in Delhi-NCR | 4 Lotus Interior",
+    "meta_description": "Elevate your guest experience with 4 Lotus Interior. We offer specialized design, decoration, and renovation services for hotels in Delhi-NCR, creating luxurious, modern, and culturally inspired spaces.",
+    "og_card": "summary_large_image",
+    "og_image": "https://4lotusinterior.in/assets/images/hotel-interior-meta.webp",
+    "og_title": "Expert Hotel Interior Design & Renovation in Delhi-NCR",
+    "robots": "index, follow"
+  },
+  "hero": {
+    "title": "Modern Hotel Interiors",
+    "description": "Our mission is to modernize and beautify your hotel, creating unforgettable experiences for your guests. Our team of best-in-class interior designers and decorators specializes in transforming every space, from crafting attractive and comfortable guest rooms to designing luxurious, model bathrooms. We focus on creating stunning, welcoming lobbies, convenient common areas, and inviting dining halls that set a beautiful atmosphere. Whether you operate a budget hotel or a luxury 5-star property, we provide comprehensive design, decoration, and renovation services to create a truly exceptional interior that reflects culture and nature throughout receptions, lobbies, rooms, washrooms, and dining areas.",
+    "image": "https://4lotusinterior.in/assets/images/245-480x640.webp",
+    "image_alt": "Hotel Interior Design"
+  },
+  "design_concept": {
+    "title": "Culturally Inspired, Modern Design",
+    "description": "We design attractive and elegant hotel interiors that seamlessly blend modern trends with cultural influences. Our approach involves creating spaces that are not only visually stunning but also deeply resonate with the modern consumer's needs and desires. We expertly fuse contemporary aesthetics with traditional Indian elements to create unique, aesthetically pleasing environments. Using advanced tools like detailed drawings, layouts, and 3D visualizations, our top designers bring your vision to life, transforming old interiors into luxurious, modern spaces that relax the eyes and capture the heart.",
+    "image": "https://4lotusinterior.in/assets/images/246-480x780.webp",
+    "image_alt": "Hotel Interior Design",
+    "links": [
+      "Hotel Interior Design Consultant in Delhi-NCR",
+      "Hotel Interior Designers in Delhi-NCR",
+      "Hotel Interior Renovation Contractors in Delhi-NCR",
+      "Hotel Interior Decorators in Delhi-NCR"
+    ]
+  },
+  "quote": "Your search for the perfect hotel interior remodeling partner ends here. We offer complete renovation services, delivered by skilled designers, decorators, and contractors dedicated to providing the latest and most modern solutions for every part of your hotel. We are committed to making your hotel interior attractive and adorable.",
+  "turnkey_services": {
+    "title": "Turnkey Hotel Interior Solutions",
+    "subtitle": "Hotel Interior Designers & Decorators Services in Delhi, Gurgaon & Noida",
+    "cards": [
+      {
+        "title": "Hotel Interior Designers",
+        "subtitle": "Creating Cohesive Spaces",
+        "description": "Our designers focus on the holistic beauty and functionality of your hotel. From guest bedrooms and washrooms to common areas, dining halls, and entertainment spaces, we create cohesive, attractive designs that transform any property into a luxury experience, regardless of its size.",
+        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+      },
+      {
+        "title": "Hotel Interior Decorators",
+        "subtitle": "Adding Aesthetic Charm",
+        "description": "Our skilled decorators curate a wide variety of decorative elements and products to complete the design vision. We artfully arrange every detail to create a visually appealing, luxurious, and perfectly aesthetic atmosphere that delights guests.",
+        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+      },
+      {
+        "title": "Hotel Interior Contractors",
+        "subtitle": "Expert Renovation Execution",
+        "description": "Our experienced contractors manage the entire renovation and remodeling process. We breathe new life into old spaces, executing the design plan with precision to create a fresh, beautiful, and innovative charm that perfectly suits your hotel's location and style.",
+        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+      }
+    ]
+  },
+  "process": {
+    "title": "Hotel Interior Design & Make",
+    "subtitle": "Comprehensive services from concept to completion for hotels in Delhi-NCR.",
+    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image_alt": "Design Build Process",
+    "tabs": [
+      {
+        "id": "design-phase",
+        "label": "Design Phase",
+        "content": "Consultation & Concept: Client Brief Analysis, Layout Planning, BOQ & Specifications, Concept Design & Detailing, 3D Rendered Views, Material Sampling."
+      },
+      {
+        "id": "build-phase",
+        "label": "Build Phase",
+        "content": "Execution & Delivery: Engineering & Production Drawings, Project Management, On-site Execution, Cost Control, Quality Control, Risk Management, Handover."
+      }
+    ]
+  },
+  "execution_cards": [
+    {
+      "title": "Trendy & Luxurious Design",
+      "role": "Hotel Interior Designers",
+      "description": "Our designers are masters at creating trendy, luxurious, and dazzling hotel interiors. They use creative and practical thinking to prepare comprehensive designs that are perfectly compatible with current trends, resulting in a completely beautiful and modern hotel environment.",
+      "image": "https://4lotusinterior.in/assets/images/247-640x480.webp"
+    },
+    {
+      "title": "Bringing Designs to Reality",
+      "role": "Hotel Interior Decorators & Contractors",
+      "description": "Our team of skilled decorators and contractors expertly transforms design concepts into reality. We handle the entire remodeling process, from selecting the right materials to executing the final touches, ensuring your hotel achieves a truly luxurious and aesthetically complete interior.",
+      "image": "https://4lotusinterior.in/assets/images/248-640x480.webp"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Hotel Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/249-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/249-1280x720-800x450.webp",
+      "tag": "Awesome"
+    },
+    {
+      "title": "Hotel Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/250-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/250-1280x720-800x450.webp",
+      "tag": "Responsive"
+    },
+    {
+      "title": "Hotel Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/251-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/251-1280x720-800x450.webp",
+      "tag": "Creative"
+    },
+    {
+      "title": "Hotel Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/252-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/252-1280x720-800x450.webp",
+      "tag": "Animated"
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "phones": [
+      "+91 98106 98082",
+      "+91 98113 63064"
+    ],
+    "addresses": [
+      "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi, Delhi-110045",
+      "Plot No-57, W.h.s, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi, Delhi-110015"
+    ],
+    "email": "contact@4lotusinterior.in",
+    "timings": "Mon - Sat | 10 Am - 06 Pm",
+    "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
+    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+  }
+}

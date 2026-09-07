@@ -1,0 +1,129 @@
+{
+  "url": "https://4lotusinterior.in/hospital-interior.html",
+  "slug": "hospital-interior",
+  "canonical": "https://4lotusinterior.in/hospital-interior.html",
+  "seo": {
+    "title": "Expert Hospital Interior Design & Renovation in Delhi-NCR | 4 Lotus Interior",
+    "meta_description": "4 Lotus Interior specializes in designing hygienic, efficient, and patient-centric hospital interiors in Delhi-NCR. We provide end-to-end renovation services for healthcare facilities.",
+    "og_card": "summary_large_image",
+    "og_image": "https://4lotusinterior.in/assets/images/hospital-interior-meta.webp",
+    "og_title": "Expert Hospital Interior Design & Renovation in Delhi-NCR",
+    "robots": "index, follow"
+  },
+  "hero": {
+    "title": "Healthcare Interiors that Heal",
+    "description": "We create hospital environments where patient care meets operational efficiency. Whether it's a small private clinic or a multi-specialty hospital, our expert team designs spaces that are hygienic, calming, and highly functional. We ensure that every area—from patient wards and doctor's chambers to waiting areas and operating theaters—optimizes natural light, air circulation, and safety to promote well-being and recovery.",
+    "image": "https://4lotusinterior.in/assets/images/261-480x640.webp",
+    "image_alt": "Hospital Interior Design"
+  },
+  "design_concept": {
+    "title": "Advanced Hospital Design & Planning",
+    "description": "Designing a hospital requires a precise balance of architecture and medical necessity. Our designers understand the critical requirements of healthcare facilities, including bed spacing, sterile zones, and efficient workflows for doctors and nurses. We meticulously plan and execute interiors for OPDs, cafeterias, labs, and administrative offices. Using advanced 3D visualization and detailed layouts, we transform complex medical requirements into soothing, modern interiors that instill confidence in patients.",
+    "image": "https://4lotusinterior.in/assets/images/262-480x780.webp",
+    "image_alt": "Hospital Interior Design",
+    "links": [
+      "Hospital Interior Design Consultant in Delhi-NCR",
+      "Hospital Interior Designers in Delhi-NCR",
+      "Hospital Interior Renovation Contractors in Delhi-NCR",
+      "Hospital Interior Decorators in Delhi-NCR"
+    ]
+  },
+  "quote": "We fulfill the critical need for expert Hospital Interior Designers & Contractors. From minor repairs to full-scale facility renovations, we handle every internal aspect of your hospital to create a safe, attractive, and efficient medical environment.",
+  "turnkey_services": {
+    "title": "Turnkey Hospital Solutions",
+    "subtitle": "Specialized Healthcare Interior Services in Delhi, Gurgaon & Noida",
+    "cards": [
+      {
+        "title": "Hospital Interior Designers",
+        "subtitle": "Technical & Aesthetic Planning",
+        "description": "Our designers manage the complex integration of civil work, plumbing, HVAC, medical gas lines, and electrical systems. We create cohesive designs that accommodate modern medical equipment while maintaining a calming ambiance essential for patient recovery.",
+        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+      },
+      {
+        "title": "Hospital Interior Decorators",
+        "subtitle": "Hygienic & Calming Environments",
+        "description": "Cleanliness is our top priority. We select durable, easy-to-clean materials and soothing color palettes that enhance hygiene and light. Our decorators ensure that the hospital environment feels welcoming and professional, reducing anxiety for patients and visitors.",
+        "icon": "https://4lotusinterior.in/assets/images/89-150x150.webp"
+      },
+      {
+        "title": "Hospital Interior Contractors",
+        "subtitle": "Specialized Execution",
+        "description": "Our skilled contractors execute precise renovations across all hospital zones. From remodeling sterile bathrooms and administrative offices to setting up critical infrastructure in OTs and patient wards, we ensure high-quality workmanship that meets healthcare standards.",
+        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Hospital Project Process",
+    "subtitle": "A streamlined design-to-build workflow for healthcare facilities in Delhi-NCR.",
+    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image_alt": "Design Build Process",
+    "tabs": [
+      {
+        "id": "design-phase",
+        "label": "Design Phase",
+        "content": "Consultation & Planning: Brief Analysis, Site Evaluation, Workflow Planning, BOQ & Technical Specifications, Concept Design & Detailing, 3D Rendered Views, Material Selection."
+      },
+      {
+        "id": "build-phase",
+        "label": "Build Phase",
+        "content": "Execution & Handover: Engineering & Production Drawings, Project Management, Execution, Quality Control (Hygiene & Safety), Cost Control, Risk Management."
+      }
+    ]
+  },
+  "execution_cards": [
+    {
+      "title": "Modernizing Healthcare",
+      "role": "Hospital Interior Designers",
+      "description": "Our designers specialize in transforming old facilities into modern, efficient healthcare centers. We bring thoughtful ideas to life, creating attractive and hygienic designs that seamlessly integrate advanced medical equipment, making the hospital a comfortable place for healing.",
+      "image": "https://4lotusinterior.in/assets/images/263-1-640x480.webp"
+    },
+    {
+      "title": "Bringing Designs to Life",
+      "role": "Hospital Interior Contractors",
+      "description": "Starting a hospital renovation requires expert coordination. Our integrated team of decorators and contractors takes the design blueprint and executes it with precision. We ensure every material and finish contributes to a clean, safe, and attractive environment for patients and staff.",
+      "image": "https://4lotusinterior.in/assets/images/264-640x480.webp"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Hospital Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/265-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/265-1280x720-800x450.webp",
+      "tag": "Awesome"
+    },
+    {
+      "title": "Hospital Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/266-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/266-1280x720-800x450.webp",
+      "tag": "Responsive"
+    },
+    {
+      "title": "Hospital Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/267-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/267-1280x720-800x450.webp",
+      "tag": "Creative"
+    },
+    {
+      "title": "Hospital Interior Design",
+      "image": "https://4lotusinterior.in/assets/images/268-1280x720.webp",
+      "thumb": "https://4lotusinterior.in/assets/images/268-1280x720-800x450.webp",
+      "tag": "Animated"
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "phones": [
+      "+91 98106 98082",
+      "+91 98113 63064"
+    ],
+    "addresses": [
+      "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi, Delhi-110045",
+      "Plot No-57, W.h.s, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi, Delhi-110015"
+    ],
+    "email": "contact@4lotusinterior.in",
+    "timings": "Mon - Sat | 10 Am - 06 Pm",
+    "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
+    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+  }
+}

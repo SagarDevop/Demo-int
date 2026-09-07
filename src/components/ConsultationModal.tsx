@@ -15,15 +15,22 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
   const [budgetRange, setBudgetRange] = useState("₹15 Lakhs - ₹35 Lakhs");
   const [submitted, setSubmitted] = useState(false);
 
-  // Close on Escape key press
+  // Close on Escape key press and lock body scroll
   useEffect(() => {
+    if (!isOpen) return;
+
+    document.body.style.overflow = "hidden";
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) {
+      if (e.key === "Escape") {
         onClose();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -44,13 +51,28 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fade-in overflow-y-auto"
+      className="fixed inset-0 z-[9999] overflow-y-auto bg-black/80 backdrop-blur-md p-4 sm:p-6 md:p-8 flex justify-center items-start animate-fade-in"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
     >
-      <div className="relative w-full max-w-lg bg-[#F8F7F5] border border-black/10 rounded-[8px] p-6 sm:p-9 shadow-2xl overflow-hidden my-8">
-        {/* Close Button */}
+      {/* Top Floating Close Pill */}
+      <button
+        onClick={onClose}
+        className="fixed top-4 right-4 sm:top-6 sm:right-6 z-[10000] flex items-center gap-1.5 px-4 py-2 rounded-full bg-black/70 hover:bg-black text-white backdrop-blur-lg border border-white/20 transition-all duration-200 shadow-2xl text-xs uppercase tracking-widest font-semibold cursor-pointer"
+        aria-label="Close consultation modal"
+      >
+        <X className="w-4 h-4" />
+        <span>Close (ESC)</span>
+      </button>
+
+      <div className="relative w-full max-w-lg bg-[#F8F7F5] border border-black/10 rounded-[10px] p-6 sm:p-9 shadow-2xl my-8 sm:my-12">
+        {/* Close Button Inside Card */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full hover:bg-black/5 text-black transition-colors"
+          className="absolute top-5 right-5 p-2 rounded-full hover:bg-black/10 text-black transition-colors"
           aria-label="Close consultation modal"
         >
           <X className="w-5 h-5" />

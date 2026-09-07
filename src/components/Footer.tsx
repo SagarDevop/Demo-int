@@ -81,9 +81,6 @@ export default function Footer() {
                 contact@4lotusinterior.in
               </a>
               <span className="opacity-40">·</span>
-              <a href="mailto:info@4lotusinterior.in" className="hover:text-white transition-colors">
-                info@4lotusinterior.in
-              </a>
             </div>
           </div>
 
@@ -164,9 +161,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Middle Row: Copyright & Back to Top */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 py-6 border-b border-white/10 text-xs tracking-wider text-[#8E8D8A] uppercase items-center">
-          <div className="md:col-span-4 text-center md:text-left">
+        {/* Bottom Row: Copyright & Back to Top */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 pt-8 pb-4 text-xs tracking-wider text-[#8E8D8A] uppercase items-center">
+          <div className="md:col-span-4 text-center md:text-left flex items-center gap-2.5 justify-center md:justify-start">
+            <img
+              src="/assets/logo.webp"
+              alt="4 Lotus Interior Logo"
+              className="w-5 h-5 object-contain opacity-80"
+            />
             <span>4 LOTUS INTERIOR · 15+ YEARS DESIGN EXCELLENCE</span>
           </div>
 
@@ -186,13 +188,6 @@ export default function Footer() {
               <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
-        </div>
-
-        {/* Giant Bottom Typography: 4 LOTUS */}
-        <div className="pt-8 pb-4 text-center select-none overflow-hidden">
-          <h2 className="text-[15vw] font-extrabold tracking-[-0.04em] text-white leading-none whitespace-nowrap opacity-95">
-            4 LOTUS
-          </h2>
         </div>
       </div>
     </footer>

@@ -7,12 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Diagnostic / temporary scripts
-crawl_old_site.js
-extract_all_old_content.js
-old_robots.txt
-scratch/
-
 # Dependencies
 node_modules
 dist
@@ -38,8 +32,18 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
-# Legacy build directories
+# Legacy & temporary directories
 .next
 out
 build
 .vercel
+4lotus-migration-package
+crawl_old_site.js
+extract_all_old_content.js
+old_robots.txt
+scratch/
+
+# Prevent loose static HTML files in root (only keep index.html SPA entry)
+/*.html
+!/index.html
+

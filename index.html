@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <title>4 Lotus Interior | Luxury Architecture & Interior Design Studio Delhi</title>
     <meta
       name="description"
@@ -19,12 +22,9 @@
     <meta property="og:image" content="https://4lotusinterior.in/assets/images/index-meta.webp" />
     <meta property="og:url" content="https://4lotusinterior.in/" />
 
-    <!-- Hide static SEO markup until React mounts -->
     <style>
-      #root > header,
-      #root > main,
-      #root > footer {
-        display: none !important;
+      html.js #static-seo-fallback {
+        display: none;
       }
     </style>
 
@@ -84,7 +84,8 @@
   <body class="bg-[#F8F7F5] text-[#111111] antialiased selection:bg-[#111111] selection:text-white">
     <div id="root">
       <!-- Semantic Static Markup for Crawlers & View Source -->
-      <header style="padding: 20px 24px; border-bottom: 1px solid rgba(0,0,0,0.08); background: #ffffff;">
+      <div id="static-seo-fallback">
+        <header style="padding: 20px 24px; border-bottom: 1px solid rgba(0,0,0,0.08); background: #ffffff;">
         <div style="max-width: 1360px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
           <a href="/" style="font-weight: 800; font-size: 18px; text-decoration: none; color: #111;">4 LOTUS INTERIOR · DELHI-NCR</a>
           <nav style="display: flex; gap: 20px; font-size: 12px; text-transform: uppercase; font-weight: 600;">
@@ -96,9 +97,9 @@
             <a href="/contact-us.html" style="text-decoration: none; color: #333;">Contact</a>
           </nav>
         </div>
-      </header>
+        </header>
 
-      <main style="max-width: 1360px; margin: 0 auto; padding: 60px 24px;">
+        <main style="max-width: 1360px; margin: 0 auto; padding: 60px 24px;">
         <section style="text-align: center; margin-bottom: 60px;">
           <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #854d0e;">
             ARCHITECTURAL INTERIOR DESIGN · DELHI-NCR
@@ -143,11 +144,12 @@
             <span style="color: #666; font-weight: 400;">contact@4lotusinterior.in</span>
           </div>
         </section>
-      </main>
+        </main>
 
-      <footer style="background: #111; color: #fff; padding: 40px 24px; text-align: center; font-size: 12px;">
-        &copy; 2026 4 Lotus Interior. All Rights Reserved. Turnkey Architecture & Interior Renovation Delhi-NCR.
-      </footer>
+        <footer style="background: #111; color: #fff; padding: 40px 24px; text-align: center; font-size: 12px;">
+          &copy; 2026 4 Lotus Interior. All Rights Reserved. Turnkey Architecture & Interior Renovation Delhi-NCR.
+        </footer>
+      </div>
     </div>
 
     <!-- React Application Mount -->

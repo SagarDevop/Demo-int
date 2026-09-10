@@ -6,20 +6,20 @@
     "title": "Villa Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Discover top-tier villa interior design and renovation services in Delhi-NCR. 4 Lotus Interior specializes in creating luxurious and personalized living spaces through expert design, decoration, and remodeling, blending functionality with aesthetics.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/villa-interior-meta.webp",
+    "og_image": "/assets/images/villa-interior-meta.webp",
     "og_title": "Villa Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Villa Interior",
     "description": "We are committed to creating exceptional villa interiors that elevate your lifestyle. Our expert designers transform spaces into luxurious and functional environments. We meticulously consider every element, from individual concepts to lighting that enhances specific features. Our professional selection of colors, textures, and materials accentuates the elegance and beauty of your villa's interior decoration.",
-    "image": "https://4lotusinterior.in/assets/images/173-480x540.webp",
+    "image": "/assets/images/luxury-villa-interior-design.webp",
     "image_alt": "Luxury Villa Interior Design"
   },
   "exclusive_design": {
     "title": "Villa Interior Design",
     "description": "At 4 Lotus Interior, we specialize in creating exclusive and elegant villa interior designs. Our projects blend nobility with a unique atmosphere, showcasing our skill in crafting bespoke interiors. Professionalism, originality, and creativity are the cornerstones of every project, incorporating the latest trends and technology. Our primary focus is your satisfaction, meeting all your requirements from design development to successful implementation. Customer satisfaction is our top priority in every project.",
-    "image": "https://4lotusinterior.in/assets/images/174-480x640.webp",
+    "image": "/assets/images/villa-interior-design.webp",
     "image_alt": "Villa Interior Design",
     "links": [
       {
@@ -49,26 +49,26 @@
         "title": "Villa Interior Designers",
         "role": "Villa Interior Design",
         "description": "Our designers create cozy and comfortable villa interiors, translating your dreams into reality. We offer modern designs suitable for every taste, from stylish and fashionable to classical and conservative.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Villa Interior Decorators",
         "role": "Villa Interior Reconstruction",
         "description": "Our decorators create gorgeous villa interiors, following established rules for wall colors, furniture finishing, and decor elements to enhance the overall decoration.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Villa Interior Contractors",
         "role": "Villa Interior Renovation",
         "description": "Our contractors execute the design with precision, transforming the villa interior into a beautiful and charming space based on the provided design information.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "process": {
     "title": "Villa Interior Design & Make",
     "subtitle": "Villa Interior Designers, Decorators & Contractors in Delhi & Villa Interior Designers, Decorators Offer Villa Interior Design, Decor, Remodeling, Renovation Services in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -88,40 +88,40 @@
       "title": "Villa Interior Design",
       "role": "Villa Interior Designers",
       "description": "Our villa interior designers incorporate new and suitable items to give your villa a real, new, and attractive look. We showcase our designs through drawings or layouts, surprising viewers with adorable villa interior designs.",
-      "image": "https://4lotusinterior.in/assets/images/175-640x480.webp",
+      "image": "/assets/images/villa-interior-design-2.webp",
       "image_alt": "Villa Interior Design"
     },
     {
       "title": "Villa Interior Design Converted Into Shape",
       "role": "Villa Interior Decorators",
       "description": "Once the design is finalized, our villa renovation contractors use modern accessories to transform the design into reality. Our team prepares the finest villa interior decorations.",
-      "image": "https://4lotusinterior.in/assets/images/176-640x480.webp",
+      "image": "/assets/images/villa-interior-design-3.webp",
       "image_alt": "Villa Interior Design"
     }
   ],
   "gallery": [
     {
       "title": "Living Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/177-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/177-1280x720-800x450.webp",
+      "image": "/assets/images/living-room-interior-design-5.webp",
+      "thumb": "/assets/images/living-room-interior-design-5-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Bed Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/178-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/178-1280x720-800x450.webp",
+      "image": "/assets/images/bed-room-interior-design-6.webp",
+      "thumb": "/assets/images/bed-room-interior-design-6-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Dinning Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/179-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/179-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-room-interior-design-5.webp",
+      "thumb": "/assets/images/dinning-room-interior-design-5-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Open Kitchen Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/180-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/180-1280x720-800x450.webp",
+      "image": "/assets/images/open-kitchen-interior-design.webp",
+      "thumb": "/assets/images/open-kitchen-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -138,6 +138,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

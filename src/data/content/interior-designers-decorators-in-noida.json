@@ -6,14 +6,14 @@
     "title": "Best Interior Designers & Decorators in Noida | 4 Lotus Interior",
     "meta_description": "Looking for top interior designers in Noida? 4 Lotus Interior offers luxury residential and commercial design, decoration, and turnkey renovation services tailored to your lifestyle in Noida.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/interior-designers-decorators-in-noida-meta.webp",
+    "og_image": "/assets/images/interior-designers-decorators-in-noida-meta.webp",
     "og_title": "Best Interior Designers & Decorators in Noida | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Interior Designers in Noida",
     "description": "Transform your space with the finest interior designers in Noida. We blend creativity with functionality to create stunning residential and commercial interiors that reflect your unique style. Whether you need a modern office makeover or a luxurious home renovation, our expert team in Noida delivers excellence in every detail.",
-    "image": "https://4lotusinterior.in/assets/images/285-1-500x1100.webp",
+    "image": "/assets/images/sketch-convert-interior-design.webp",
     "image_alt": "Sketch Convert Interior Design",
     "features": [
       {
@@ -30,50 +30,51 @@
     {
       "title": "Design Excellence",
       "description": "We bring the latest global trends to Noida. Share your requirements with us, and we will create a customized, luxurious interior plan that maximizes your space and budget.",
-      "image": "https://4lotusinterior.in/assets/images/286-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-2.webp"
     },
     {
       "title": "Strategic Planning",
       "description": "Looking for reliable advice? Our interior consultants in Noida assist you in executing complex designs for residences and offices, creating environments that are both practical and comfortable.",
-      "image": "https://4lotusinterior.in/assets/images/287-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-3.webp"
     },
     {
       "title": "Turnkey Solutions",
       "description": "We offer ethical and transparent contracting services. As turnkey contractors in Noida, we handle civil work, electrical, plumbing, carpentry, and finishing at market-leading prices.",
-      "image": "https://4lotusinterior.in/assets/images/288-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-4.webp"
     }
   ],
   "expertise_breakdown": {
     "residential": "Residential Expertise: We specialize in residential projects including apartments, villas, bungalows, farmhouses, and penthouses in Noida. Our services cover complete home renovations, bedroom makeovers, living room styling, modular kitchens, and puja rooms.",
     "commercial": "Commercial Expertise: We deliver high-performance workspaces and commercial interiors in Noida. Our portfolio includes corporate offices, retail shops, showrooms, restaurants, cafes, salons, clinics, gyms, schools, and banquet halls.",
-    "image": "https://4lotusinterior.in/assets/images/289-649x649.webp"
+    "image": "/assets/images/sketch-convert-interior-design-5.webp",
+    "image_alt": "Sketch Convert Interior Design"
   },
   "specialties_carousel": [
     {
       "title": "Interior Designers",
       "subtitle": "Interior Designers in Noida",
-      "image": "https://4lotusinterior.in/assets/images/290-1280x720.webp"
+      "image": "/assets/images/interior-design-2.webp"
     },
     {
       "title": "Bathroom Designers",
       "subtitle": "Bathroom Designers in Noida",
-      "image": "https://4lotusinterior.in/assets/images/291-1280x720.webp"
+      "image": "/assets/images/bathroom-design-3.webp"
     },
     {
       "title": "Kitchen Designers",
       "subtitle": "Kitchen Designers in Noida",
-      "image": "https://4lotusinterior.in/assets/images/292-1280x720.webp"
+      "image": "/assets/images/kitchen-design-3.webp"
     },
     {
       "title": "Designer Furniture",
       "subtitle": "Furniture Designers in Noida",
-      "image": "https://4lotusinterior.in/assets/images/293-1280x720.webp"
+      "image": "/assets/images/furniture-design.webp"
     }
   ],
   "process": {
     "title": "Turnkey Interiors in Noida",
     "subtitle": "Complete Design-to-Build Solutions Managed by Experts in Noida",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -91,50 +92,50 @@
   "gallery": [
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/315-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/315-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-10.webp",
+      "thumb": "/assets/images/residential-interior-design-10-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/316-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/316-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-11.webp",
+      "thumb": "/assets/images/residential-interior-design-11-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/138-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/138-1280x720-800x450.webp",
+      "image": "/assets/images/living-room-interior-design.webp",
+      "thumb": "/assets/images/living-room-interior-design-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/318-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/318-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-12.webp",
+      "thumb": "/assets/images/residential-interior-design-12-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/319-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/319-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-13.webp",
+      "thumb": "/assets/images/commercial-interior-design-13-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/320-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/320-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-14.webp",
+      "thumb": "/assets/images/commercial-interior-design-14-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/321-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/321-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-15.webp",
+      "thumb": "/assets/images/commercial-interior-design-15-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/322-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/322-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-16.webp",
+      "thumb": "/assets/images/commercial-interior-design-16-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -151,6 +152,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

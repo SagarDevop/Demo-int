@@ -1,0 +1,175 @@
+{
+  "url": "https://4lotusinterior.in/interior-designers-saket.html",
+  "slug": "interior-designers-saket",
+  "canonical": "https://4lotusinterior.in/interior-designers-saket.html",
+  "seo": {
+    "title": "Interior Designers & Decorators in Saket | 4 Lotus Interior",
+    "meta_description": "Luxury residential interior architecture, turnkey renovations, and bespoke joinery in Saket and South Delhi by 4 Lotus Interior.",
+    "og_card": "summary_large_image",
+    "og_image": "/assets/images/interior-designers-south-delhi-meta.webp",
+    "og_title": "Interior Designers & Decorators in Saket | 4 Lotus Interior",
+    "robots": "index, follow"
+  },
+  "hero": {
+    "title": "Interior Designers in Saket",
+    "description": "Transform your residential or commercial space in Saket with our expert interior design services. We blend contemporary trends with practical functionality to create aesthetically pleasing and efficient interiors. Our team uses detailed layouts and 3D visualizations to bring your vision to life, ensuring a seamless process from concept to reality.",
+    "image": "/assets/images/architectural-concept-to-interior-execution.webp",
+    "image_alt": "Interior Designers in Saket"
+  },
+  "hero_sub_cards": [
+    {
+      "title": "Interior Design Consultant in Saket",
+      "description": "Our professional interior design consultants in Saket offer expert guidance to craft modern, user-friendly spaces. We focus on quality control and aesthetic excellence to create narrative-driven designs for homes, offices, and workspaces in Saket."
+    },
+    {
+      "title": "Interior Decorators in Saket",
+      "description": "Our skilled interior decorators in Saket specialize in translating designs into reality. With a focus on efficiency and craftsmanship, we curate bespoke furnishings, lighting, and textures that enhance the prestige of your space."
+    }
+  ],
+  "showcase_duo": [
+    {
+      "title": "Residential Interior",
+      "image": "/assets/images/residential-interior-design-showcase.webp",
+      "alt": "Residential Interior Design"
+    },
+    {
+      "title": "Commercial Interior",
+      "image": "/assets/images/commercial-interior-design-showcase.webp",
+      "alt": "Commercial Interior Design"
+    }
+  ],
+  "accordion_sections": [
+    {
+      "title": "Residential Interior in Saket",
+      "content": "We offer luxury residential interior designing, decoration, and turnkey renovation services in Saket for apartments, builder floors, duplexes, and independent bungalows. Our expertise covers complete living rooms, master bedroom suites, walk-in closets, modular kitchens, and private balconies."
+    },
+    {
+      "title": "Commercial Interior in Saket",
+      "content": "Our commercial interior services in Saket cater to corporate offices, boutique retail shops, high-end medical clinics, restaurants, and lounges. We optimize footfall flow, acoustic comfort, and brand identity."
+    }
+  ],
+  "flip_cards": {
+    "title": "Interior, Bathroom, Kitchen & Furniture",
+    "cards": [
+      {
+        "title": "Interior Designers & Decorators in Saket",
+        "description": "Interior designers & decorators offering services in Saket. We are committed to customer satisfaction, delivering high-end turnkey finishes on time.",
+        "image": "/assets/images/delhi-ncr-interior-decor-styling.webp"
+      },
+      {
+        "title": "Bathroom Designers & Remodelers in Saket",
+        "description": "Luxury bathroom designers & decorators in Saket delivering Italian tile cladding, concealed sanitary lines, and bespoke vanities.",
+        "image": "/assets/images/bespoke-living-room-interior-design.webp"
+      },
+      {
+        "title": "Modular Kitchen Specialists in Saket",
+        "description": "Modular kitchen designers in Saket crafting German Blum hardware, quartz countertops, and ergonomic storage solutions.",
+        "image": "/assets/images/modern-master-bedroom-interior.webp"
+      },
+      {
+        "title": "Designer Furniture Manufacturers in Saket",
+        "description": "Bespoke teakwood and upholstered furniture manufactured in our West Delhi timber factory and delivered with white-glove setup in Saket.",
+        "image": "/assets/images/luxury-dining-room-interior-design.webp"
+      }
+    ]
+  },
+  "turnkey_services": {
+    "title": "Interior, Bathroom, Kitchen & Furniture",
+    "subtitle": "Complete turnkey design, decoration, and remodeling across Saket",
+    "cards": [
+      {
+        "title": "Interior Designers & Decorators in Saket",
+        "description": "Interior designers & decorators offering services in Saket. We are committed to customer satisfaction, delivering the best interior design and work on time.",
+        "icon": "/assets/blueprint_sketch.svg"
+      },
+      {
+        "title": "Bathroom Designers & Decorators in Saket",
+        "description": "Bathroom designers & decorators in Saket aiming for customer satisfaction through the best bathroom designs and timely renovation work.",
+        "icon": "/assets/blueprint_sketch.svg"
+      },
+      {
+        "title": "Kitchen Designers & Decorators in Saket",
+        "description": "Kitchen designers & decorators in Saket with a motto of customer satisfaction. We provide the best kitchen designs and complete remodeling work within time.",
+        "icon": "/assets/blueprint_sketch.svg"
+      },
+      {
+        "title": "Designer Furniture Manufacturers in Saket",
+        "description": "Furniture designers & manufacturers in Saket focused on creating the best furniture designs and delivering them on time.",
+        "icon": "/assets/blueprint_sketch.svg"
+      }
+    ]
+  },
+  "process": {
+    "title": "Design & Execution Process",
+    "subtitle": "From Concept to Turnkey Handover in Saket",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
+    "image_alt": "Design Build Process",
+    "tabs": [
+      {
+        "id": "design-phase",
+        "label": "Design Phase",
+        "content": "Client Brief - Brief Analysis, Layout Planning, BOQ & Specifications, Concept Design & Detailing, 3D Rendered Views, Sampling."
+      },
+      {
+        "id": "build-phase",
+        "label": "Build Phase",
+        "content": "Hand Over - Engineering & Production Drawing, Project Management, Execution, Cost Control, Quality Control, Risk Management."
+      }
+    ]
+  },
+  "execution_cards": [
+    {
+      "title": "Space-Optimized Residential Architecture",
+      "role": "Saket Residential Fitouts",
+      "description": "Custom wall paneling, acoustic false ceilings, VRV air conditioning, and integrated ambient lighting crafted for contemporary South Delhi homes.",
+      "image": "/assets/south_delhi_villa.jpg"
+    },
+    {
+      "title": "Executive Office & Retail Fitouts",
+      "role": "Commercial Architecture",
+      "description": "High-performance meeting suites, double-glazed acoustic partitions, and custom reception desks engineered to corporate specifications in Saket.",
+      "image": "/assets/corporate_office.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Saket Living Suite",
+      "image": "/assets/images/play-school-interior-design-6.webp",
+      "thumb": "/assets/images/play-school-interior-design-6-thumb.webp",
+      "tag": "Residential"
+    },
+    {
+      "title": "Saket Master Bedroom",
+      "image": "/assets/images/play-school-interior-design-7.webp",
+      "thumb": "/assets/images/play-school-interior-design-7-thumb.webp",
+      "tag": "Luxury Fitout"
+    },
+    {
+      "title": "Saket Modular Kitchen",
+      "image": "/assets/images/play-school-interior-design-8.webp",
+      "thumb": "/assets/images/play-school-interior-design-8-thumb.webp",
+      "tag": "Millwork"
+    },
+    {
+      "title": "Saket Corporate Suite",
+      "image": "/assets/images/play-school-interior-design-9.webp",
+      "thumb": "/assets/images/play-school-interior-design-9-thumb.webp",
+      "tag": "Commercial"
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "phones": [
+      "+91 98106 98082",
+      "+91 98113 63064"
+    ],
+    "addresses": [
+      "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi, Delhi-110045",
+      "Plot No-57, W.h.s, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi, Delhi-110015"
+    ],
+    "email": "contact@4lotusinterior.in",
+    "timings": "Mon - Sat | 10 AM - 06 PM",
+    "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
+    "map_image": "/assets/images/design-build.webp"
+  }
+}

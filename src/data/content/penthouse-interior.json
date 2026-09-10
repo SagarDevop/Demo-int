@@ -6,20 +6,20 @@
     "title": "Penthouse Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Discover luxury penthouse interior design, decoration, and renovation services in Delhi-NCR. Our expert team creates bespoke, high-end penthouse spaces.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/penthouse-interior-meta.webp",
+    "og_image": "/assets/images/penthouse-interior-meta.webp",
     "og_title": "Penthouse Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Penthouse Interior",
     "description": "A penthouse offers a unique atmosphere, embodying both security and beauty. Our team of expert designers, decorators, and contractors specializes in transforming ordinary penthouses into luxury duplex residences. We understand that penthouse renovation involves more than just a change of decor; it requires rethinking the entire space to suit a modern lifestyle. From new flooring and false ceilings to innovative wall decorations, we deliver excellent design and decoration solutions to create a truly adorable and personalized home. This is our motive: to realize your dream penthouse interior.",
-    "image": "https://4lotusinterior.in/assets/images/165-480x540.webp",
+    "image": "/assets/images/luxury-penthouse-interior-design.webp",
     "image_alt": "Luxury Penthouse Interior Design"
   },
   "exclusive_design": {
     "title": "Penthouse Interior Design",
     "description": "Designing a penthouse requires a unique approach that considers contemporary lifestyles and modern materials. Our goal is to create an attractive and enchanting space that offers comfort and convenience. The scope of penthouse interior design is vast, and we believe in leveraging this to design a truly exceptional home. We restrict ourselves to only the best, ensuring that every detail, from the best flooring to attractive ceiling and wall decorations, contributes to your happiness and comfort. Our services are dedicated to achieving this high standard of design.",
-    "image": "https://4lotusinterior.in/assets/images/166-480x640.webp",
+    "image": "/assets/images/penthouse-interior-design.webp",
     "image_alt": "Penthouse Interior Design",
     "links": [
       {
@@ -49,26 +49,26 @@
         "title": "Penthouse Interior Designers",
         "role": "Penthouse Interior Design",
         "description": "Our penthouse interior designers think through every detail, from lighting effects and woodwork to enhancing the beauty of wall decorations. By considering all these factors, they create a well-planned penthouse interior design that showcases their expertise through drawing layouts, resulting in an exceptional space.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Penthouse Interior Decorators",
         "role": "Penthouse Interior Reconstruction",
         "description": "Penthouse interior decoration is the art of establishing beauty. Our finest interior decorators combine their expertise with the designer's vision and market knowledge to provide attractive and surprising interior decorations that beautifully enhance your penthouse.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Penthouse Interior Contractors",
         "role": "Penthouse Interior Renovation",
         "description": "Once the penthouse renovation design is finalized, our skilled interior contractors mold the concept into reality. This process results in a high-quality penthouse interior renovation or remodeling, executing the excellent design and decoration into a beautiful and functional space.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "process": {
     "title": "Penthouse Interior Design & Make",
     "subtitle": "Penthouse Interior Designers, Decorators & Contractors in Delhi & Penthouse Interior Designers Offer Penthouse Interior Design, Decor, Remodeling, Renovation Services in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -88,40 +88,40 @@
       "title": "Penthouse Interior Design",
       "role": "Penthouse Interior Designers",
       "description": "Penthouse interior design is a great art requiring positive thinking and experience. It goes a long way in giving a beautiful and attractive look that suits the lifestyle of the consumer. An artistic design is created when an idea becomes elaborate, emerging as a luxury design only when an attractive and surprising penthouse interior is produced.",
-      "image": "https://4lotusinterior.in/assets/images/167-640x480.webp",
+      "image": "/assets/images/penthouse-interior-design-2.webp",
       "image_alt": "Penthouse Interior Design"
     },
     {
       "title": "Penthouse Interior Design Converted Into Shape",
       "role": "Penthouse Interior Decorators",
       "description": "After gathering information related to the penthouse interior, our professional team starts the execution process using the latest materials, furniture, and lighting. Skilled artisans work to give an attractive look, providing beauty and creating a precious, convenient, and comfortable interior for the future. This is the art of doing the best that we offer.",
-      "image": "https://4lotusinterior.in/assets/images/168-640x480.webp",
+      "image": "/assets/images/penthouse-interior-design-3.webp",
       "image_alt": "Penthouse Interior Design"
     }
   ],
   "gallery": [
     {
       "title": "Bed Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/169-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/169-1280x720-800x450.webp",
+      "image": "/assets/images/bed-room-interior-design-5.webp",
+      "thumb": "/assets/images/bed-room-interior-design-5-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Drawing Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/170-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/170-1280x720-800x450.webp",
+      "image": "/assets/images/drawing-room-interior-design-2.webp",
+      "thumb": "/assets/images/drawing-room-interior-design-2-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Dinning Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/171-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/171-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-room-interior-design-4.webp",
+      "thumb": "/assets/images/dinning-room-interior-design-4-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Kitchen Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/172-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/172-1280x720-800x450.webp",
+      "image": "/assets/images/kitchen-interior-design.webp",
+      "thumb": "/assets/images/kitchen-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -138,6 +138,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

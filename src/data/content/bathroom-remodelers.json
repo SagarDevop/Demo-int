@@ -6,7 +6,7 @@
     "title": "Expert Bathroom Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Transform your bathroom into a modern sanctuary with 4 Lotus Interior. We offer end-to-end design, luxury renovations, and functional remodeling in Delhi-NCR. Get a free consultation.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/bathroom-remodelers-meta.webp",
+    "og_image": "/assets/images/bathroom-remodelers-meta.webp",
     "og_title": "Bathroom Design & Renovation Services in Delhi-NCR",
     "robots": "index, follow"
   },
@@ -14,13 +14,13 @@
     "title": "Your Dream Bathroom Awaits",
     "subtitle": "Expert Designers & Renovators in Delhi-NCR",
     "description": "We don't just renovate spaces; we create personal retreats. From small powder rooms to luxurious master spas, our expert team delivers custom designs and flawless execution tailored to your lifestyle.",
-    "image": "https://4lotusinterior.in/assets/images/24-512x305.webp",
+    "image": "/assets/images/bathroom-design-2.webp",
     "image_alt": "Bathroom Design"
   },
   "expertise": {
     "title": "Our Expertise",
     "subtitle": "Transforming Residential & Commercial Spaces",
-    "image": "https://4lotusinterior.in/assets/images/44-868x488.webp",
+    "image": "/assets/images/bathroom-design-4.webp",
     "image_alt": "Bathroom Design",
     "items": [
       {
@@ -38,7 +38,7 @@
   "modern_solutions": {
     "title": "Modern Bathroom Solutions",
     "description": "A modern bathroom needs to be a blend of comfort, hygiene, and style. We upgrade your space with the latest technologies, including high-efficiency fixtures, modern vanities, premium tiling, and smart hygiene solutions like touchless faucets and dispensers. We ensure every element, from the shower enclosure to the lighting, enhances your daily routine within your budget.",
-    "image": "https://4lotusinterior.in/assets/images/45-890x501.webp",
+    "image": "/assets/images/bathroom-design-5.webp",
     "image_alt": "Bathroom Design",
     "links": [
       {
@@ -58,7 +58,7 @@
   "renovation_process": {
     "title": "Seamless Renovation Process",
     "subtitle": "From initial concept to final handover, we handle every detail of your bathroom makeover in Delhi-NCR.",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -76,7 +76,7 @@
   "advantages": {
     "title": "The 4 Lotus Advantage",
     "subtitle": "Why choose us for your washroom makeover in Delhi-NCR?",
-    "image": "https://4lotusinterior.in/assets/images/46-1110x624.webp",
+    "image": "/assets/images/bathroom-design-6.webp",
     "image_alt": "Bathroom Design",
     "items": [
       {
@@ -92,50 +92,50 @@
   "gallery": [
     {
       "title": "Modern Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/47-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/47-1280x720-800x450.webp",
+      "image": "/assets/images/modern-bathroom-design.webp",
+      "thumb": "/assets/images/modern-bathroom-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Large Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/48-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/48-1280x720-800x450.webp",
+      "image": "/assets/images/large-bathroom-design.webp",
+      "thumb": "/assets/images/large-bathroom-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Modern Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/49-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/49-1280x720-800x450.webp",
+      "image": "/assets/images/modern-bathroom-design-2.webp",
+      "thumb": "/assets/images/modern-bathroom-design-2-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Luxury Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/50-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/50-1280x720-800x450.webp",
+      "image": "/assets/images/luxury-bathroom-design.webp",
+      "thumb": "/assets/images/luxury-bathroom-design-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Vanity Design",
-      "image": "https://4lotusinterior.in/assets/images/51-720x1280.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/51-720x1280-720x1280.webp",
+      "image": "/assets/images/vanity-design-2.webp",
+      "thumb": "/assets/images/vanity-design.webp",
       "tag": "Awesome"
     },
     {
       "title": "Small Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/52-720x1280.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/52-720x1280-720x1280.webp",
+      "image": "/assets/images/small-bathroom-design-2.webp",
+      "thumb": "/assets/images/small-bathroom-design.webp",
       "tag": "Awesome"
     },
     {
       "title": "Jacuzzi Design",
-      "image": "https://4lotusinterior.in/assets/images/53-720x1280.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/53-720x1280-720x1280.webp",
+      "image": "/assets/images/jacuzzi-design-2.webp",
+      "thumb": "/assets/images/jacuzzi-design.webp",
       "tag": "Responsive"
     },
     {
       "title": "Latest Bathroom Design",
-      "image": "https://4lotusinterior.in/assets/images/54-720x1280.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/54-720x1280-720x1280.webp",
+      "image": "/assets/images/latest-bathroom-design-2.webp",
+      "thumb": "/assets/images/latest-bathroom-design.webp",
       "tag": "Animated"
     }
   ],
@@ -152,6 +152,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

@@ -6,14 +6,14 @@
     "title": "Best Interior Designers & Decorators in Delhi | 4 Lotus Interior",
     "meta_description": "Looking for the best interior designers in Delhi? 4 Lotus Interior offers top-tier residential and commercial design, decoration, and renovation services tailored to your style and budget.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/interior-designers-decorators-in-delhi-meta.webp",
+    "og_image": "/assets/images/interior-designers-decorators-in-delhi-meta.webp",
     "og_title": "Best Interior Designers & Decorators in Delhi | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Leading Interior Designers in Delhi",
     "description": "Are you looking to transform your space? We provide top-tier interior design services throughout Delhi. Whether it's your home, office, or any commercial establishment, our team crafts beautiful, functional designs that not only look luxurious but also enhance your lifestyle and brand image.",
-    "image": "https://4lotusinterior.in/assets/images/285-1-500x1100.webp",
+    "image": "/assets/images/sketch-convert-interior-design.webp",
     "image_alt": "Sketch Convert Interior Design",
     "features": [
       {
@@ -30,50 +30,51 @@
     {
       "title": "Premium Design Services",
       "description": "Get access to the latest trends and materials. Share your requirements with us, and we will help prepare a luxurious interior plan tailored specifically for your Delhi property.",
-      "image": "https://4lotusinterior.in/assets/images/286-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-2.webp"
     },
     {
       "title": "Personalized Consultation",
       "description": "Need assistance executing your vision? Our consultants in Delhi guide you through every step, ensuring your residence or workspace becomes a comfortable and practical environment.",
-      "image": "https://4lotusinterior.in/assets/images/287-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-3.webp"
     },
     {
       "title": "Turnkey Contracting",
       "description": "We believe in ethical, transparent business. As turnkey contractors, we offer market-leading pricing for all works including civil, electrical, plumbing, carpentry, and finishing.",
-      "image": "https://4lotusinterior.in/assets/images/288-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-4.webp"
     }
   ],
   "expertise_breakdown": {
     "residential": "Residential Expertise: We cover home interiors, apartments, villas, bungalows, farmhouses, and penthouses. Our services extend to bedrooms, living rooms, drawing rooms, study rooms, dining areas, and guest rooms.",
     "commercial": "Commercial Expertise: From offices and retail shops to showrooms, restaurants, cafes, salons, gyms, clinics, and hotels, we deliver functional and stylish commercial interiors tailored to your business.",
-    "image": "https://4lotusinterior.in/assets/images/289-649x649.webp"
+    "image": "/assets/images/sketch-convert-interior-design-5.webp",
+    "image_alt": "Sketch Convert Interior Design"
   },
   "specialties_carousel": [
     {
       "title": "Interior Designers",
       "subtitle": "Interior Designers in Delhi",
-      "image": "https://4lotusinterior.in/assets/images/290-1280x720.webp"
+      "image": "/assets/images/interior-design-2.webp"
     },
     {
       "title": "Bathroom Designers",
       "subtitle": "Bathroom Designers in Delhi",
-      "image": "https://4lotusinterior.in/assets/images/291-1280x720.webp"
+      "image": "/assets/images/bathroom-design-3.webp"
     },
     {
       "title": "Kitchen Designers",
       "subtitle": "Kitchen Designers in Delhi",
-      "image": "https://4lotusinterior.in/assets/images/292-1280x720.webp"
+      "image": "/assets/images/kitchen-design-3.webp"
     },
     {
       "title": "Designer Furniture",
       "subtitle": "Furniture Designers in Delhi",
-      "image": "https://4lotusinterior.in/assets/images/293-1280x720.webp"
+      "image": "/assets/images/furniture-design.webp"
     }
   ],
   "process": {
     "title": "Turnkey Interiors in Delhi",
     "subtitle": "Complete Design-to-Build Solutions Managed by Experts in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -91,50 +92,50 @@
   "gallery": [
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/299-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/299-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design.webp",
+      "thumb": "/assets/images/residential-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/300-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/300-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-3.webp",
+      "thumb": "/assets/images/residential-interior-design-3-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/301-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/301-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-4.webp",
+      "thumb": "/assets/images/residential-interior-design-4-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/302-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/302-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-5.webp",
+      "thumb": "/assets/images/residential-interior-design-5-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/303-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/303-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-4.webp",
+      "thumb": "/assets/images/commercial-interior-design-4-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/304-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/304-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-5.webp",
+      "thumb": "/assets/images/commercial-interior-design-5-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/305-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/305-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-6.webp",
+      "thumb": "/assets/images/commercial-interior-design-6-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/306-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/306-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-7.webp",
+      "thumb": "/assets/images/commercial-interior-design-7-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -151,6 +152,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

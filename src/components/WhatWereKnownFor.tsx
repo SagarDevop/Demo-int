@@ -3,8 +3,16 @@ import { Link } from "react-router-dom";
 import Image from "@/components/Image";
 import { Star, Home, ShoppingBag, Building2, Factory } from "lucide-react";
 
-export default function WhatWereKnownFor() {
-  const pillars = [
+interface WhatWereKnownForProps {
+  items?: {
+    title: string;
+    desc: string;
+    icon?: any;
+  }[];
+}
+
+export default function WhatWereKnownFor({ items }: WhatWereKnownForProps) {
+  const defaultPillars = [
     {
       title: "Residential Interiors",
       desc: "We create living spaces that reflect your culture and lifestyle. Whether modern, western, or contemporary, our residential designs complement the ever-changing world while remaining uniquely yours. Every home we design shares a common thread: tailored comfort and style.",
@@ -26,6 +34,15 @@ export default function WhatWereKnownFor() {
       icon: Factory,
     },
   ];
+
+  const icons = [Home, ShoppingBag, Building2, Factory];
+  const pillars = items && items.length > 0
+    ? items.map((it, idx) => ({
+        title: it.title,
+        desc: it.desc,
+        icon: it.icon || icons[idx % icons.length],
+      }))
+    : defaultPillars;
 
   return (
     <section id="studio" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">

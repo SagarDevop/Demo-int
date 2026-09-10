@@ -6,20 +6,20 @@
     "title": "Expert Gym Interior Design & Renovation in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Motivate and inspire with 4 Lotus Interior. We design and renovate high-performance gym interiors in Delhi-NCR, optimizing layout, lighting, and materials for a world-class fitness experience.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/gym-interior-meta.webp",
+    "og_image": "/assets/images/gym-interior-meta.webp",
     "og_title": "Expert Gym Interior Design & Renovation in Delhi-NCR",
     "robots": "index, follow"
   },
   "hero": {
     "title": "High-Performance Gym Interiors",
     "description": "A modern gym is more than just equipment; it's a motivational environment. We aim to create a glamorous and attractive gym interior that is scientifically designed for body fitness. Our approach involves a strategic layout of all equipment—from squat racks, cables, and dumbbells to cardio machines—ensuring optimal flow and safety. We enhance the space with dynamic lighting effects, durable and impact-absorbing rubber flooring, and inspiring wall decor to create a truly high-energy and aesthetic workout space.",
-    "image": "https://4lotusinterior.in/assets/images/269-480x640.webp",
+    "image": "/assets/images/gym-interior-design-2.webp",
     "image_alt": "Gym Interior Design"
   },
   "design_concept": {
     "title": "Strategic Gym Design & Planning",
     "description": "We don't just fill a room with machines; we engineer a fitness experience. Our design process starts with understanding your space and target audience to create a clean, energetic, and macho environment. We meticulously plan the placement of all equipment to maximize functionality and flow. Beyond the workout floor, we design welcoming reception areas, private and comfortable changing rooms, and specialized zones for yoga, aerobics, or even steam baths. Our designers use advanced 2D layouts and 3D visualizations to bring your vision to life before construction begins.",
-    "image": "https://4lotusinterior.in/assets/images/270-480x780.webp",
+    "image": "/assets/images/gym-interior-design-3.webp",
     "image_alt": "Gym Interior Design",
     "links": [
       "Gym's Interior Design Consultant in Delhi-NCR",
@@ -37,26 +37,26 @@
         "title": "Gym Interior Designers",
         "subtitle": "Conceptualizing Fitness Spaces",
         "description": "We design home and commercial gyms that are both functional and inspiring. Our designs prioritize a healthy, energetic environment with proper air circulation and lighting, ensuring the space is as practical as it is attractive for a superior workout experience.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Gym Interior Decorators",
         "subtitle": "Enhancing Atmosphere",
         "description": "Our decorators focus on creating the right vibe. We use strategic lighting, motivating wall art, and color palettes to energize the space. We also create distinct decorative themes for specialized zones like yoga or aerobics studios to enhance their specific purpose.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Gym Interior Contractors",
         "subtitle": "Executing the Vision",
         "description": "Our experienced contractors bring the design to life. From structural changes to installing specialized flooring and lighting, we manage the entire renovation process with skilled workmanship, transforming your space into a modern, ready-to-use gym.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "process": {
     "title": "Our Gym Project Process",
     "subtitle": "A streamlined approach to designing, building, and delivering your dream gym in Delhi-NCR.",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -76,38 +76,38 @@
       "title": "Functional & Aesthetic Design",
       "role": "Gym Interior Designers",
       "description": "Our primary goal is to blend functionality with aesthetics. We use equipment placement, lighting, and color to create an energetic and attractive space. Our practical and artistic approach results in a modern gym interior that is as motivating as it is beautiful.",
-      "image": "https://4lotusinterior.in/assets/images/271-640x480.webp"
+      "image": "/assets/images/gym-interior-design-4.webp"
     },
     {
       "title": "Expert Renovation Execution",
       "role": "Gym Interior Decorators & Contractors",
       "description": "Once the design is finalized, our contractors and decorators take over. We execute the remodeling process with precision, using high-quality materials and expert craftsmanship to realize the vision and give your gym a fresh, high-energy new look.",
-      "image": "https://4lotusinterior.in/assets/images/272-640x480.webp"
+      "image": "/assets/images/gym-interior-design-5.webp"
     }
   ],
   "gallery": [
     {
       "title": "Gym Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/273-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/273-1280x720-800x450.webp",
+      "image": "/assets/images/gym-interior-design-6.webp",
+      "thumb": "/assets/images/gym-interior-design-6-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Gym Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/274-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/274-1280x720-800x450.webp",
+      "image": "/assets/images/gym-interior-design-7.webp",
+      "thumb": "/assets/images/gym-interior-design-7-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Gym Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/275-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/275-1280x720-800x450.webp",
+      "image": "/assets/images/gym-interior-design-8.webp",
+      "thumb": "/assets/images/gym-interior-design-8-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Gym Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/276-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/276-1280x720-800x450.webp",
+      "image": "/assets/images/gym-interior-design-9.webp",
+      "thumb": "/assets/images/gym-interior-design-9-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -124,6 +124,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

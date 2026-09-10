@@ -6,9 +6,12 @@ import PageHeader from "@/components/PageHeader";
 import SEO from "@/components/SEO";
 import { navigationData } from "@/data/navigationData";
 import { pageInventory } from "@/data/pageInventory";
+import { getPageBySlug } from "@/data/contentLoader";
 import { ArrowUpRight, Folder, FileText } from "lucide-react";
 
 export default function HtmlSitemap() {
+  const sitemapData = getPageBySlug("sitemap");
+
   const categories = [
     { title: "Core Studio Pages", cat: "Core" },
     { title: "Specialist Capabilities", cat: "Specialist" },
@@ -21,17 +24,17 @@ export default function HtmlSitemap() {
   return (
     <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
       <SEO
-        title="4 Lotus Interior HTML Sitemap | Complete Directory"
-        description="Explore the complete hierarchical sitemap and URL inventory of 4 Lotus Interior architecture and design firm in Delhi-NCR."
-        canonical="https://4lotusinterior.in/sitemap.html"
+        title={sitemapData?.seo?.title || "4 Lotus Interior HTML Sitemap | Complete Directory"}
+        description={sitemapData?.seo?.meta_description || "Explore the complete hierarchical sitemap and URL inventory of 4 Lotus Interior architecture and design firm in Delhi-NCR."}
+        canonical={sitemapData?.canonical || "https://4lotusinterior.in/sitemap.html"}
       />
 
       <Navbar />
 
       <PageHeader
         eyebrow="DIRECTORY & ARCHIVE"
-        title="HTML Sitemap"
-        description="Complete site index and hierarchical information architecture of 4 Lotus Interior architecture and design services in Delhi-NCR."
+        title={sitemapData?.hero?.title || "HTML Sitemap Directory"}
+        description={sitemapData?.hero?.description || "Complete site index and hierarchical information architecture of 4 Lotus Interior architecture and design services in Delhi-NCR."}
         breadcrumbs={[{ label: "Home", href: "/" }]}
       />
 

@@ -6,20 +6,20 @@
     "title": "Commercial Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Boost your business with a functional and engaging workspace. 4 Lotus Interior provides expert commercial design, renovation, and decor services for offices, retail stores, and hospitality venues in Delhi-NCR. Book a free consultation.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/commercial-interior-meta.webp",
+    "og_image": "/assets/images/commercial-interior-meta.webp",
     "og_title": "Commercial Interior Design & Renovation Services in Delhi-NCR",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Designing Commercial Spaces That Drive Success",
     "description": "A commercial space is more than just a physical location; it's a powerful tool for your business. It reflects your brand's identity, influences client perceptions, and directly impacts employee productivity. We specialize in creating functional, attractive, and branded environments for offices, retail stores, and hospitality venues, ensuring your space aligns perfectly with your business goals and attracts your target audience.",
-    "image": "https://4lotusinterior.in/assets/images/104-890x501.webp",
+    "image": "/assets/images/commercial-interior-design.webp",
     "image_alt": "Commercial Interior Design"
   },
   "service_decor": {
     "title": "Expert Commercial Decor & Renovation",
     "description": "Effective commercial decor balances style, efficiency, and cost. In today's competitive market, a unique and engaging environment is essential. Our expert decorators use creative and ergonomic solutions to give your space character and personality, making it a true reflection of your business's purpose. We help you navigate budget constraints while maximizing the impact of your interior decor.",
-    "image": "https://4lotusinterior.in/assets/images/105-890x501.webp",
+    "image": "/assets/images/commercial-interior-design-2.webp",
     "image_alt": "Commercial Interior Design",
     "links": [
       "Commercial Interior Designers in Delhi-NCR",
@@ -54,79 +54,79 @@
       "title": "Retail & Shop Interiors",
       "subtitle": "Creating Engaging Customer Experiences",
       "description": "We design retail spaces that maximize product visibility and customer flow. Our designs focus on effective lighting, strategic layouts, and brand-aligned aesthetics to attract customers and boost sales.",
-      "image": "https://4lotusinterior.in/assets/images/107-600x405.webp"
+      "image": "/assets/images/shop-interior-design.webp"
     },
     {
       "title": "Showroom Interiors",
       "subtitle": "Highlighting Your Products",
       "description": "Our showroom designs are crafted to be the perfect backdrop for your products. We use innovative lighting and modern display solutions to create a premium environment that allows your merchandise to shine.",
-      "image": "https://4lotusinterior.in/assets/images/108-600x405.webp"
+      "image": "/assets/images/showroom-interior-design.webp"
     },
     {
       "title": "Modern Office Interiors",
       "subtitle": "Productivity-Focused Design",
       "description": "We design modern offices that integrate the latest technology with ergonomic principles. Our goal is to create collaborative, flexible, and inspiring workspaces that enhance employee well-being and productivity.",
-      "image": "https://4lotusinterior.in/assets/images/109-600x405.webp"
+      "image": "/assets/images/office-interior-design.webp"
     },
     {
       "title": "Clinic Interiors",
       "subtitle": "Hygienic & Professional Healing Spaces",
       "description": "We design clinic interiors that prioritize patient comfort, safety, and hygiene. Our layouts ensure efficient workflows for medical staff while creating a calming and professional environment for patients.",
-      "image": "https://4lotusinterior.in/assets/images/110-600x405.webp"
+      "image": "/assets/images/clinic-interior-design.webp"
     },
     {
       "title": "Hospital Interiors",
       "subtitle": "Functional Healthcare Environments",
       "description": "Our hospital designs focus on operational efficiency, patient safety, and cleanliness. From reception areas to patient wards, we create specialized spaces that meet rigorous healthcare standards.",
-      "image": "https://4lotusinterior.in/assets/images/111-600x405.webp"
+      "image": "/assets/images/hospital-interior-design.webp"
     },
     {
       "title": "Salon & Spa Interiors",
       "subtitle": "Luxurious & Relaxing Spaces",
       "description": "We create salon interiors that are both stylish and functional. Our designs focus on creating a luxurious and relaxing atmosphere for clients while ensuring efficient workspaces for stylists and therapists.",
-      "image": "https://4lotusinterior.in/assets/images/112-600x405.webp"
+      "image": "/assets/images/salon-interior-design.webp"
     },
     {
       "title": "Gym Interiors",
       "subtitle": "Fitness & Wellness Design",
       "description": "We design energetic and motivating gym interiors. Our layouts optimize space for modern equipment and functional training zones, creating an environment that inspires members to achieve their fitness goals.",
-      "image": "https://4lotusinterior.in/assets/images/113-1-361x244.webp"
+      "image": "/assets/images/gym-interior-design.webp"
     },
     {
       "title": "Play School Interiors",
       "subtitle": "Educational Space Design",
       "description": "We create safe, engaging, and vibrant learning environments for children. Our designs incorporate playful elements, child-friendly furniture, and secure layouts to foster creativity and learning.",
-      "image": "https://4lotusinterior.in/assets/images/114-1-361x244.webp"
+      "image": "/assets/images/play-school-interior-design.webp"
     },
     {
       "title": "Restaurant Interiors",
       "subtitle": "Dining Experiences That Delight",
       "description": "We design restaurant interiors that complement your culinary concept. Our focus is on creating comfortable dining areas, efficient service flows, and a memorable ambiance for your guests.",
-      "image": "https://4lotusinterior.in/assets/images/115-600x405.webp"
+      "image": "/assets/images/restaurant-interior-design.webp"
     },
     {
       "title": "Banquet Hall Interiors",
       "subtitle": "Elegant Spaces for Events",
       "description": "Our banquet hall designs are versatile and grand, perfect for hosting a variety of events. We focus on creating flexible layouts, elegant decor, and modern amenities to ensure a successful function.",
-      "image": "https://4lotusinterior.in/assets/images/116-600x405.webp"
+      "image": "/assets/images/banquet-hall-interior-design.webp"
     },
     {
       "title": "Pub & Bar Interiors",
       "subtitle": "Vibrant Social Spaces",
       "description": "We design pubs and bars that are both lively and comfortable. Our focus is on creating unique themes, strategic lighting, and comfortable seating to ensure a memorable social experience for your patrons.",
-      "image": "https://4lotusinterior.in/assets/images/117-513x346.webp"
+      "image": "/assets/images/pub-interior-design.webp"
     },
     {
       "title": "Hotel Interiors",
       "subtitle": "Hospitality Design Excellence",
       "description": "We design holistic hotel interiors that encompass everything from welcoming lobbies and comfortable guest rooms to functional dining areas and modern amenities, ensuring a superior guest experience.",
-      "image": "https://4lotusinterior.in/assets/images/118-600x405.webp"
+      "image": "/assets/images/hotel-interior-design.webp"
     }
   ],
   "process": {
     "title": "Our Commercial Project Process",
     "subtitle": "A streamlined approach to designing, building, and delivering your commercial space in Delhi-NCR.",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -161,50 +161,50 @@
   "gallery": [
     {
       "title": "Reception Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/119-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/119-1280x720-800x450.webp",
+      "image": "/assets/images/reception-interior-design.webp",
+      "thumb": "/assets/images/reception-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Hotel Bedroom Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/120-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/120-1280x720-800x450.webp",
+      "image": "/assets/images/hotel-bedroom-interior-design.webp",
+      "thumb": "/assets/images/hotel-bedroom-interior-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Dinning Hall Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/121-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/121-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-hall-interior-design.webp",
+      "thumb": "/assets/images/dinning-hall-interior-design-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Hotel Lobby Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/122-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/122-1280x720-800x450.webp",
+      "image": "/assets/images/hotel-lobby-interior-design.webp",
+      "thumb": "/assets/images/hotel-lobby-interior-design-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Reception Hall Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/123-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/123-1280x720-800x450.webp",
+      "image": "/assets/images/reception-hall-interior-design.webp",
+      "thumb": "/assets/images/reception-hall-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Office Cafe Area Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/124-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/124-1280x720-800x450.webp",
+      "image": "/assets/images/office-cafe-area-interior-design.webp",
+      "thumb": "/assets/images/office-cafe-area-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Office Entry Wall Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/125-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/125-1280x720-800x450.webp",
+      "image": "/assets/images/office-entry-wall-interior-design.webp",
+      "thumb": "/assets/images/office-entry-wall-interior-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Office Cabin Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/126-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/126-1280x720-800x450.webp",
+      "image": "/assets/images/office-cabin-interior-design.webp",
+      "thumb": "/assets/images/office-cabin-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -221,6 +221,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

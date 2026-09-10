@@ -6,7 +6,7 @@
     "title": "Expert Interior Designers & Decorators in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "4 Lotus Interior provides professional interior design, decoration, and turnkey contracting services for residential and commercial projects across Delhi-NCR.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/interior-designers-meta.webp",
+    "og_image": "/assets/images/interior-designers-meta.webp",
     "og_title": "Expert Interior Designers & Decorators in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
@@ -14,13 +14,13 @@
     "title": "Premier Interior Services",
     "subtitle": "Designers, Decorators, & Contractors in Delhi-NCR",
     "description": "We are a team of skilled professionals dedicated to transforming residential and commercial spaces through innovative design, expert decoration, and reliable contracting.",
-    "image": "https://4lotusinterior.in/assets/images/12-1014x523.webp",
+    "image": "/assets/images/interior-design.webp",
     "image_alt": "Interior Design"
   },
   "core_services": {
     "title": "Our Core Services",
     "subtitle": "Comprehensive Solutions for Residential Interior & Commercial Interior",
-    "image": "https://4lotusinterior.in/assets/images/27-728x1117.webp",
+    "image": "/assets/images/3d-interior-design.webp",
     "image_alt": "3D Interior Design",
     "items": [
       {
@@ -48,12 +48,12 @@
   "showcase_duo": [
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/28-536x626.webp",
+      "image": "/assets/images/residential-interior-design-showcase.webp",
       "alt": "Residential Interior Design"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/29-936x626.webp",
+      "image": "/assets/images/commercial-interior-design-showcase.webp",
       "alt": "Commercial Interior Design"
     }
   ],
@@ -136,12 +136,12 @@
     "cards": [
       {
         "title": "Residential Interior Design",
-        "image": "https://4lotusinterior.in/assets/images/30-778x438.webp",
+        "image": "/assets/images/residential-interior-design-2.webp",
         "alt": "Residential Interior Design"
       },
       {
         "title": "Commercial Interior Design",
-        "image": "https://4lotusinterior.in/assets/images/31-1044x587.webp",
+        "image": "/assets/images/commercial-interior-design-8.webp",
         "alt": "Commercial Interior Design"
       }
     ]
@@ -149,7 +149,7 @@
   "turnkey_solutions": {
     "title": "Turnkey Interior Solutions",
     "subtitle": "End-to-End Design, Build, and Renovation Services in Delhi-NCR.",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -172,13 +172,13 @@
       {
         "title": "Residential Interior Renovate",
         "link": "/residential-interior.html",
-        "image": "https://4lotusinterior.in/assets/images/32-1039x584.webp",
+        "image": "/assets/images/residential-interior-decor.webp",
         "alt": "Residential Interior Decor"
       },
       {
         "title": "Commercial Interior Renovate",
         "link": "/commercial-interior.html",
-        "image": "https://4lotusinterior.in/assets/images/33-783x440.webp",
+        "image": "/assets/images/commercial-interior-decor.webp",
         "alt": "Commercial Interior Decor"
       }
     ]
@@ -206,50 +206,50 @@
   "gallery": [
     {
       "title": "Bed Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/34-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/34-1280x720-800x450.webp",
+      "image": "/assets/images/bed-room-interior-design-8.webp",
+      "thumb": "/assets/images/bed-room-interior-design-8-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Study Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/35-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/35-1280x720-800x450.webp",
+      "image": "/assets/images/study-room-interior-design-4.webp",
+      "thumb": "/assets/images/study-room-interior-design-4-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Drawing Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/36-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/36-1280x720-800x450.webp",
+      "image": "/assets/images/drawing-room-interior-design-3.webp",
+      "thumb": "/assets/images/drawing-room-interior-design-3-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Dinning Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/37-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/37-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-room-interior-design-6.webp",
+      "thumb": "/assets/images/dinning-room-interior-design-6-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Office Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/38-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/38-1280x720-800x450.webp",
+      "image": "/assets/images/office-interior-design-10.webp",
+      "thumb": "/assets/images/office-interior-design-10-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Waiting Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/39-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/39-1280x720-800x450.webp",
+      "image": "/assets/images/waiting-room-interior-design.webp",
+      "thumb": "/assets/images/waiting-room-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Retail Store Exterior Design",
-      "image": "https://4lotusinterior.in/assets/images/40-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/40-1280x720-800x450.webp",
+      "image": "/assets/images/retail-store-exterior-design.webp",
+      "thumb": "/assets/images/retail-store-exterior-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Retail Shop Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/41-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/41-1280x720-800x450.webp",
+      "image": "/assets/images/retail-shop-interior-design.webp",
+      "thumb": "/assets/images/retail-shop-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -266,13 +266,13 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   },
   "schema": {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "4 Lotus Interior",
-    "image": "https://4lotusinterior.in/assets/images/index-meta.webp",
+    "image": "/assets/images/index-meta.webp",
     "@id": "https://4lotusinterior.in/",
     "url": "https://4lotusinterior.in/",
     "telephone": "+919810698082",
@@ -292,7 +292,14 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
         "opens": "10:00",
         "closes": "18:00"
       },
@@ -303,11 +310,15 @@
         "closes": "14:00"
       }
     ],
-    "sameAs": ["https://x.com/4lotusinterior", "https://www.facebook.com/4lotusinterior/", "https://4lotusinterior.in/"],
+    "sameAs": [
+      "https://x.com/4lotusinterior",
+      "https://www.facebook.com/4lotusinterior/",
+      "https://4lotusinterior.in/"
+    ],
     "department": {
       "@type": "LocalBusiness",
       "name": "4 Lotus Interior",
-      "image": "https://4lotusinterior.in/assets/images/index-meta.webp",
+      "image": "/assets/images/index-meta.webp",
       "@id": "https://4lotusinterior.in/",
       "url": "https://4lotusinterior.in/",
       "telephone": "+919811363064",
@@ -321,13 +332,20 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 28.636430,
+        "latitude": 28.63643,
         "longitude": 77.134442
       },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "10:00",
           "closes": "18:00"
         },
@@ -338,7 +356,13 @@
           "closes": "14:00"
         }
       ],
-      "sameAs": ["https://x.com/4lotusinterior", "https://www.facebook.com/4lotusinterior/", "https://4lotusinterior.in/"]
-    }
+      "sameAs": [
+        "https://x.com/4lotusinterior",
+        "https://www.facebook.com/4lotusinterior/",
+        "https://4lotusinterior.in/"
+      ],
+      "image_alt": "index meta"
+    },
+    "image_alt": "index meta"
   }
 }

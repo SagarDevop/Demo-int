@@ -31,17 +31,40 @@ export default function App() {
       <Routes>
         {/* Core Pages */}
         <Route path="/" element={<Home />} />
+        <Route path="/index.html" element={<Home />} />
+        <Route path="/index" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about.html" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services.html" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio.html" element={<Portfolio />} />
         <Route path="/process" element={<Process />} />
+        <Route path="/process.html" element={<Process />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/reviews.html" element={<Reviews />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/locations.html" element={<Locations />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact.html" element={<Contact />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/contact-us.html" element={<Contact />} />
         <Route path="/sitemap" element={<HtmlSitemap />} />
         <Route path="/sitemap.html" element={<HtmlSitemap />} />
+
+        {/* Regional Hub Short Aliases */}
+        <Route path="/interior-designers-noida" element={<Navigate to="/interior-designers-decorators-in-noida" replace />} />
+        <Route path="/interior-designers-noida.html" element={<Navigate to="/interior-designers-decorators-in-noida.html" replace />} />
+        <Route path="/interior-designers-delhi" element={<Navigate to="/interior-designers-decorators-in-delhi" replace />} />
+        <Route path="/interior-designers-delhi.html" element={<Navigate to="/interior-designers-decorators-in-delhi.html" replace />} />
+        <Route path="/interior-designers-gurgaon" element={<Navigate to="/interior-designers-decorators-in-gurgaon" replace />} />
+        <Route path="/interior-designers-gurgaon.html" element={<Navigate to="/interior-designers-decorators-in-gurgaon.html" replace />} />
+        <Route path="/interior-designers-faridabad" element={<Navigate to="/interior-designers-decorators-in-faridabad" replace />} />
+        <Route path="/interior-designers-faridabad.html" element={<Navigate to="/interior-designers-decorators-in-faridabad.html" replace />} />
+        <Route path="/interior-designers-sonipat" element={<Navigate to="/interior-designers-decorators-in-sonipat" replace />} />
+        <Route path="/interior-designers-sonipat.html" element={<Navigate to="/interior-designers-decorators-in-sonipat.html" replace />} />
+        <Route path="/interior-designers-ghaziabad" element={<Navigate to="/interior-designers-decorators-in-ghaziabad" replace />} />
+        <Route path="/interior-designers-ghaziabad.html" element={<Navigate to="/interior-designers-decorators-in-ghaziabad.html" replace />} />
 
         {/* Dynamic Inventory Routes (supporting both clean slug and .html extension) */}
         {templatePages.map((page) => (

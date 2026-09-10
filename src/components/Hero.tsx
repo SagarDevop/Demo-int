@@ -6,14 +6,16 @@ import { ArrowUpRight, Star } from "lucide-react";
 interface HeroProps {
   onOpenConsultation: () => void;
   onOpenProjects?: () => void;
+  title?: string;
+  description?: string;
 }
 
-export default function Hero({ onOpenConsultation, onOpenProjects }: HeroProps) {
+export default function Hero({ onOpenConsultation, onOpenProjects, title, description }: HeroProps) {
   return (
     <section className="relative w-full min-h-[85vh] md:min-h-screen flex flex-col justify-between pt-24 pb-8 md:pb-12 px-4 md:px-10 max-w-[1440px] mx-auto overflow-hidden">
       {/* Accessible semantic heading for screen readers & SEO */}
       <h1 className="sr-only">
-        4 Lotus Interior — Luxury Architecture & Interior Design Studio in New Delhi
+        {title || "4 Lotus Interior — Luxury Architecture & Interior Design Studio in New Delhi"}
       </h1>
 
       {/* Background Hero Image Card */}
@@ -56,7 +58,7 @@ export default function Hero({ onOpenConsultation, onOpenProjects }: HeroProps) 
         <div className="relative z-10 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 pt-4 border-t border-white/20">
           {/* Left Text */}
           <p className="max-w-md text-xs sm:text-sm md:text-base text-white/90 font-light leading-relaxed">
-            4 Lotus is a design studio built on the belief that interiors should feel effortless, warm, and deeply personal. Transforming residential and commercial spaces across Delhi-NCR.
+            {description || "4 Lotus is a design studio built on the belief that interiors should feel effortless, warm, and deeply personal. Transforming residential and commercial spaces across Delhi-NCR."}
           </p>
 
           {/* Right Action Links */}

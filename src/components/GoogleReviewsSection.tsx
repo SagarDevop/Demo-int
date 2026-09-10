@@ -2,8 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Star, CheckCircle, Quote, ArrowUpRight } from "lucide-react";
 
-export default function GoogleReviewsSection() {
-  const allReviews = [
+interface GoogleReviewsSectionProps {
+  reviews?: {
+    quote: string;
+    author: string;
+    location: string;
+    rating: number;
+    avatar?: string;
+  }[];
+}
+
+export default function GoogleReviewsSection({ reviews: propReviews }: GoogleReviewsSectionProps = {}) {
+  const defaultReviews = [
     {
       quote:
         "It was an absolute pleasure working with 4 Lotus Interior. Very professional and friendly. They renovated our flat, and the process was simple. From initial floor plans to 3D renders and timely delivery, they never exceeded the budget unless we increased the scope. We have now engaged them again for my parents' flat. Highly recommended if you want quality.",
@@ -53,6 +63,8 @@ export default function GoogleReviewsSection() {
       avatar: "https://randomuser.me/api/portraits/women/49.jpg",
     },
   ];
+
+  const allReviews = propReviews && propReviews.length > 0 ? propReviews : defaultReviews;
 
   return (
     <section id="reviews" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">

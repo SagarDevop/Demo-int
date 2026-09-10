@@ -6,20 +6,20 @@
     "title": "Office Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Transform your office space with 4 Lotus Interior's expert design, decoration, and turnkey renovation services in Delhi-NCR. We create functional and inspiring workspaces for all business sectors.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/office-interior-meta.webp",
+    "og_image": "/assets/images/office-interior-meta.webp",
     "og_title": "Office Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Office Interior",
     "description": "In today's era, every sector, whether corporate, retail, accounting, medical, legal, or even public spaces like petrol pumps, airports, and hospitals, requires a functional office. As office interior designers and decorators, our challenge is to create adaptable spaces—including reception areas, cabins, meeting rooms, cafeterias, lounges, and conference halls—that cater to diverse work environments. We skillfully integrate office materials, from woodwork and ceiling decor to workstations, seating, CCTV cameras, and technical data storage, ensuring the design is both beautiful and functional. We aim to create attractive and modern office interiors that set a benchmark, seamlessly blending art and modern technology to enhance the workspace.",
-    "image": "https://4lotusinterior.in/assets/images/229-480x640.webp",
+    "image": "/assets/images/office-interior-design-2.webp",
     "image_alt": "Office Interior Design"
   },
   "design_concept": {
     "title": "Office Interior Design",
     "description": "Office interior design encompasses all tasks related to finishing an office space, tailored to the people who work there. Our designers create modern office interiors that facilitate maintenance and furnishing, reflecting their talent and vision. A truly finished office interior is attractive and functional, enhancing the work system. We understand the work nature and design beautiful, attractive interiors that reflect a modern lifestyle. Through drawings, layouts, and 3D visualization, our designers create unmatched office designs incorporating woodwork, ceiling decor, flooring, partitioning, wall decoration, color effects, and lighting, creating a truly exceptional workspace.",
-    "image": "https://4lotusinterior.in/assets/images/230-480x780.webp",
+    "image": "/assets/images/office-interior-design-3.webp",
     "image_alt": "Office Interior Design",
     "links": [
       "Office Interior Design Consultant in Delhi-NCR",
@@ -37,26 +37,26 @@
         "title": "Office Interior Designers",
         "subtitle": "Office Interior Design",
         "description": "Our office interior designers create attractive, beautifully designed spaces that charm and inspire. We tailor the design to the office's reality, creating an excellent atmosphere that becomes a center of attraction.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Office Interior Decorators",
         "subtitle": "Office Interior Reconstruction",
         "description": "Our skilled office interior decorators use a variety of materials, including wood, brass, steel, and wrought iron, to create dazzling and attractive office decor through experienced craftsmanship.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Office Interior Contractors",
         "subtitle": "Office Interior Renovation",
         "description": "Our experienced contractors begin the remodeling process once materials are received, combining design and materials to create an attractive office renovation that enhances the overall interior beauty.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "process": {
     "title": "Office Interior Design & Make",
     "subtitle": "Office Interior Designers, Decorators & Contractors in Delhi & Office Interior Designers, Decorators Offer Office Interior Design, Decor, Remodeling, Renovation Services in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -76,38 +76,38 @@
       "title": "Office Interior Design",
       "role": "Office Interior Designers",
       "description": "Office interior design involves creating attractive and beautiful spaces for goods conference, defined by the creative thinking of our designers who give imagination a real look. This results in an aesthetic office interior suitable for various types of offices.",
-      "image": "https://4lotusinterior.in/assets/images/231-640x480.webp"
+      "image": "/assets/images/office-interior-design-4.webp"
     },
     {
       "title": "Office Interior Design Converted Into Shape",
       "role": "Office Interior Decorators",
       "description": "The office interior design is realized by our skilled and experienced interior contractors, transforming the designer's vision into a realistic office space once all design materials are received.",
-      "image": "https://4lotusinterior.in/assets/images/232-640x480.webp"
+      "image": "/assets/images/office-interior-design-5.webp"
     }
   ],
   "gallery": [
     {
       "title": "Office Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/233-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/233-1280x720-800x450.webp",
+      "image": "/assets/images/office-interior-design-6.webp",
+      "thumb": "/assets/images/office-interior-design-6-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Office Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/234-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/234-1280x720-800x450.webp",
+      "image": "/assets/images/office-interior-design-7.webp",
+      "thumb": "/assets/images/office-interior-design-7-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Office Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/235-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/235-1280x720-800x450.webp",
+      "image": "/assets/images/office-interior-design-8.webp",
+      "thumb": "/assets/images/office-interior-design-8-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Office Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/236-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/236-1280x720-800x450.webp",
+      "image": "/assets/images/office-interior-design-9.webp",
+      "thumb": "/assets/images/office-interior-design-9-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -124,6 +124,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

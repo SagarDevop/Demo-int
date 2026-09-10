@@ -1,16 +1,21 @@
 import React from "react";
 import Image from "@/components/Image";
 
-export default function Philosophy() {
+interface PhilosophyProps {
+  title?: string;
+  description?: string;
+}
+
+export default function Philosophy({ title, description }: PhilosophyProps) {
   return (
     <section id="philosophy" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto">
       {/* Section Header Row */}
       <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-12 md:mb-16 border-b border-black/[0.08] pb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] uppercase max-w-lg">
-          THE 4 LOTUS PHILOSOPHY
+          {title || "THE 4 LOTUS PHILOSOPHY"}
         </h2>
         <p className="text-xs sm:text-sm md:text-base text-[#444444] font-normal leading-relaxed max-w-xl">
-          Purpose first, beauty always. We blend functional planning, enduring design language, and carefully curated natural materials to create spaces that feel deeply personal.
+          {description || "Purpose first, beauty always. We blend functional planning, enduring design language, and carefully curated natural materials to create spaces that feel deeply personal."}
         </p>
       </div>
 

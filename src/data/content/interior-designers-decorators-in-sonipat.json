@@ -6,14 +6,14 @@
     "title": "Best Interior Designers & Decorators in Sonipat | 4 Lotus Interior",
     "meta_description": "Searching for the best interior designers in Sonipat? 4 Lotus Interior offers premium residential and commercial design, decoration, and turnkey renovation services in Sonipat.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/interior-designers-decorators-in-sonipat-meta.webp",
+    "og_image": "/assets/images/interior-designers-decorators-in-sonipat-meta.webp",
     "og_title": "Best Interior Designers & Decorators in Sonipat | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Interior Designers in Sonipat",
     "description": "Discover the perfect blend of style and functionality with Sonipat's leading interior design firm. We transform homes and offices into inspiring spaces that reflect your personality and elevate your lifestyle.",
-    "image": "https://4lotusinterior.in/assets/images/285-1-500x1100.webp",
+    "image": "/assets/images/sketch-convert-interior-design.webp",
     "image_alt": "Sketch Convert Interior Design",
     "features": [
       {
@@ -30,50 +30,51 @@
     {
       "title": "Premium Design Services",
       "description": "Stay updated with the latest trends. We offer cutting-edge interior solutions in Sonipat, ensuring your space looks modern, luxurious, and timeless.",
-      "image": "https://4lotusinterior.in/assets/images/286-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-2.webp"
     },
     {
       "title": "Professional Consultation",
       "description": "From initial concepts to final execution, our consultants guide you through every step, making the renovation process smooth and stress-free.",
-      "image": "https://4lotusinterior.in/assets/images/287-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-3.webp"
     },
     {
       "title": "Turnkey Contracting",
       "description": "Experience hassle-free execution. As turnkey contractors in Sonipat, we manage civil work, woodwork, electrical, and plumbing with complete transparency and quality assurance.",
-      "image": "https://4lotusinterior.in/assets/images/288-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-4.webp"
     }
   ],
   "expertise_breakdown": {
     "residential": "Residential Expertise: We specialize in crafting dream homes in Sonipat. From apartments and flats to spacious villas and farmhouses, we design bedrooms, living areas, modular kitchens, and puja rooms.",
     "commercial": "Commercial Expertise: Elevate your business presence. We design functional offices, retail shops, showrooms, restaurants, salons, and educational institutions across Sonipat.",
-    "image": "https://4lotusinterior.in/assets/images/289-649x649.webp"
+    "image": "/assets/images/sketch-convert-interior-design-5.webp",
+    "image_alt": "Sketch Convert Interior Design"
   },
   "specialties_carousel": [
     {
       "title": "Interior Designers",
       "subtitle": "Interior Designers in Sonipat",
-      "image": "https://4lotusinterior.in/assets/images/290-1280x720.webp"
+      "image": "/assets/images/interior-design-2.webp"
     },
     {
       "title": "Bathroom Designers",
       "subtitle": "Bathroom Designers in Sonipat",
-      "image": "https://4lotusinterior.in/assets/images/291-1280x720.webp"
+      "image": "/assets/images/bathroom-design-3.webp"
     },
     {
       "title": "Kitchen Designers",
       "subtitle": "Kitchen Designers in Sonipat",
-      "image": "https://4lotusinterior.in/assets/images/292-1280x720.webp"
+      "image": "/assets/images/kitchen-design-3.webp"
     },
     {
       "title": "Designer Furniture",
       "subtitle": "Furniture Designers in Sonipat",
-      "image": "https://4lotusinterior.in/assets/images/293-1280x720.webp"
+      "image": "/assets/images/furniture-design.webp"
     }
   ],
   "process": {
     "title": "Turnkey Interiors in Sonipat",
     "subtitle": "Complete Design-to-Build Solutions Managed by Experts in Sonipat",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -91,50 +92,50 @@
   "gallery": [
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/323-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/323-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-13.webp",
+      "thumb": "/assets/images/residential-interior-design-13-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/324-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/324-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-14.webp",
+      "thumb": "/assets/images/residential-interior-design-14-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/325-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/325-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-15.webp",
+      "thumb": "/assets/images/residential-interior-design-15-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/326-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/326-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-16.webp",
+      "thumb": "/assets/images/residential-interior-design-16-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/327-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/327-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-17.webp",
+      "thumb": "/assets/images/commercial-interior-design-17-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/328-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/328-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-18.webp",
+      "thumb": "/assets/images/commercial-interior-design-18-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/329-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/329-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-19.webp",
+      "thumb": "/assets/images/commercial-interior-design-19-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/330-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/330-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-20.webp",
+      "thumb": "/assets/images/commercial-interior-design-20-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -151,6 +152,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

@@ -6,7 +6,7 @@
     "title": "Kitchen Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Transform your kitchen with our expert design, renovation, and remodeling services in Delhi-NCR. From modular to custom-built, we create functional and beautiful kitchens.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/kitchen-remodelers-meta.webp",
+    "og_image": "/assets/images/kitchen-remodelers-meta.webp",
     "og_title": "Kitchen Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
@@ -14,13 +14,13 @@
     "title": "Kitchen",
     "subtitle": "Kitchen Designers, Re-modelers Delhi",
     "description": "We offer modular kitchen design and makeover services in Delhi-NCR, with a team of experienced kitchen designers and specialists dedicated to your kitchen remodeling needs.",
-    "image": "https://4lotusinterior.in/assets/images/36-850x600.webp",
+    "image": "/assets/images/kitchen-design-4.webp",
     "image_alt": "Kitchen Design"
   },
   "we_do": {
     "title": "We Do",
     "subtitle": "Residential Kitchen & Commercial Kitchen",
-    "image": "https://4lotusinterior.in/assets/images/57-824x464.webp",
+    "image": "/assets/images/modular-kitchen-design.webp",
     "image_alt": "Modular Kitchen Design",
     "items": [
       {
@@ -38,7 +38,7 @@
   "feature_section": {
     "title": "Kitchen Design",
     "description": "Our modular kitchen design services in Delhi-NCR cater to all your kitchen needs, whether it's redesigning, remodeling, or renovating an L-shaped, U-shaped, C-shaped, or single-wall kitchen. We customize solutions based on your requirements, including replacing wooden racks, stainless steel appliances, cabinets, and chimneys. We are dedicated to creating modern, convenient kitchens that work for you, not the other way around. With breathtaking colors and finishes, we transform your kitchen into an exciting, easy-to-maintain space that feels fresh for years to come. We deliver the best functional and beautiful kitchen decoration solutions within your budget, proving that modular design can transform any ordinary kitchen into a neat and highly functional space.",
-    "image": "https://4lotusinterior.in/assets/images/58-890x501.webp",
+    "image": "/assets/images/white-kitchen-design.webp",
     "image_alt": "White Kitchen Design",
     "links": [
       {
@@ -58,7 +58,7 @@
   "design_and_make": {
     "title": "Kitchen Design & Make",
     "subtitle": "Kitchen Designers & Contractors in Delhi & Makeover Modular Kitchen in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -76,7 +76,7 @@
   "reconstruction": {
     "title": "Kitchen Reconstruction",
     "subtitle": "Kitchen Designers & Re-modelers Manage Kitchen Design, Revamp or Redo in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/59-1110x624.webp",
+    "image": "/assets/images/modular-kitchen-design-2.webp",
     "image_alt": "Modular Kitchen Design",
     "items": [
       {
@@ -114,50 +114,50 @@
   "gallery": [
     {
       "title": "White Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/60-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/60-1280x720-800x450.webp",
+      "image": "/assets/images/white-kitchen-design-2.webp",
+      "thumb": "/assets/images/white-kitchen-design-2-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Wooden Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/61-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/61-1280x720-800x450.webp",
+      "image": "/assets/images/wooden-kitchen-design.webp",
+      "thumb": "/assets/images/wooden-kitchen-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Island Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/62-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/62-1280x720-800x450.webp",
+      "image": "/assets/images/island-kitchen-design.webp",
+      "thumb": "/assets/images/island-kitchen-design-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Modular Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/63-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/63-1280x720-800x450.webp",
+      "image": "/assets/images/modular-kitchen-design-3.webp",
+      "thumb": "/assets/images/modular-kitchen-design-3-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Modern Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/64-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/64-1280x720-800x450.webp",
+      "image": "/assets/images/modern-kitchen-design.webp",
+      "thumb": "/assets/images/modern-kitchen-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Residential Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/65-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/65-1280x720-800x450.webp",
+      "image": "/assets/images/residential-kitchen-design.webp",
+      "thumb": "/assets/images/residential-kitchen-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Stainless Steel Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/66-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/66-1280x720-800x450.webp",
+      "image": "/assets/images/stainless-steel-kitchen-design.webp",
+      "thumb": "/assets/images/stainless-steel-kitchen-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Commercial Kitchen Design",
-      "image": "https://4lotusinterior.in/assets/images/67-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/67-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-kitchen-design.webp",
+      "thumb": "/assets/images/commercial-kitchen-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -174,6 +174,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

@@ -6,7 +6,7 @@
     "title": "Custom Furniture Designers & Manufacturers in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "From concept to creation, 4 Lotus Interior designs and manufactures custom furniture for homes, offices, hotels, and restaurants across Delhi-NCR. Craftsmanship that inspires.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/furniture-manufacturer-meta.webp",
+    "og_image": "/assets/images/furniture-manufacturer-meta.webp",
     "og_title": "Custom Furniture Designers & Manufacturers in Delhi-NCR",
     "robots": "index, follow"
   },
@@ -14,13 +14,13 @@
     "title": "Masterful Furniture Creation",
     "subtitle": "Designing & Manufacturing Excellence in Delhi-NCR",
     "description": "We don't just place furniture; we craft experiences. From thoughtful space planning that maximizes your layout to the precise manufacturing of bespoke pieces, our mission is to elevate your home or workplace with furniture that blends impeccable design with functional brilliance.",
-    "image": "https://4lotusinterior.in/assets/images/69-631x400.webp",
+    "image": "/assets/images/furniture-design-2.webp",
     "image_alt": "Furniture Design"
   },
   "expertise": {
     "title": "Our Expertise",
     "subtitle": "Specializing in Custom Residential & Commercial Furniture",
-    "image": "https://4lotusinterior.in/assets/images/70-824x464.webp",
+    "image": "/assets/images/furniture-design-3.webp",
     "image_alt": "Furniture Design",
     "items": [
       {
@@ -43,19 +43,19 @@
     {
       "title": "Royal Elegance",
       "subtitle": "Crafting Timeless Royal Furniture in Delhi-NCR",
-      "image": "https://4lotusinterior.in/assets/images/71-600x350.webp",
+      "image": "/assets/images/royal-furniture-design.webp",
       "image_alt": "Royal Furniture Design"
     },
     {
       "title": "Modern Simplicity",
       "subtitle": "Sleek & Functional Modern Furniture Manufacturers",
-      "image": "https://4lotusinterior.in/assets/images/72-600x350.webp",
+      "image": "/assets/images/modern-furniture-design.webp",
       "image_alt": "Modern Furniture Design"
     },
     {
       "title": "Modular Flexibility",
       "subtitle": "Innovative Modular Furniture Solutions in Delhi-NCR",
-      "image": "https://4lotusinterior.in/assets/images/73-600x350.webp",
+      "image": "/assets/images/modular-furniture-design.webp",
       "image_alt": "Modular Furniture Design"
     }
   ],
@@ -67,28 +67,28 @@
         "title": "Optimal Space Planning",
         "role": "Furniture Planner",
         "description": "Our expertise lies in maximizing your space efficiency without compromising on aesthetics. We meticulously plan the layout for every chair, sofa, desk, and cupboard, ensuring no space is wasted and every piece serves a purpose, from relaxation to productivity.",
-        "image": "https://4lotusinterior.in/assets/images/74-320x216.webp",
+        "image": "/assets/images/furniture-space-plan.webp",
         "image_alt": "Furniture Space Plan"
       },
       {
         "title": "Innovative Furniture Design",
         "role": "Furniture Designer",
         "description": "We stay ahead of global trends to design furniture that is contemporary, minimalist, and timeless. Our designers translate your vision into precise technical specifications, working closely with our workshop to ensure every detail is flawlessly executed during manufacturing.",
-        "image": "https://4lotusinterior.in/assets/images/75-320x216.webp",
+        "image": "/assets/images/furniture-design-layout.webp",
         "image_alt": "Furniture Design Layout"
       },
       {
         "title": "Quality Manufacturing",
         "role": "Furniture Manufacturer",
         "description": "Our exquisitely crafted furniture is dedicated to modern lifestyles. Our artisans in Delhi use a variety of high-quality materials, including teak wood, steel, brass, and premium fabrics or leather, to create distinct designer pieces with impeccable workmanship and comfort.",
-        "image": "https://4lotusinterior.in/assets/images/76-320x216.webp",
+        "image": "/assets/images/furniture-manufacturing.webp",
         "image_alt": "Furniture Manufacturing"
       },
       {
         "title": "Direct-to-Consumer Supply",
         "role": "Furniture Supplier",
         "description": "We provide excellent quality furniture for schools, hotels, homes, and large retail stores, maintaining reliability in both price and performance. By buying directly from us, you get factory pricing on designer furniture without compromising on quality.",
-        "image": "https://4lotusinterior.in/assets/images/77-320x216.webp",
+        "image": "/assets/images/furniture-display-store.webp",
         "image_alt": "Furniture Display Store"
       }
     ]
@@ -96,7 +96,7 @@
   "process": {
     "title": "Our Design-to-Build Process",
     "subtitle": "Seamlessly Delivering Custom Furniture in Delhi-NCR, Gurgaon, Noida & Beyond",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -114,50 +114,50 @@
   "gallery": [
     {
       "title": "Bed Design",
-      "image": "https://4lotusinterior.in/assets/images/78-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/78-1280x720-800x450.webp",
+      "image": "/assets/images/bed-design.webp",
+      "thumb": "/assets/images/bed-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Bunk Bed Design",
-      "image": "https://4lotusinterior.in/assets/images/79-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/79-1280x720-800x450.webp",
+      "image": "/assets/images/bunk-bed-design.webp",
+      "thumb": "/assets/images/bunk-bed-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Study Table Design",
-      "image": "https://4lotusinterior.in/assets/images/80-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/80-1280x720-800x450.webp",
+      "image": "/assets/images/study-table-design.webp",
+      "thumb": "/assets/images/study-table-design-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Sofa Sets Design",
-      "image": "https://4lotusinterior.in/assets/images/81-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/81-1280x720-800x450.webp",
+      "image": "/assets/images/sofa-sets-design.webp",
+      "thumb": "/assets/images/sofa-sets-design-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Restaurant Chairs Tables Design",
-      "image": "https://4lotusinterior.in/assets/images/82-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/82-1280x720-800x450.webp",
+      "image": "/assets/images/restaurant-chairs-tables-design.webp",
+      "thumb": "/assets/images/restaurant-chairs-tables-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Standing Table Design",
-      "image": "https://4lotusinterior.in/assets/images/83-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/83-1280x720-800x450.webp",
+      "image": "/assets/images/standing-table-design.webp",
+      "thumb": "/assets/images/standing-table-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Stainless Furniture Design",
-      "image": "https://4lotusinterior.in/assets/images/84-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/84-1280x720-800x450.webp",
+      "image": "/assets/images/stainless-furniture-design.webp",
+      "thumb": "/assets/images/stainless-furniture-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Sofa Furniture Design",
-      "image": "https://4lotusinterior.in/assets/images/85-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/85-1280x720-800x450.webp",
+      "image": "/assets/images/sofa-furniture-design.webp",
+      "thumb": "/assets/images/sofa-furniture-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -174,6 +174,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

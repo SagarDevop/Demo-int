@@ -9,7 +9,7 @@ const rootDir = path.resolve(__dirname, "..");
 const contentDir = path.resolve(rootDir, "src/data/content");
 const distDir = path.resolve(rootDir, "dist");
 
-// Read page inventory from TypeScript file via experimental strip or regex
+// Read page inventory from TypeScript file
 function loadInventory() {
   const tsContent = fs.readFileSync(path.resolve(rootDir, "src/data/pageInventory.ts"), "utf-8");
   const items = [];
@@ -36,7 +36,7 @@ function generateSchemaJson(data) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "4 Lotus Interior",
-    "image": data.seo?.og_image || "https://4lotusinterior.in/assets/images/index-meta.webp",
+    "image": data.seo?.og_image || "/assets/images/index-meta.webp",
     "@id": "https://4lotusinterior.in/",
     "url": data.url || "https://4lotusinterior.in/",
     "telephone": "+919810698082",
@@ -75,7 +75,7 @@ function generateSchemaJson(data) {
     "department": {
       "@type": "LocalBusiness",
       "name": "4 Lotus Interior - Kirti Nagar Millwork & Studio",
-      "image": "https://4lotusinterior.in/assets/images/index-meta.webp",
+      "image": "/assets/images/index-meta.webp",
       "@id": "https://4lotusinterior.in/",
       "url": "https://4lotusinterior.in/",
       "telephone": "+919811363064",
@@ -101,125 +101,103 @@ function getSharedStyles() {
   return `
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #111111;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #F8F7F5;
+  color: #111111;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
-.container { max-width: 1360px; margin: 0 auto; padding: 0 24px; }
 
-/* Header & Nav */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media (min-width: 768px) {
+  .container { padding: 0 40px; }
+}
+
+/* Header / Nav */
 header.site-nav {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .nav-inner {
-  display: flex; align-items: center; justify-content: space-between;
-  height: 80px; position: relative;
+  height: 80px; display: flex; align-items: center; justify-content: space-between;
 }
-.brand-logo {
-  font-size: 20px; font-weight: 800; letter-spacing: 0.08em;
-  text-transform: uppercase; color: #111111; display: flex; align-items: center; gap: 8px;
-}
-.brand-badge {
-  font-size: 9px; font-weight: 700; background: #854d0e; color: #fff;
-  padding: 2px 6px; border-radius: 3px; letter-spacing: 0.1em;
-}
-.nav-links { display: flex; align-items: center; gap: 18px; list-style: none; }
-.nav-links a { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #333; transition: color 0.2s; white-space: nowrap; }
+.brand-logo { font-size: 18px; font-weight: 800; letter-spacing: -0.03em; color: #111111; display: flex; align-items: center; gap: 8px; }
+.brand-badge { font-size: 9px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; background: #111; color: #fff; padding: 3px 8px; border-radius: 4px; }
+.nav-links { display: flex; align-items: center; gap: 24px; list-style: none; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 .nav-links a:hover { color: #854d0e; }
-.cta-btn {
-  background: #111111; color: #ffffff !important; padding: 8px 16px;
-  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
-  border-radius: 9999px; transition: background 0.2s; white-space: nowrap;
-}
-.cta-btn:hover { background: #333333; }
-.mobile-toggle {
-  display: none; background: none; border: none; cursor: pointer; padding: 8px; color: #111;
-}
+.cta-btn { background: #111111; color: #ffffff !important; padding: 10px 18px; border-radius: 4px; transition: opacity 0.2s; white-space: nowrap; }
+.cta-btn:hover { opacity: 0.9; }
+.cta-btn-outline { background: transparent !important; color: #111111 !important; border: 1px solid rgba(0,0,0,0.2) !important; }
+.cta-btn-outline:hover { border-color: #111111 !important; }
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
 
-/* Breadcrumbs */
-.breadcrumb-wrap {
-  padding: 20px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #888;
-}
-.breadcrumb-wrap a { color: #555; }
-.breadcrumb-wrap a:hover { color: #000; }
-.breadcrumb-sep { margin: 0 8px; color: #bbb; }
-
-/* Hero */
-.hero-section { padding: 40px 0 40px; }
+/* Hero Section */
+.hero-section { padding: 40px 0 20px; }
 .hero-card {
   background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px;
-  padding: 48px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px;
-  align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  padding: 40px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 .hero-img-box {
-  position: relative; border-radius: 6px; overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.08); background: #FAF9F6;
-  aspect-ratio: 4/5;
+  position: relative; border-radius: 6px; overflow: hidden; border: 1px solid rgba(0,0,0,0.1);
+  aspect-ratio: 4/3; max-height: 500px; background: #FAF9F6;
 }
 .hero-img-box img { width: 100%; height: 100%; object-fit: cover; }
-.hero-text { display: flex; flex-direction: column; gap: 20px; }
-.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #854d0e; }
-h1.hero-title { font-size: 38px; font-weight: 800; text-transform: uppercase; line-height: 1.15; letter-spacing: -0.02em; color: #111111; }
-p.hero-desc { font-size: 15px; color: #444444; font-weight: 300; line-height: 1.7; }
-.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; pt: 10px; }
-.btn-primary {
-  background: #111111; color: #ffffff; padding: 14px 26px; font-size: 12px;
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 4px; display: inline-block;
-}
-.btn-outline {
-  border: 1px solid rgba(0,0,0,0.2); color: #111111; padding: 14px 26px; font-size: 12px;
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 4px; display: inline-block;
-}
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #777777; margin-bottom: 12px; display: block; }
+h1.hero-title { font-size: 36px; font-weight: 800; line-height: 1.15; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 16px; color: #111111; }
+.hero-desc { font-size: 15px; color: #444444; font-weight: 300; line-height: 1.7; margin-bottom: 24px; }
+.hero-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn-primary { background: #111111; color: #fff; padding: 14px 28px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 4px; }
+.btn-outline { border: 1px solid rgba(0,0,0,0.2); color: #111; padding: 14px 28px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 4px; }
 
-/* Concept Section */
+/* Concept Card */
 .concept-section { padding: 40px 0; }
 .concept-card {
   background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px;
-  padding: 48px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px;
-  align-items: center;
+  padding: 48px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center;
 }
-.concept-title { font-size: 28px; font-weight: 800; text-transform: uppercase; margin-bottom: 16px; }
-.concept-desc { font-size: 14px; color: #444444; font-weight: 300; line-height: 1.7; margin-bottom: 20px; }
-.tags-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.tag-item {
-  background: #FAF9F6; border: 1px solid rgba(0,0,0,0.08); padding: 8px 14px;
-  font-size: 12px; font-weight: 600; border-radius: 4px; color: #333333;
-}
+.concept-title { font-size: 26px; font-weight: 800; text-transform: uppercase; margin-bottom: 16px; }
+.concept-desc { font-size: 14px; color: #444; font-weight: 300; line-height: 1.7; margin-bottom: 24px; }
+.tags-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-item { background: #FAF9F6; border: 1px solid rgba(0,0,0,0.08); padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 600; color: #333; }
 
-/* Quote Section */
-.quote-section { padding: 40px 0; }
+/* Quote Box */
+.quote-section { padding: 30px 0; }
 .quote-box {
-  background: #111111; color: #ffffff; border-radius: 8px; padding: 60px 40px;
+  background: #111111; color: #ffffff; border-radius: 8px; padding: 48px 32px;
   text-align: center; max-width: 1000px; margin: 0 auto;
 }
 .quote-box blockquote { font-size: 20px; font-style: italic; font-weight: 300; line-height: 1.6; margin-bottom: 16px; }
 .quote-author { font-size: 10px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #a3a3a3; }
 
 /* Turnkey Services */
-.services-section { padding: 60px 0; }
-.section-header { text-align: center; max-width: 800px; margin: 0 auto 40px; }
-.section-title { font-size: 30px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; }
+.services-section { padding: 40px 0; }
+.section-header { text-align: center; max-width: 800px; margin: 0 auto 36px; }
+.section-title { font-size: 28px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; }
 .section-subtitle { font-size: 14px; color: #666666; font-weight: 400; }
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
 .service-card {
   background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px;
-  padding: 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;
+  padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
 .card-icon-box {
-  width: 60px; height: 60px; border-radius: 50%; background: #FAF9F6;
+  width: 54px; height: 54px; border-radius: 50%; background: #FAF9F6;
   border: 1px solid rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;
-  padding: 12px; margin-bottom: 16px;
+  padding: 10px; margin-bottom: 14px;
 }
-.card-title { font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; }
-.card-subtitle { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #854d0e; margin-bottom: 12px; }
+.card-title { font-size: 17px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; }
+.card-subtitle { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #854d0e; margin-bottom: 10px; }
 .card-desc { font-size: 13px; color: #555555; font-weight: 300; line-height: 1.6; }
 
 /* Process Section */
@@ -254,7 +232,7 @@ p.hero-desc { font-size: 15px; color: #444444; font-weight: 300; line-height: 1.
 
 /* Gallery Section */
 .gallery-section { padding: 40px 0; }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
 .gallery-card {
   position: relative; border-radius: 6px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08);
   aspect-ratio: 16/10; cursor: pointer; background: #FAF9F6;
@@ -336,7 +314,7 @@ footer.site-footer {
 `;
 }
 
-// Navigation Bar markup (Without Home, Without Portfolio)
+// Navigation Bar markup
 function getNavMarkup() {
   return `
 <header class="site-nav">
@@ -357,6 +335,7 @@ function getNavMarkup() {
       <li><a href="/contact-us.html">Contact</a></li>
       <li><a href="/sitemap.html">Source</a></li>
       <li><a href="tel:+919810698082" class="cta-btn">+91 98106 98082</a></li>
+      <li><a href="tel:+919811363064" class="cta-btn cta-btn-outline">+91 98113 63064</a></li>
     </ul>
   </div>
 </header>
@@ -442,11 +421,137 @@ function closeLightbox() {
 `;
 }
 
-// Build standard rich page from migration data
-function buildStandardPage(data) {
+// Normalizer to align with React contentLoader
+function normalizePageData(raw, slug) {
+  const item = JSON.parse(JSON.stringify(raw));
+
+  // 1. Concept normalization
+  if (!item.design_concept) {
+    const sourceConcept =
+      item.bespoke_design ||
+      item.exclusive_design ||
+      item.inspired_design ||
+      item.service_decor ||
+      item.modern_solutions ||
+      item.complete_solutions ||
+      item.we_do ||
+      item.decorator_section ||
+      item.feature_section;
+
+    if (sourceConcept) {
+      item.design_concept = {
+        title: sourceConcept.title || "Architectural Design Concept",
+        description: sourceConcept.description || "",
+        image: sourceConcept.image,
+        image_alt: sourceConcept.image_alt || sourceConcept.title,
+        links: Array.isArray(sourceConcept.links)
+          ? sourceConcept.links.map(l => typeof l === "string" ? l : l.label || l.text || "")
+          : [],
+      };
+    }
+  }
+
+  // 2. Turnkey services normalization
+  if (!item.turnkey_services) {
+    if (item.turnkey_solutions && item.turnkey_solutions.pillars) {
+      item.turnkey_services = {
+        title: item.turnkey_solutions.title || "Turnkey Interior Solutions",
+        subtitle: item.turnkey_solutions.subtitle,
+        cards: item.turnkey_solutions.pillars.map(p => ({
+          title: p.title,
+          subtitle: p.role,
+          role: p.role,
+          description: p.description,
+          icon: p.icon || "/assets/blueprint_sketch.svg",
+        })),
+      };
+    } else if (item.turnkey_home_interior && item.turnkey_home_interior.pillars) {
+      item.turnkey_services = {
+        title: item.turnkey_home_interior.title || "Turnkey Home Interior",
+        subtitle: item.turnkey_home_interior.subtitle,
+        cards: item.turnkey_home_interior.pillars.map(p => ({
+          title: p.title,
+          subtitle: p.role,
+          role: p.role,
+          description: p.description,
+          icon: p.icon || "/assets/blueprint_sketch.svg",
+        })),
+      };
+    } else if (item.complete_solutions && item.complete_solutions.cards) {
+      item.turnkey_services = {
+        title: item.complete_solutions.title || "Complete Furniture Solutions",
+        subtitle: item.complete_solutions.subtitle,
+        cards: item.complete_solutions.cards.map(c => ({
+          title: c.title,
+          subtitle: c.role,
+          role: c.role,
+          description: c.description,
+          image: c.image,
+          icon: "/assets/blueprint_sketch.svg",
+        })),
+      };
+    } else if (item.service_pillars && Array.isArray(item.service_pillars)) {
+      item.turnkey_services = {
+        title: "Service Pillars & Capabilities",
+        cards: item.service_pillars.map(p => ({
+          title: p.title,
+          subtitle: p.role,
+          role: p.role,
+          description: p.description,
+          icon: p.icon || "/assets/blueprint_sketch.svg",
+        })),
+      };
+    } else if (item.core_services && item.core_services.items) {
+      item.turnkey_services = {
+        title: item.core_services.title || "Core Services",
+        subtitle: item.core_services.subtitle,
+        cards: item.core_services.items.map(it => ({
+          title: it.title,
+          description: it.description,
+          icon: "/assets/blueprint_sketch.svg",
+        })),
+      };
+    } else if (item.expertise && item.expertise.items) {
+      item.turnkey_services = {
+        title: item.expertise.title || "Our Expertise",
+        subtitle: item.expertise.subtitle,
+        cards: item.expertise.items.map(it => ({
+          title: it.title,
+          description: it.description,
+          icon: "/assets/blueprint_sketch.svg",
+        })),
+      };
+    }
+  }
+
+  // 3. Process normalization
+  if (!item.process) {
+    const sourceProcess = item.design_and_make || item.renovation_process;
+    if (sourceProcess) {
+      item.process = sourceProcess;
+    }
+  }
+
+  // 4. Quote normalization
+  if (!item.quote && item.callout) {
+    item.quote = item.callout;
+  }
+
+  // 5. Execution cards
+  if (!item.execution_cards && item.team_approach) {
+    item.execution_cards = item.team_approach;
+  }
+
+  return item;
+}
+
+// Build standard rich page from authoritative JSON data
+function buildStandardPage(rawJson) {
+  const data = normalizePageData(rawJson, rawJson.slug);
+
   const title = data.seo?.title || data.title || `${data.hero?.title || "Luxury Interior"} | 4 Lotus Interior`;
   const metaDesc = data.seo?.meta_description || data.meta?.description || data.hero?.description || "";
-  const ogImage = data.seo?.og_image || "https://4lotusinterior.in/assets/images/index-meta.webp";
+  const ogImage = data.seo?.og_image || "/assets/images/index-meta.webp";
   const ogTitle = data.seo?.og_title || title;
   const canonical = data.canonical || data.url || `https://4lotusinterior.in/${data.slug}.html`;
 
@@ -460,7 +565,7 @@ function buildStandardPage(data) {
 <meta name="description" content="${escapeHtml(metaDesc)}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${escapeHtml(canonical)}">
-<link rel="shortcut icon" href="https://4lotusinterior.in/assets/images/logo-128x128.png" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/images/logo-128x128.png" type="image/x-icon">
 
 <!-- Open Graph -->
 <meta property="og:card" content="summary_large_image">
@@ -498,6 +603,7 @@ ${getNavMarkup()}
         <div class="hero-text">
           <span class="eyebrow">TURNKEY ARCHITECTURAL SERVICE · DELHI-NCR</span>
           <h1 class="hero-title">${escapeHtml(data.hero?.title || title)}</h1>
+          ${data.hero?.subtitle ? `<div style="font-size: 13px; font-weight: 700; text-transform: uppercase; color: #854d0e; margin-bottom: 12px;">${escapeHtml(data.hero.subtitle)}</div>` : ""}
           <p class="hero-desc">${escapeHtml(data.hero?.description || metaDesc)}</p>
           <div class="hero-btns">
             <a href="#contact" class="btn-primary">Book Consultation</a>
@@ -508,6 +614,20 @@ ${getNavMarkup()}
     </div>
   </section>
 
+  <!-- Hero Sub Cards -->
+  ${data.hero_sub_cards && data.hero_sub_cards.length > 0 ? `
+  <section class="concept-section" style="padding-top: 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        ${data.hero_sub_cards.map(sc => `
+        <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.08); padding: 24px; border-radius: 6px;">
+          <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin-bottom: 8px;">${escapeHtml(sc.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(sc.description)}</p>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
   <!-- Concept Section -->
   ${data.design_concept ? `
   <section class="concept-section">
@@ -517,14 +637,481 @@ ${getNavMarkup()}
           <span class="eyebrow">ARCHITECTURAL STRATEGY</span>
           <h2 class="concept-title">${escapeHtml(data.design_concept.title)}</h2>
           <p class="concept-desc">${escapeHtml(data.design_concept.description)}</p>
-          ${data.design_concept.links ? `
+          ${data.design_concept.links && data.design_concept.links.length > 0 ? `
           <div class="tags-list">
-            ${data.design_concept.links.map(l => `<span class="tag-item">${escapeHtml(l)}</span>`).join("\n            ")}
+            ${data.design_concept.links.map(l => `<span class="tag-item">${escapeHtml(typeof l === "string" ? l : l.label || "")}</span>`).join("\n            ")}
           </div>` : ""}
         </div>
+        ${data.design_concept.image ? `
         <div class="hero-img-box" style="aspect-ratio: 4/3;">
           <img src="${escapeHtml(data.design_concept.image)}" alt="${escapeHtml(data.design_concept.image_alt || data.design_concept.title)}" loading="lazy">
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Advantages (Bathroom Remodelers) -->
+  ${data.advantages ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="concept-card">
+        ${data.advantages.image ? `
+        <div class="hero-img-box" style="aspect-ratio: 4/3;">
+          <img src="${escapeHtml(data.advantages.image)}" alt="${escapeHtml(data.advantages.image_alt || data.advantages.title)}" loading="lazy">
+        </div>` : ""}
+        <div>
+          <span class="eyebrow">PROVEN ADVANTAGE</span>
+          <h2 class="concept-title">${escapeHtml(data.advantages.title)}</h2>
+          ${data.advantages.subtitle ? `<p style="font-size: 14px; color: #666; margin-bottom: 16px;">${escapeHtml(data.advantages.subtitle)}</p>` : ""}
+          ${data.advantages.items ? `
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            ${data.advantages.items.map(adv => `
+            <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 16px; border-radius: 6px;">
+              <h3 style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">${escapeHtml(adv.title)}</h3>
+              <p style="font-size: 13px; color: #555;">${escapeHtml(adv.description)}</p>
+            </div>`).join("")}
+          </div>` : ""}
         </div>
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Expertise (Bathroom & Furniture) -->
+  ${data.expertise ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="concept-card">
+        <div>
+          <span class="eyebrow">SPECIALIZED CRAFTSMANSHIP</span>
+          <h2 class="concept-title">${escapeHtml(data.expertise.title)}</h2>
+          ${data.expertise.subtitle ? `<p style="font-size: 14px; color: #666; margin-bottom: 16px;">${escapeHtml(data.expertise.subtitle)}</p>` : ""}
+          ${data.expertise.items ? `
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            ${data.expertise.items.map((exp, idx) => `
+            <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 16px; border-radius: 6px;">
+              <span style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase;">0${exp.number || idx + 1}</span>
+              <h3 style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin: 4px 0;">${escapeHtml(exp.title)}</h3>
+              <p style="font-size: 13px; color: #555;">${escapeHtml(exp.description)}</p>
+            </div>`).join("")}
+          </div>` : ""}
+        </div>
+        ${data.expertise.image ? `
+        <div class="hero-img-box" style="aspect-ratio: 4/3;">
+          <img src="${escapeHtml(data.expertise.image)}" alt="${escapeHtml(data.expertise.image_alt || data.expertise.title)}" loading="lazy">
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- We Do (Kitchen Remodelers) -->
+  ${data.we_do ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="concept-card">
+        <div>
+          <span class="eyebrow">WHAT WE DO</span>
+          <h2 class="concept-title">${escapeHtml(data.we_do.title)}</h2>
+          ${data.we_do.subtitle ? `<p style="font-size: 14px; color: #666; margin-bottom: 16px;">${escapeHtml(data.we_do.subtitle)}</p>` : ""}
+          ${data.we_do.items ? `
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            ${data.we_do.items.map((it, idx) => `
+            <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 16px; border-radius: 6px;">
+              <span style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase;">0${it.number || idx + 1}</span>
+              <h3 style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin: 4px 0;">${escapeHtml(it.title)}</h3>
+              <p style="font-size: 13px; color: #555;">${escapeHtml(it.description)}</p>
+            </div>`).join("")}
+          </div>` : ""}
+        </div>
+        ${data.we_do.image ? `
+        <div class="hero-img-box" style="aspect-ratio: 4/3;">
+          <img src="${escapeHtml(data.we_do.image)}" alt="${escapeHtml(data.we_do.image_alt || data.we_do.title)}" loading="lazy">
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Kitchen Reconstruction -->
+  ${data.reconstruction ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header" style="text-align: left;">
+        <span class="eyebrow">RECONSTRUCTION & REMODELING</span>
+        <h2 class="section-title">${escapeHtml(data.reconstruction.title)}</h2>
+        ${data.reconstruction.subtitle ? `<p class="section-subtitle">${escapeHtml(data.reconstruction.subtitle)}</p>` : ""}
+      </div>
+      ${data.reconstruction.items ? `
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        ${data.reconstruction.items.map(rc => `
+        <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); padding: 24px; border-radius: 8px;">
+          <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin-bottom: 8px;">${escapeHtml(rc.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(rc.description)}</p>
+        </div>`).join("")}
+      </div>` : ""}
+    </div>
+  </section>` : ""}
+
+  <!-- Kitchen Types Timeline -->
+  ${data.kitchen_types_timeline ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">MODULAR SPECS</span>
+        <h2 class="section-title">${escapeHtml(data.kitchen_types_timeline.title)}</h2>
+        ${data.kitchen_types_timeline.subtitle ? `<p class="section-subtitle">${escapeHtml(data.kitchen_types_timeline.subtitle)}</p>` : ""}
+      </div>
+      ${data.kitchen_types_timeline.items ? `
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        ${data.kitchen_types_timeline.items.map((kt, idx) => `
+        <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); padding: 24px; border-radius: 8px;">
+          <span style="font-size: 10px; font-weight: bold; color: #854d0e; text-transform: uppercase;">Type 0${idx + 1}</span>
+          <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin: 6px 0 8px;">${escapeHtml(kt.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(kt.description)}</p>
+        </div>`).join("")}
+      </div>` : ""}
+    </div>
+  </section>` : ""}
+
+  <!-- Partner Banner -->
+  ${data.partner_banner ? `
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-box">
+        <h2 style="font-size: 22px; font-weight: 800; text-transform: uppercase; margin-bottom: 12px;">${escapeHtml(data.partner_banner.title)}</h2>
+        <p style="font-size: 14px; font-weight: 300; line-height: 1.7; color: #ddd;">${escapeHtml(data.partner_banner.description)}</p>
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Styles Slider -->
+  ${data.styles_slider && data.styles_slider.length > 0 ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">DESIGN VOCABULARY</span>
+        <h2 class="section-title">Furniture Styles & Aesthetics</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        ${data.styles_slider.map(st => `
+        <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
+          <div style="aspect-ratio: 16/10; overflow: hidden;">
+            <img src="${escapeHtml(st.image)}" alt="${escapeHtml(st.image_alt || st.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <div style="padding: 24px;">
+            <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin-bottom: 6px;">${escapeHtml(st.title)}</h3>
+            ${st.subtitle ? `<p style="font-size: 13px; color: #666;">${escapeHtml(st.subtitle)}</p>` : ""}
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Typologies (Commercial Interior) -->
+  ${data.typologies && data.typologies.length > 0 ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">COMMERCIAL DOMAINS</span>
+        <h2 class="section-title">Commercial Typologies & Sectors</h2>
+        <p class="section-subtitle">Specialized commercial architecture and turnkey fitouts tailored for operational efficiency.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        ${data.typologies.map(t => `
+        <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          ${t.image ? `<div style="aspect-ratio: 16/10; overflow: hidden;"><img src="${escapeHtml(t.image)}" alt="${escapeHtml(t.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>` : ""}
+          <div style="padding: 24px; flex: 1;">
+            <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">${escapeHtml(t.title)}</h3>
+            ${t.subtitle ? `<div style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase; margin-bottom: 8px;">${escapeHtml(t.subtitle)}</div>` : ""}
+            <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(t.description)}</p>
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Specialized Services (Commercial Interior) -->
+  ${data.specialized_services && data.specialized_services.length > 0 ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header" style="text-align: left;">
+        <span class="eyebrow">SPECIALIZED SCOPE</span>
+        <h2 class="section-title">Specialized Commercial Services</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        ${data.specialized_services.map((ss, idx) => `
+        <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 24px; border-radius: 6px;">
+          <span style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase;">Phase 0${ss.step || idx + 1}</span>
+          <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin: 6px 0 8px;">${escapeHtml(ss.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(ss.description)}</p>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Scope (Commercial Interior) -->
+  ${data.scope ? `
+  <section class="concept-section">
+    <div class="container">
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 40px;">
+        <span class="eyebrow">COMMERCIAL SCOPE</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 12px;">Planning & Execution Scope</h2>
+        ${data.scope.statement ? `<p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 24px;">${escapeHtml(data.scope.statement)}</p>` : ""}
+        ${data.scope.pillars ? `
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+          ${data.scope.pillars.map(p => `
+          <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 20px; border-radius: 6px;">
+            <h3 style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 6px;">${escapeHtml(p.title)}</h3>
+            <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(p.description)}</p>
+          </div>`).join("")}
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Residential Typologies (Residential Interior) -->
+  ${data.residential_categories && data.residential_categories.length > 0 ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">RESIDENTIAL DOMAINS</span>
+        <h2 class="section-title">Residential Typologies</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        ${data.residential_categories.map(rc => `
+        <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          ${rc.image ? `<div style="aspect-ratio: 16/10; overflow: hidden;"><img src="${escapeHtml(rc.image)}" alt="${escapeHtml(rc.image_alt || rc.name)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>` : ""}
+          <div style="padding: 24px; flex: 1;">
+            <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">${escapeHtml(rc.name)}</h3>
+            ${rc.tagline ? `<div style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase; margin-bottom: 8px;">${escapeHtml(rc.tagline)}</div>` : ""}
+            <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(rc.description)}</p>
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Four Steps (Residential Interior) -->
+  ${data.four_steps ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header" style="text-align: left;">
+        <span class="eyebrow">METHODICAL EXECUTION</span>
+        <h2 class="section-title">${escapeHtml(data.four_steps.title)}</h2>
+        ${data.four_steps.subtitle ? `<p class="section-subtitle">${escapeHtml(data.four_steps.subtitle)}</p>` : ""}
+      </div>
+      ${data.four_steps.steps ? `
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        ${data.four_steps.steps.map((st, idx) => `
+        <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 24px; border-radius: 6px;">
+          <span style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase;">Step 0${st.step || idx + 1}</span>
+          <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin: 6px 0 8px;">${escapeHtml(st.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(st.description)}</p>
+        </div>`).join("")}
+      </div>` : ""}
+    </div>
+  </section>` : ""}
+
+  <!-- Service Pillars (Regional Hubs) -->
+  ${data.service_pillars && Array.isArray(data.service_pillars) ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">REGIONAL CAPABILITIES</span>
+        <h2 class="section-title">Turnkey Service Pillars</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        ${data.service_pillars.map(sp => `
+        <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); padding: 28px; border-radius: 8px;">
+          <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">${escapeHtml(sp.title)}</h3>
+          ${sp.role ? `<div style="font-size: 11px; font-weight: bold; color: #854d0e; text-transform: uppercase; margin-bottom: 8px;">${escapeHtml(sp.role)}</div>` : ""}
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(sp.description)}</p>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Expertise Breakdown (Regional Hubs) -->
+  ${data.expertise_breakdown ? `
+  <section class="concept-section">
+    <div class="container">
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 40px;">
+        <span class="eyebrow">DOMAIN EXPERTISE</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">Comprehensive Interior &amp; Decorator Scope</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+          ${data.expertise_breakdown.residential ? `
+          <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 24px; border-radius: 6px;">
+            <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin-bottom: 8px;">Residential Expertise</h3>
+            <p style="font-size: 13px; color: #555; line-height: 1.7;">${escapeHtml(String(data.expertise_breakdown.residential).replace(/^Residential Expertise:\s*/i, ""))}</p>
+          </div>` : ""}
+          ${data.expertise_breakdown.commercial ? `
+          <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 24px; border-radius: 6px;">
+            <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin-bottom: 8px;">Commercial Expertise</h3>
+            <p style="font-size: 13px; color: #555; line-height: 1.7;">${escapeHtml(String(data.expertise_breakdown.commercial).replace(/^Commercial Expertise:\s*/i, ""))}</p>
+          </div>` : ""}
+        </div>
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Specialties Carousel (Regional Hubs) -->
+  ${data.specialties_carousel && data.specialties_carousel.length > 0 ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">REGIONAL SPECIALTIES</span>
+        <h2 class="section-title">Specialized Spatial Capabilities</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        ${data.specialties_carousel.map(sc => `
+        <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
+          ${sc.image ? `<div style="aspect-ratio: 16/10; overflow: hidden;"><img src="${escapeHtml(sc.image)}" alt="${escapeHtml(sc.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>` : ""}
+          <div style="padding: 20px;">
+            <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">${escapeHtml(sc.title)}</h3>
+            ${sc.subtitle ? `<p style="font-size: 12px; color: #666;">${escapeHtml(sc.subtitle)}</p>` : ""}
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Luxury Style -->
+  ${data.luxury_style ? `
+  <section class="concept-section">
+    <div class="container">
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 40px;">
+        <span class="eyebrow">HIGH-END DESIGN</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 12px;">${escapeHtml(data.luxury_style.title)}</h2>
+        ${data.luxury_style.description ? `<p style="font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 24px;">${escapeHtml(data.luxury_style.description)}</p>` : ""}
+        ${data.luxury_style.cards ? `
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+          ${data.luxury_style.cards.map(c => `
+          <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.1); position: relative; aspect-ratio: 16/10;">
+            <img src="${escapeHtml(c.image)}" alt="${escapeHtml(c.alt || c.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); display: flex; align-items: flex-end; padding: 24px;">
+              <h3 style="color: #fff; font-size: 18px; font-weight: bold; text-transform: uppercase;">${escapeHtml(c.title)}</h3>
+            </div>
+          </div>`).join("")}
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Project Gallery Section (Interior Designers) -->
+  ${data.project_gallery_section ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">PROJECT SHOWCASE</span>
+        <h2 class="section-title">${escapeHtml(data.project_gallery_section.title)}</h2>
+        ${data.project_gallery_section.subtitle ? `<p class="section-subtitle">${escapeHtml(data.project_gallery_section.subtitle)}</p>` : ""}
+      </div>
+      ${data.project_gallery_section.cards ? `
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        ${data.project_gallery_section.cards.map(c => `
+        <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
+          ${c.image ? `<div style="aspect-ratio: 16/10; overflow: hidden;"><img src="${escapeHtml(c.image)}" alt="${escapeHtml(c.alt || c.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>` : ""}
+          <div style="padding: 20px;">
+            <h3 style="font-size: 15px; font-weight: bold; text-transform: uppercase;">${escapeHtml(c.title)}</h3>
+          </div>
+        </div>`).join("")}
+      </div>` : ""}
+    </div>
+  </section>` : ""}
+
+  <!-- Interior Philosophy -->
+  ${data.interior_philosophy ? `
+  <section class="concept-section">
+    <div class="container">
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 40px;">
+        <span class="eyebrow">STRATEGIC PHILOSOPHY</span>
+        ${data.interior_philosophy.quote ? `<blockquote style="font-size: 16px; font-style: italic; color: #444; line-height: 1.7; border-left: 3px solid #854d0e; padding-left: 16px; margin-bottom: 24px;">&ldquo;${escapeHtml(data.interior_philosophy.quote)}&rdquo;</blockquote>` : ""}
+        ${data.interior_philosophy.pillars ? `
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+          ${data.interior_philosophy.pillars.map(p => `
+          <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 20px; border-radius: 6px;">
+            <h3 style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 6px;">${escapeHtml(p.term || p.title)}</h3>
+            <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(p.description)}</p>
+          </div>`).join("")}
+        </div>` : ""}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Showcase Duo -->
+  ${data.showcase_duo && data.showcase_duo.length > 0 ? `
+  <section class="concept-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">SPATIAL PORTFOLIOS</span>
+        <h2 class="section-title">Residential &amp; Commercial Design</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        ${data.showcase_duo.map(sd => `
+        <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); position: relative; aspect-ratio: 16/10;">
+          <img src="${escapeHtml(sd.image)}" alt="${escapeHtml(sd.alt || sd.title)}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); display: flex; align-items: flex-end; padding: 24px;">
+            <h3 style="color: #fff; font-size: 20px; font-weight: bold; text-transform: uppercase;">${escapeHtml(sd.title)}</h3>
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Accordion Sections -->
+  ${data.accordion_sections && data.accordion_sections.length > 0 ? `
+  <section class="concept-section">
+    <div class="container">
+      <div style="background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 32px;">
+        <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+          <span class="eyebrow">DETAILED CAPABILITIES</span>
+          <h2 class="section-title">Scope &amp; Specifications</h2>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          ${data.accordion_sections.map((acc, idx) => `
+          <div style="border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; overflow: hidden;">
+            <div style="background: #FAF9F6; padding: 18px 24px; font-weight: bold; text-transform: uppercase; font-size: 15px;">${escapeHtml(acc.title)}</div>
+            <div style="padding: 20px 24px; font-size: 13px; color: #444; line-height: 1.7; border-top: 1px solid rgba(0,0,0,0.06);">${escapeHtml(acc.content)}</div>
+          </div>`).join("")}
+        </div>
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Flip Cards -->
+  ${data.flip_cards && data.flip_cards.cards ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">CAPABILITY SPECTRUM</span>
+        <h2 class="section-title">${escapeHtml(data.flip_cards.title)}</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+        ${data.flip_cards.cards.map(fc => `
+        <div class="service-card" style="padding: 0; overflow: hidden;">
+          ${fc.image ? `<img src="${escapeHtml(fc.image)}" alt="${escapeHtml(fc.title)}" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">` : ""}
+          <div style="padding: 24px;">
+            <h3 class="card-title">${escapeHtml(fc.title)}</h3>
+            <p class="card-desc">${escapeHtml(fc.description)}</p>
+          </div>
+        </div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <!-- Core Services -->
+  ${data.core_services ? `
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">METHODICAL PROCESS &amp; EXPERTISE</span>
+        <h2 class="section-title">${escapeHtml(data.core_services.title || "Our Design Philosophy &amp; Pillars")}</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        ${(Array.isArray(data.core_services) ? data.core_services : data.core_services.items || []).map((cs, idx) => `
+        <div style="background: #FAF9F6; border: 1px solid rgba(0,0,0,0.06); padding: 24px; border-radius: 6px;">
+          <span style="font-size: 11px; font-weight: bold; color: #888; text-transform: uppercase;">${cs.number ? `Step 0${cs.number}` : `Pillar 0${idx + 1}`}</span>
+          <h3 style="font-size: 16px; font-weight: bold; text-transform: uppercase; margin: 6px 0 8px;">${escapeHtml(cs.title)}</h3>
+          <p style="font-size: 13px; color: #555; line-height: 1.6;">${escapeHtml(cs.description)}</p>
+        </div>`).join("")}
       </div>
     </div>
   </section>` : ""}
@@ -540,21 +1127,32 @@ ${getNavMarkup()}
     </div>
   </section>` : ""}
 
+  <!-- Callout (When distinct from quote) -->
+  ${data.callout && data.callout !== data.quote ? `
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-box">
+        <blockquote>&ldquo;${escapeHtml(data.callout.replace(/^"|"$/g, ""))}&rdquo;</blockquote>
+        <span class="quote-author">4 LOTUS INTERIOR · CLIENT COMMITMENT</span>
+      </div>
+    </div>
+  </section>` : ""}
+
   <!-- Turnkey Services -->
   ${data.turnkey_services ? `
   <section class="services-section">
     <div class="container">
       <div class="section-header">
         <span class="eyebrow">FULL-SPECTRUM EXECUTION</span>
-        <h2 class="section-title">${escapeHtml(data.turnkey_services.title)}</h2>
+        <h2 class="section-title">${escapeHtml(data.turnkey_services.title || "Turnkey Interior Execution")}</h2>
         ${data.turnkey_services.subtitle ? `<p class="section-subtitle">${escapeHtml(data.turnkey_services.subtitle)}</p>` : ""}
       </div>
       <div class="cards-grid">
-        ${data.turnkey_services.cards.map(c => `
+        ${(Array.isArray(data.turnkey_services.cards) ? data.turnkey_services.cards : Array.isArray(data.turnkey_services) ? data.turnkey_services : []).map(c => `
         <div class="service-card">
           <div>
             <div class="card-icon-box">
-              <img src="${escapeHtml(c.icon || "https://4lotusinterior.in/assets/images/130-150x150.webp")}" alt="${escapeHtml(c.title)}">
+              <img src="${escapeHtml(c.icon || "/assets/images/expert-interior-designers-icon.webp")}" alt="${escapeHtml(c.title)}">
             </div>
             <h3 class="card-title">${escapeHtml(c.title)}</h3>
             ${c.subtitle ? `<div class="card-subtitle">${escapeHtml(c.subtitle)}</div>` : ""}
@@ -577,17 +1175,17 @@ ${getNavMarkup()}
         </div>
         <div class="process-grid">
           <div class="process-img-wrap">
-            <img src="${escapeHtml(data.process.image || "https://4lotusinterior.in/assets/images/12-1204x535.webp")}" alt="${escapeHtml(data.process.image_alt || "Delivery Process")}">
+            <img src="${escapeHtml(data.process.image || "/assets/images/turnkey-interior-execution-process.webp")}" alt="${escapeHtml(data.process.image_alt || "Delivery Process")}">
           </div>
           <div>
             <div class="tab-buttons">
-              ${data.process.tabs.map((t, idx) => `
-              <button class="tab-btn ${idx === 0 ? "active" : ""}" onclick="switchTab(this, 'tab-${idx}')">${escapeHtml(t.label)}</button>`).join("")}
+              ${data.process.tabs ? data.process.tabs.map((t, idx) => `
+              <button class="tab-btn ${idx === 0 ? "active" : ""}" onclick="switchTab(this, 'tab-${idx}')">${escapeHtml(t.label)}</button>`).join("") : ""}
             </div>
-            ${data.process.tabs.map((t, idx) => `
+            ${data.process.tabs ? data.process.tabs.map((t, idx) => `
             <div id="tab-${idx}" class="tab-content" style="${idx !== 0 ? "display: none;" : ""}">
               <p style="font-size: 14px; line-height: 1.7; color: #444;">${escapeHtml(t.content)}</p>
-            </div>`).join("")}
+            </div>`).join("") : ""}
           </div>
         </div>
       </div>
@@ -600,7 +1198,7 @@ ${getNavMarkup()}
     <div class="container">
       <div class="section-header" style="text-align: left; margin-bottom: 32px;">
         <span class="eyebrow">PHYSICAL TRANSFORMATION</span>
-        <h2 class="section-title">Execution & Craftsmanship</h2>
+        <h2 class="section-title">Execution &amp; Craftsmanship</h2>
       </div>
       <div class="execution-grid">
         ${data.execution_cards.map(ec => `
@@ -642,35 +1240,35 @@ ${getNavMarkup()}
       <div class="contact-card">
         <div class="contact-info">
           <div>
-            <span class="eyebrow">HEADQUARTERS & STUDIOS</span>
-            <h2 class="section-title">Connect With Us</h2>
+            <span class="eyebrow">HEADQUARTERS &amp; STUDIOS</span>
+            <h2 class="section-title">${escapeHtml(data.contact?.title || "Connect With Us")}</h2>
             <p class="section-subtitle" style="margin-top: 6px;">Schedule an on-site consultation or visit our Delhi-NCR studios.</p>
           </div>
 
           <div class="phones-grid">
-            <a href="tel:+919810698082" class="phone-item">
+            <a href="tel:${escapeHtml((data.contact?.phones?.[0] || "+919810698082").replace(/\\s+/g, ""))}" class="phone-item">
               <span class="phone-label">Primary Line</span>
-              <span class="phone-val">+91 98106 98082</span>
+              <span class="phone-val">${escapeHtml(data.contact?.phones?.[0] || "+91 98106 98082")}</span>
             </a>
-            <a href="tel:+919811363064" class="phone-item">
+            <a href="tel:${escapeHtml((data.contact?.phones?.[1] || "+919811363064").replace(/\\s+/g, ""))}" class="phone-item">
               <span class="phone-label">Secondary Line</span>
-              <span class="phone-val">+91 98113 63064</span>
+              <span class="phone-val">${escapeHtml(data.contact?.phones?.[1] || "+91 98113 63064")}</span>
             </a>
           </div>
 
           <div class="addr-card">
-            <div class="addr-title">Dwarka / Janakpuri Studio</div>
-            Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi-110045
+            <div class="addr-title">Janakpuri Studio &amp; Head Office</div>
+            ${escapeHtml(data.contact?.addresses?.[0] || "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi-110045")}
           </div>
 
           <div class="addr-card">
-            <div class="addr-title">Kirti Nagar Millwork & Factory</div>
-            Plot No-57, W.H.S, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi-110015
+            <div class="addr-title">Kirti Nagar Millwork &amp; Factory</div>
+            ${escapeHtml(data.contact?.addresses?.[1] || "Plot No-57, W.H.S, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi-110015")}
           </div>
 
           <div style="font-size: 12px; color: #666; display: flex; gap: 20px;">
-            <span>Email: contact@4lotusinterior.in</span>
-            <span>Hours: Mon - Sat | 10:00 AM - 06:00 PM</span>
+            <span>Email: ${escapeHtml(data.contact?.email || "contact@4lotusinterior.in")}</span>
+            <span>Hours: ${escapeHtml(data.contact?.timings || "Mon - Sat | 10:00 AM - 06:00 PM")}</span>
           </div>
         </div>
 
@@ -706,248 +1304,6 @@ ${getFooterMarkup()}
 </html>`;
 }
 
-// Build localized static page for micro-locations or remaining inventory pages
-function buildLocalizedInventoryPage(item) {
-  const title = item.metaTitle || `${item.label} | 4 Lotus Interior`;
-  const metaDesc = item.metaDescription || "Turnkey interior design and architectural renovation in Delhi-NCR.";
-  const canonical = item.url;
-  const ogImage = "https://4lotusinterior.in/assets/images/index-meta.webp";
-
-  // Clean locality name
-  const locality = item.label
-    .replace(/^Interior Designers & Decorators in /i, "")
-    .replace(/^Top Interior Designers & Decorators in /i, "")
-    .replace(/ Design & Renovation$/i, "");
-
-  const data = {
-    title,
-    url: canonical,
-    canonical,
-    seo: {
-      title,
-      meta_description: metaDesc,
-      og_title: title,
-      og_image: ogImage,
-    },
-    hero: {
-      title: item.label,
-      description: item.metaDescription,
-      image: "https://4lotusinterior.in/assets/images/277-480x640.webp",
-      image_alt: item.label,
-    },
-    design_concept: {
-      title: `Architectural Excellence in ${locality}`,
-      description: `At 4 Lotus Interior, we specialize in luxury spatial planning, 2D/3D schematics, in-house solid wood millwork, and end-to-end civil contracting across ${locality}. Our single-window turnkey approach eliminates contractor overlapping, ensuring project handovers are on time, on budget, and crafted to the highest architectural standards.`,
-      image: "https://4lotusinterior.in/assets/images/278-480x780.webp",
-      image_alt: `${locality} Interior Architecture`,
-      links: [
-        `Turnkey Interior Designers in ${locality}`,
-        `Luxury Residential Contractors in ${locality}`,
-        `Bespoke Modular Kitchens in ${locality}`,
-        `Commercial Office Renovations in ${locality}`,
-      ],
-    },
-    quote: `Every residence and workspace in ${locality} deserves an environment engineered for elegance and effortless daily living. Our commitment is to deliver bespoke luxury backed by factory-grade precision.`,
-    turnkey_services: {
-      title: `Turnkey Interior Services in ${locality}`,
-      subtitle: `Full-scope design, procurement, millwork, and contracting under one roof`,
-      cards: [
-        {
-          title: "Spatial Planning & 3D Renderings",
-          subtitle: "Architectural Schematics",
-          description: `Detailed 2D furniture layouts, MEP schematics, lighting calculations, and photorealistic 3D virtual walkthroughs before civil commencement in ${locality}.`,
-          icon: "https://4lotusinterior.in/assets/images/130-150x150.webp",
-        },
-        {
-          title: "Custom Joinery & Millwork",
-          subtitle: "Kirti Nagar Factory",
-          description: `Direct manufacturing of solid teak sofas, modular wardrobe systems, and premium German-hardware modular kitchens crafted in our West Delhi timber facility.`,
-          icon: "https://4lotusinterior.in/assets/images/131-150x150.webp",
-        },
-        {
-          title: "Turnkey Civil & Fitout Execution",
-          subtitle: "Dedicated Project Management",
-          description: `Demolition, masonry, plaster, false ceiling, sanitary plumbing, VRV air conditioning, and electrical cabling executed with zero contractor disputes.`,
-          icon: "https://4lotusinterior.in/assets/images/132-150x150.webp",
-        },
-      ],
-    },
-    process: {
-      title: "Our Proven Delivery Methodology",
-      subtitle: "A systematic roadmap from initial site measurement to keys handover",
-      image: "https://4lotusinterior.in/assets/images/12-1204x535.webp",
-      image_alt: "Design Build Process",
-      tabs: [
-        {
-          id: "design-phase",
-          label: "Design Phase",
-          content: `Brief Analysis, On-Site Laser Survey in ${locality}, Spatial Layout Planning, Bill of Quantities (BOQ), Concept Detailing, 3D Rendered Views, and Material Sampling.`,
-        },
-        {
-          id: "build-phase",
-          label: "Build Phase",
-          content: `Production Drawings, Dedicated Site Engineer Supervision, Quality Control Benchmarks, Weekly Progress Reporting, Safety Compliance, and Flawless Handover.`,
-        },
-      ],
-    },
-    execution_cards: [
-      {
-        title: `Curated Living & Dining Sanctuaries in ${locality}`,
-        role: "Bespoke Residential Transformation",
-        description: `Transforming empty shells and outdated structures into open-plan luxury homes with warm acoustics, hidden storage, and concealed ambient cove illumination.`,
-        image: "https://4lotusinterior.in/assets/images/279-640x480.webp",
-      },
-      {
-        title: `High-Performance Workspaces & Retail in ${locality}`,
-        role: "Turnkey Commercial Architecture",
-        description: `Engineering commercial properties, corporate offices, and boutique retail showrooms designed to maximize space efficiency and client brand prestige.`,
-        image: "https://4lotusinterior.in/assets/images/280-640x480.webp",
-      },
-    ],
-    gallery: [
-      {
-        title: `${locality} Living Suite`,
-        image: "https://4lotusinterior.in/assets/images/281-1280x720.webp",
-        thumb: "https://4lotusinterior.in/assets/images/281-1280x720-800x450.webp",
-        tag: "Residential",
-      },
-      {
-        title: `${locality} Master Bedroom`,
-        image: "https://4lotusinterior.in/assets/images/282-1280x720.webp",
-        thumb: "https://4lotusinterior.in/assets/images/282-1280x720-800x450.webp",
-        tag: "Luxury Fitout",
-      },
-      {
-        title: `${locality} Modular Kitchen`,
-        image: "https://4lotusinterior.in/assets/images/283-1280x720.webp",
-        thumb: "https://4lotusinterior.in/assets/images/283-1280x720-800x450.webp",
-        tag: "Millwork",
-      },
-      {
-        title: `${locality} Corporate Suite`,
-        image: "https://4lotusinterior.in/assets/images/284-1280x720.webp",
-        thumb: "https://4lotusinterior.in/assets/images/284-1280x720-800x450.webp",
-        tag: "Commercial",
-      },
-    ],
-  };
-
-  return buildStandardPage(data);
-}
-
-function buildHomepageStaticSeo(data, inventory) {
-  const sections = (data.sections || [])
-    .filter(section => section.text && section.text.length > 80)
-    .map((section, index) => {
-      const headings = (section.headings || []).map((heading, headingIndex) => {
-        const tag = index === 0 && headingIndex === 0 ? "h1" : headingIndex === 0 ? "h2" : "h3";
-        return `<${tag}>${escapeHtml(heading)}</${tag}>`;
-      }).join("\n");
-      return `<section class="seo-content-section">${headings}<p>${escapeHtml(section.text)}</p></section>`;
-    }).join("\n");
-
-  const services = [
-    ["Civil Works, Masonry & Plastering", "Masonry & Plastering, RCC Works, Screeding, and all types of Flooring/Cladding (Granite, Marble, Vitrified Tiles)."],
-    ["Plumbing & Sanitary Lines", "Complete Fresh Water & Sanitary Line installation, along with high-quality Sanitary Fixtures & Luxury Bath Accessories."],
-    ["Electrical & Smart Lighting", "Internal Electrification, Lighting, Power Outlets, DBs, External Electrification, HT Sub-stations, DG sets, and comprehensive electrical fittings."],
-    ["False Ceiling Solutions", "Modular Grid, Gypsum Board, POP Decorative, Metal, and Wooden or Glazed Architectural Ceilings."],
-    ["Joinery, Carpentry & Storage Units", "Wood and Gypsum Partitions, Paneling, Flush Doors, Custom Furniture, Storage Units, and Built-in Wardrobe Cabinets."],
-    ["Flooring & Architectural Surfaces", "False Flooring, Carpets, Hardwood and Engineered Wooden Flooring, Luxury Vinyl, Epoxy, and Imported Stone."],
-    ["Fabrication & Structural MS", "MS Structures, Structural Roofing, Stainless Steel and Aluminium Grills, Glass Railings, and Commercial Rolling Shutters."],
-    ["HVAC & Ventilation Engineering", "Split, Ductable and VRV air-conditioning, Precision AC for Server Rooms, and Office and Toilet Ventilation Systems."],
-    ["Architectural Glass Works", "Toughened Glass Partitions, Lacquered Glass, Anti-reflective Glazing, and Custom Painted Glass solutions."],
-    ["Data, Networking & Server Rooms", "Structured Cat-6 Cabling, Server Room Design, Rack Setup, and Wireless Enterprise Network solutions."],
-    ["Fire Safety & Electronic Security", "Fire Alarm Systems, Hydrants, Sprinklers, FM-200 Suppression, Biometric Access Control, and CCTV Surveillance."],
-    ["Finishing Touches & Artistry", "Painting, Wall Art, Melamine and PU Polishing, Texture Finishing, Signage, Glass Blocks, Indoor Waterfalls, and Artifacts."],
-  ];
-
-  const faqs = [
-    ["Who leads the architectural and design desk at 4 Lotus Interior?", "4 Lotus Interior is led by Principal Interior Architect Rashid Ali, bringing over 15+ years of design and execution expertise. Our multidisciplinary team includes CAD draftsmen, 3D visualizers, master carpenters, and dedicated site supervisors."],
-    ["What services do you provide under turnkey interior execution?", "We provide complete end-to-end turnkey solutions covering architectural spatial planning, 3D photorealistic visualization, structural civil remodeling, electrical and plumbing layouts, false ceiling elevations, modular kitchen installations, luxury bathroom transformations, and custom in-house furniture manufacturing."],
-    ["Do you manufacture your own custom furniture and modular fixtures?", "Yes. 4 Lotus operates its own specialized furniture manufacturing facility. We produce bespoke fluted consoles, solid teak dining tables, upholstered headboards, German-hardware modular kitchens, and custom wardrobes."],
-    ["Which areas in Delhi-NCR do you provide on-site services?", "We provide on-site visits across Janakpuri, Dwarka, South Delhi, West Delhi, North and East Delhi, Gurgaon, Noida, Faridabad, Ghaziabad, and Sonipat."],
-    ["How does the initial design consultation and 3D modeling work?", "The journey begins with an initial spatial consultation. We map lifestyle requirements and prepare 2D layout options, hyper-realistic 3D walkthrough renders, and physical material sample boards before site work begins."],
-    ["How do you ensure budget certainty and project timelines?", "Before signing, we provide a fixed-price itemized bill of quantities with zero hidden charges. Each project follows a milestone-linked timeline supervised by an on-site project manager."],
-  ];
-
-  const reviews = [
-    "It was an absolute pleasure working with 4 Lotus Interior. Very professional and friendly. They renovated our flat, and the process was simple. Highly recommended if you want quality.",
-    "My home was renovated by 4 Lotus. They are very professional and highly skilled. They totally changed my home interior as per my needs and within my budget.",
-    "4 Lotus Interior designed and decorated our home beautifully. Despite challenges like the lockdown, they completed the work on time and were budget-friendly.",
-    "My 4BHK builder floor was well interior designed and renovated in a completely new style. I am satisfied with the service and execution by 4 Lotus Interior.",
-    "My company took interior designing and contractor services from 4 Lotus. They have all interior-related solutions under one roof.",
-    "Awesome residential interior of my home by Delhi's best interior designers and decorators. Choose them, it will never disappoint you.",
-  ];
-
-  const locations = inventory
-    .filter(item => item.category === "Availability")
-    .map(item => `<li><a href="/${escapeHtml(item.slug)}.html">${escapeHtml(item.label)}</a></li>`)
-    .join("");
-
-  const portfolioImages = (data.images || [])
-    .filter(image => image.src && image.alt)
-    .slice(0, 24)
-    .map(image => `<figure><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy"><figcaption>${escapeHtml(image.alt)}</figcaption></figure>`)
-    .join("");
-
-  return `
-    <header class="seo-fallback-header">
-      <a href="/">4 LOTUS INTERIOR · DELHI-NCR</a>
-      <nav aria-label="Main navigation">
-        <a href="/interior-designers.html">Specialist</a>
-        <a href="/residential-interior.html">Residential</a>
-        <a href="/commercial-interior.html">Commercial</a>
-        <a href="/contact-us.html">Contact</a>
-      </nav>
-    </header>
-    <main class="seo-fallback-main">
-      ${sections}
-
-      <section class="seo-content-section" id="services">
-        <h2>Turnkey Interior Solutions in Delhi-NCR</h2>
-        <p>We handle complete interior design, renovation, and turnkey execution for residential, retail, commercial, corporate, and hospitality spaces across Delhi-NCR, Gurgaon, and Noida.</p>
-        <div class="seo-list-grid">
-          ${services.map(([title, description]) => `<article><h3>${escapeHtml(title)}</h3><p>${escapeHtml(description)}</p></article>`).join("")}
-        </div>
-      </section>
-
-      <section class="seo-content-section" id="reviews">
-        <h2>What Our Clients Say</h2>
-        <p>4.9 Rating from 81 Verified Google Reviews.</p>
-        <div class="seo-list-grid">
-          ${reviews.map(review => `<blockquote>“${escapeHtml(review)}”<cite>Verified 4 Lotus Interior client</cite></blockquote>`).join("")}
-        </div>
-      </section>
-
-      <section class="seo-content-section" id="portfolio">
-        <h2>Interior Design Portfolio</h2>
-        <p>Selected residential, commercial, retail, hospitality, bedroom, living room, bathroom, kitchen, clinic, and shop interior design work by 4 Lotus Interior.</p>
-        <div class="seo-image-grid">${portfolioImages}</div>
-      </section>
-
-      <section class="seo-content-section" id="faq">
-        <h2>Frequently Asked Questions</h2>
-        ${faqs.map(([question, answer]) => `<article><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></article>`).join("")}
-      </section>
-
-      <section class="seo-content-section" id="locations">
-        <h2>Interior Design Service Areas</h2>
-        <p>Our architects and execution teams serve residential and commercial clients throughout Delhi-NCR.</p>
-        <ul class="seo-location-list">${locations}</ul>
-      </section>
-
-      <section class="seo-content-section" id="contact">
-        <h2>Contact 4 Lotus Interior</h2>
-        <p>Book a consultation with Principal Architect Rashid Ali for your residential, commercial, or turnkey interior project.</p>
-        <p><strong>Phone:</strong> <a href="tel:+919810698082">+91 98106 98082</a> · <a href="tel:+919811363064">+91 98113 63064</a></p>
-        <p><strong>Studio:</strong> Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi-110045.</p>
-        <p><strong>Factory:</strong> Plot No-57, W.H.S, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi-110015.</p>
-        <p><strong>Email:</strong> contact@4lotusinterior.in · <strong>Hours:</strong> Monday to Saturday, 10:00 AM to 6:00 PM.</p>
-      </section>
-    </main>
-    <footer class="seo-fallback-footer">© 2026 4 Lotus Interior. All Rights Reserved. Turnkey Architecture & Interior Renovation Delhi-NCR.</footer>`;
-}
-
 async function renderReactHomepage() {
   const vite = await createServer({
     root: rootDir,
@@ -962,72 +1318,6 @@ async function renderReactHomepage() {
   } finally {
     await vite.close();
   }
-}
-
-// Build dedicated Contact Us page
-function buildContactPage() {
-  const data = {
-    title: "Contact 4 Lotus Interior | Studio Janakpuri & Factory Kirti Nagar",
-    url: "https://4lotusinterior.in/contact-us.html",
-    canonical: "https://4lotusinterior.in/contact-us.html",
-    seo: {
-      title: "Contact 4 Lotus Interior | Studio Janakpuri & Factory Kirti Nagar",
-      meta_description: "Connect with Principal Architect Rashid Ali at 4 Lotus Interior. Studio in Janakpuri and joinery facility in Kirti Nagar. Call +91 98106 98082.",
-      og_title: "Contact 4 Lotus Interior Delhi",
-      og_image: "https://4lotusinterior.in/assets/images/index-meta.webp",
-    },
-    hero: {
-      title: "Contact 4 Lotus Interior",
-      description: "Book an architectural spatial consultation with Principal Architect Rashid Ali at our Janakpuri Design Studio or schedule an on-site property audit across Delhi-NCR.",
-      image: "https://4lotusinterior.in/assets/images/221-480x640.webp",
-      image_alt: "4 Lotus Interior Design Studio",
-    },
-    design_concept: {
-      title: "Direct Architectural Channels",
-      description: "Whether you have an architectural blueprint or an idea for a full turnkey makeover, our senior designers are available for direct in-person discussion at our studios or your project site.",
-      image: "https://4lotusinterior.in/assets/images/design-build.webp",
-      image_alt: "Studio Consultation",
-      links: [
-        "Architectural Site Audits",
-        "Factory Joinery Tours in Kirti Nagar",
-        "Material Selection & Sampling",
-        "Detailed BOQ & Budget Consultations",
-      ],
-    },
-    quote: "Architecture is not just about making blueprints; it is about listening to how you live, work, and interact with your environment.",
-  };
-
-  return buildStandardPage(data);
-}
-
-// Build dedicated Sitemap page
-function buildSitemapPage(inventory) {
-  const data = {
-    title: "HTML Sitemap Directory | 4 Lotus Interior Architecture & Design",
-    url: "https://4lotusinterior.in/sitemap.html",
-    canonical: "https://4lotusinterior.in/sitemap.html",
-    seo: {
-      title: "HTML Sitemap Directory | 4 Lotus Interior Architecture & Design",
-      meta_description: "Complete page inventory, service categories, residential, commercial and regional directory for 4 Lotus Interior in Delhi-NCR.",
-      og_title: "4 Lotus Interior Sitemap",
-      og_image: "https://4lotusinterior.in/assets/images/index-meta.webp",
-    },
-    hero: {
-      title: "HTML Sitemap Directory",
-      description: "Complete directory of architectural services, residential renovations, commercial fitouts, regional hubs, and micro-location availability for 4 Lotus Interior across Delhi-NCR.",
-      image: "https://4lotusinterior.in/assets/images/12-1204x535.webp",
-      image_alt: "Sitemap Directory",
-    },
-    design_concept: {
-      title: "Complete Delhi-NCR Coverage",
-      description: "Browse all official service pages, regional contractor hubs, and micro-location studios across Delhi, Gurgaon, Noida, Faridabad, Sonipat, and Ghaziabad.",
-      image: "https://4lotusinterior.in/assets/images/222-480x780.webp",
-      image_alt: "Architectural Sitemap",
-      links: inventory.slice(0, 12).map(i => i.label),
-    },
-  };
-
-  return buildStandardPage(data);
 }
 
 function escapeHtml(str) {
@@ -1045,16 +1335,30 @@ async function main() {
   const inventory = loadInventory();
   console.log(`Loaded ${inventory.length} pages from pageInventory.`);
 
-  // Load available raw JSON content files
+  // Load all 61 JSON content files
   const contentFiles = fs.readdirSync(contentDir).filter(f => f.endsWith(".json"));
   const jsonContentMap = new Map();
   for (const file of contentFiles) {
     const raw = fs.readFileSync(path.join(contentDir, file), "utf-8");
     const parsed = JSON.parse(raw);
-    const slug = parsed.slug || file.replace(".json", "");
-    jsonContentMap.set(slug, parsed);
+    const baseName = file.replace(/\.json$/i, "");
+    jsonContentMap.set(baseName, parsed);
+    if (parsed.slug) {
+      jsonContentMap.set(parsed.slug, parsed);
+    }
+    if (baseName === "homepage") {
+      jsonContentMap.set("", parsed);
+    }
   }
 
+  console.log(`Loaded ${contentFiles.length} JSON sources into map.`);
+
+  // Ensure distDir exists
+  if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir, { recursive: true });
+  }
+
+  // 1. Generate index.html from React SSR with homepage.json data
   const homepageData = jsonContentMap.get("homepage");
   const indexFile = path.join(distDir, "index.html");
   if (homepageData && fs.existsSync(indexFile)) {
@@ -1065,37 +1369,48 @@ async function main() {
       staticHomepage
     );
     fs.writeFileSync(indexFile, updatedIndexHtml, "utf-8");
-    console.log("Generated: index.html with complete homepage SEO content.");
+    console.log("Generated: index.html with complete homepage SSR content.");
   }
 
+  // 2. Generate all 60 other pages from their authoritative JSON
   let count = 0;
 
   for (const item of inventory) {
     if (!item.slug) continue; // Skip root home page (has index.html)
 
-    let html = "";
-    if (item.slug === "contact-us") {
-      html = buildContactPage();
-    } else if (item.slug === "sitemap") {
-      html = buildSitemapPage(inventory);
-    } else if (jsonContentMap.has(item.slug)) {
-      html = buildStandardPage(jsonContentMap.get(item.slug));
-    } else {
-      // Localized micro-location or flat-interior page
-      html = buildLocalizedInventoryPage(item);
+    const rawData = jsonContentMap.get(item.slug);
+    if (!rawData) {
+      throw new Error(`CRITICAL: No authoritative JSON found for slug: ${item.slug}`);
     }
 
-    if (!fs.existsSync(distDir)) {
-      fs.mkdirSync(distDir, { recursive: true });
-    }
+    const html = buildStandardPage(rawData);
     const targetFile = path.join(distDir, `${item.slug}.html`);
     fs.writeFileSync(targetFile, html, "utf-8");
 
     count++;
-    console.log(`[${count}] Generated: ${item.slug}.html`);
+    console.log(`[${count}] Generated: ${item.slug}.html from authoritative JSON`);
   }
 
-  console.log(`\n🎉 Successfully generated ${count} complete static HTML pages!`);
+  // Generate shorthand alias files for regional hubs
+  const regionalAliases = {
+    "interior-designers-noida.html": "interior-designers-decorators-in-noida.html",
+    "interior-designers-delhi.html": "interior-designers-decorators-in-delhi.html",
+    "interior-designers-gurgaon.html": "interior-designers-decorators-in-gurgaon.html",
+    "interior-designers-faridabad.html": "interior-designers-decorators-in-faridabad.html",
+    "interior-designers-sonipat.html": "interior-designers-decorators-in-sonipat.html",
+    "interior-designers-ghaziabad.html": "interior-designers-decorators-in-ghaziabad.html",
+  };
+
+  for (const [aliasFile, srcFile] of Object.entries(regionalAliases)) {
+    const srcPath = path.join(distDir, srcFile);
+    const aliasPath = path.join(distDir, aliasFile);
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, aliasPath);
+      console.log(`Aliased: ${aliasFile} -> ${srcFile}`);
+    }
+  }
+
+  console.log(`\n🎉 Successfully generated ${count} complete static HTML pages directly from JSON!`);
 }
 
 main().catch(err => {

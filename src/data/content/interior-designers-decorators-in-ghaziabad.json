@@ -6,14 +6,14 @@
     "title": "Best Interior Designers & Decorators in Ghaziabad | 4 Lotus Interior",
     "meta_description": "Searching for top interior designers in Ghaziabad? 4 Lotus Interior offers expert design, decoration, and renovation services for homes and offices. Get a premium look within your budget.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/interior-designers-decorators-in-ghaziabad-meta.webp",
+    "og_image": "/assets/images/interior-designers-decorators-in-ghaziabad-meta.webp",
     "og_title": "Best Interior Designers & Decorators in Ghaziabad | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Premier Interior Designers in Ghaziabad",
     "description": "Transform your living and working spaces with Ghaziabad's most trusted interior design team. Whether you need a fresh look for your home, a functional office layout, or a vibrant commercial space, we deliver designs that captivate and inspire. Our expert services ensure a luxurious, modern, and high-quality finish tailored to your needs.",
-    "image": "https://4lotusinterior.in/assets/images/285-1-500x1100.webp",
+    "image": "/assets/images/sketch-convert-interior-design.webp",
     "image_alt": "Sketch Convert Interior Design",
     "features": [
       {
@@ -30,50 +30,51 @@
     {
       "title": "Ghaziabad's Finest Designers",
       "description": "Discover the latest interior trends right here in Ghaziabad. Share your vision with us, and we'll help you create a luxurious, custom-designed space that meets your every requirement.",
-      "image": "https://4lotusinterior.in/assets/images/286-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-2.webp"
     },
     {
       "title": "Professional Consultation",
       "description": "Need expert guidance for your Ghaziabad project? Our consultants support you at every stage, ensuring your home or office is both stylish and comfortable.",
-      "image": "https://4lotusinterior.in/assets/images/287-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-3.webp"
     },
     {
       "title": "Reliable Local Contractors",
       "description": "We provide transparent turnkey contracting services in Ghaziabad. Benefit from competitive pricing on civil work, electrical, plumbing, carpentry, and finishing, all delivered with integrity.",
-      "image": "https://4lotusinterior.in/assets/images/288-676x380.webp"
+      "image": "/assets/images/sketch-convert-interior-design-4.webp"
     }
   ],
   "expertise_breakdown": {
     "residential": "Residential Services in Ghaziabad: We specialize in designing home interiors, including apartments, villas, bungalows, and farmhouses. Our expertise extends to bedrooms, living rooms, kitchens, bathrooms, and guest rooms, ensuring perfection in every corner.",
     "commercial": "Commercial Services in Ghaziabad: We deliver outstanding designs for offices, retail stores, showrooms, restaurants, cafes, salons, gyms, clinics, and hotels. Our commercial interiors are crafted to attract customers and boost business efficiency.",
-    "image": "https://4lotusinterior.in/assets/images/289-649x649.webp"
+    "image": "/assets/images/sketch-convert-interior-design-5.webp",
+    "image_alt": "Sketch Convert Interior Design"
   },
   "specialties_carousel": [
     {
       "title": "Interior Designers",
       "subtitle": "Top Designers in Ghaziabad",
-      "image": "https://4lotusinterior.in/assets/images/290-1280x720.webp"
+      "image": "/assets/images/interior-design-2.webp"
     },
     {
       "title": "Bathroom Renovation",
       "subtitle": "Modern Bathrooms in Ghaziabad",
-      "image": "https://4lotusinterior.in/assets/images/291-1280x720.webp"
+      "image": "/assets/images/bathroom-design-3.webp"
     },
     {
       "title": "Kitchen Makeovers",
       "subtitle": "Modular Kitchens in Ghaziabad",
-      "image": "https://4lotusinterior.in/assets/images/292-1280x720.webp"
+      "image": "/assets/images/kitchen-design-3.webp"
     },
     {
       "title": "Custom Furniture",
       "subtitle": "Furniture Manufacturing in Ghaziabad",
-      "image": "https://4lotusinterior.in/assets/images/293-1280x720.webp"
+      "image": "/assets/images/furniture-design.webp"
     }
   ],
   "process": {
     "title": "Turnkey Interior Solutions in Ghaziabad",
     "subtitle": "Complete Design-to-Build Management by Local Experts",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -91,50 +92,50 @@
   "gallery": [
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/339-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/339-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-21.webp",
+      "thumb": "/assets/images/residential-interior-design-21-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/340-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/340-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-22.webp",
+      "thumb": "/assets/images/residential-interior-design-22-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/341-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/341-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-23.webp",
+      "thumb": "/assets/images/residential-interior-design-23-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Residential Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/342-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/342-1280x720-800x450.webp",
+      "image": "/assets/images/residential-interior-design-24.webp",
+      "thumb": "/assets/images/residential-interior-design-24-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/343-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/343-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-25.webp",
+      "thumb": "/assets/images/commercial-interior-design-25-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/344-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/344-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-26.webp",
+      "thumb": "/assets/images/commercial-interior-design-26-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/345-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/345-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-27.webp",
+      "thumb": "/assets/images/commercial-interior-design-27-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Commercial Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/346-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/346-1280x720-800x450.webp",
+      "image": "/assets/images/commercial-interior-design-28.webp",
+      "thumb": "/assets/images/commercial-interior-design-28-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -151,6 +152,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

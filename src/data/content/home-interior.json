@@ -6,20 +6,20 @@
     "title": "Expert Home Interior Design & Renovation in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Transform your home with 4 Lotus Interior. We offer comprehensive home interior design, decoration, and renovation services in Delhi-NCR, creating beautiful, livable spaces tailored to your lifestyle.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/home-interior-meta.webp",
+    "og_image": "/assets/images/home-interior-meta.webp",
     "og_title": "Expert Home Interior Design & Renovation in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Crafting Your Dream Home Interior",
     "description": "Home interior design is the art of balancing aesthetic beauty with everyday functionality. A residence is, first and foremost, a place for living. Our primary focus is creating spaces that are not only visually stunning but also supremely livable. We specialize in transforming existing structures through thoughtful civil changes, modern false ceilings, and strategic lighting effects. Our integrated team of designers and contractors works seamlessly to renovate your home, turning bedrooms, kitchens, and bathrooms into ethereal spaces using rich elements like metals, wood, and stone.",
-    "image": "https://4lotusinterior.in/assets/images/133-480x540.webp",
+    "image": "/assets/images/luxury-home-interior-design.webp",
     "image_alt": "Luxury Home Interior Design"
   },
   "inspired_design": {
     "title": "Inspired Residential Design",
     "description": "We create inspired living spaces that add lasting value to your home. Our approach combines smart, space-saving furniture solutions with a cohesive design language that flows throughout the house, while still allowing for unique themes within functional spaces. We carefully plan every layer to ensure the design feels integrated, not cluttered. We believe in enhancing your home's natural beauty through a sophisticated blend of style, color harmony, contrast, and comfort, ensuring your personality shines through in every detail.",
-    "image": "https://4lotusinterior.in/assets/images/134-480x640.webp",
+    "image": "/assets/images/home-interior-design.webp",
     "image_alt": "Home Interior Design",
     "links": [
       {
@@ -49,26 +49,26 @@
         "title": "Conceptual Design",
         "role": "Home Interior Designers",
         "description": "Great interior design stems from experienced professionals visualizing spaces in new ways. Our designers leverage modern technology and creative thinking to prepare truly beautiful and functional home interior concepts tailored to your needs.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Expert Decoration",
         "role": "Home Interior Decorators",
         "description": "Our decorators possess deep knowledge of the latest materials, trends, and furnishings. They bring the design to life, proving their talent by meticulously selecting and installing elements that create the perfect ambiance for your home.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Seamless Execution",
         "role": "Home Interior Contractors",
         "description": "Once the design is finalized, it needs skilled hands to take shape. Our experienced contractors understand the design documentation perfectly and execute the renovation path defined by the designers, ensuring a high-quality finish.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "design_and_make": {
     "title": "Home Interior Design & Make",
     "subtitle": "Comprehensive design-to-build services offered by experienced professionals in Delhi-NCR.",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -88,40 +88,40 @@
       "title": "Holistic Design Approach",
       "role": "Home Interior Designers",
       "description": "We design your home keeping your specific needs and lifestyle requirements at the forefront. Our professional approach ensures accurate, modern designs that stand the test of time. We manage the entire process, coordinating skilled artisans to handle everything from initial design concepts to the final interior finishing, removing the headache for you.",
-      "image": "https://4lotusinterior.in/assets/images/135-640x480.webp",
+      "image": "/assets/images/bedroom-interior-design.webp",
       "image_alt": "Bedroom Interior Design"
     },
     {
       "title": "Bringing Designs to Life",
       "role": "Home Interior Contractors",
       "description": "When the design plan is ready, our designers guide the execution team to translate vision into reality. Our skilled contractors understand the nuances of the design, ensuring the final outcome precisely matches the envisioned appearance of your home interior through experienced craftsmanship.",
-      "image": "https://4lotusinterior.in/assets/images/136-640x480.webp",
+      "image": "/assets/images/home-office-interior-design.webp",
       "image_alt": "Home Office Interior Design"
     }
   ],
   "gallery": [
     {
       "title": "Bedroom Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/137-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/137-1280x720-800x450.webp",
+      "image": "/assets/images/bedroom-interior-design-2.webp",
+      "thumb": "/assets/images/bedroom-interior-design-2-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Living room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/138-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/138-1280x720-800x450.webp",
+      "image": "/assets/images/living-room-interior-design.webp",
+      "thumb": "/assets/images/living-room-interior-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Study room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/139-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/139-1280x720-800x450.webp",
+      "image": "/assets/images/study-room-interior-design-2.webp",
+      "thumb": "/assets/images/study-room-interior-design-2-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Dinning room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/140-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/140-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-room-interior-design.webp",
+      "thumb": "/assets/images/dinning-room-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -138,6 +138,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

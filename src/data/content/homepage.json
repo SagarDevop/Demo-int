@@ -3,8 +3,8 @@
   "title": "Architecture, Interior Design & Renovation Services in Delhi-NCR \\| 4 Lotus Interior",
   "meta": {
     "og\\:card": "summary\\_large\\_image",
-    "og\\:image\\:src": "assets/images/index-meta.webp",
-    "og\\:image": "assets/images/index-meta.webp",
+    "og\\:image\\:src": "/assets/images/index-meta.webp",
+    "og\\:image": "/assets/images/index-meta.webp",
     "og\\:title": "Architecture, Interior Design & Renovation Services in Delhi-NCR \\| 4 Lotus Interior",
     "viewport": "width=device-width,initial-scale=1,minimum-scale=1",
     "description": "4 Lotus Interior is a leading architecture and interior design firm in Delhi-NCR. We offer turnkey solutions for residential, retail, commercial, and corporate spaces. Transform your space today.",
@@ -181,211 +181,211 @@
     "Plot No-18, 1st Floor, Main Palam Dwarka Road, Near Dabri Police Station, South West Delhi, New Delhi, Delhi-110045",
     "Plot No-57, W\\.h.s, A Block, 2nd Floor, Kirti Nagar Industrial Area, Timber Market, West Delhi, New Delhi, Delhi-110015",
     "Email : contact[at]4lotusinterior.in Time : Mon - Sat \\| 10 Am - 06 Pm",
-    "© Copyright 2026 - All Rights Reserved"
+    "\u00a9 Copyright 2026 - All Rights Reserved"
   ],
   "images": [
     {
-      "src": "https://4lotusinterior.in/assets/images/3-606x497.webp",
+      "src": "/assets/images/house-interior-design.webp",
       "alt": "House Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/3-935x597.webp",
+      "src": "/assets/images/house-design.webp",
       "alt": "House Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/5-1-600x600.webp",
+      "src": "/assets/images/residential-interior-design-29.webp",
       "alt": "Residential Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/6-1-600x600.webp",
+      "src": "/assets/images/retail-interior-design.webp",
       "alt": "Retail Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/7-600x600.webp",
+      "src": "/assets/images/corporate-interior-design.webp",
       "alt": "Corporate Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/8-1007x566.webp",
+      "src": "/assets/images/residential-interior-design-30.webp",
       "alt": "Residential Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/9-815x458.webp",
+      "src": "/assets/images/bathroom-design-7.webp",
       "alt": "Bathroom Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/10-778x438.webp",
+      "src": "/assets/images/kitchen-design.webp",
       "alt": "Kitchen Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/11-1044x587.webp",
+      "src": "/assets/images/commercial-interior-design-3.webp",
       "alt": "Commercial Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+      "src": "/assets/images/turnkey-interior-execution-process.webp",
       "alt": "Design Build Process",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/264-588x327.webp",
+      "src": "/assets/images/residential-interior-designs.webp",
       "alt": "Residential Interior Designs",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/14-783x440.webp",
+      "src": "/assets/images/bathroom-designs.webp",
       "alt": "Bathroom Designs",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/15-766x431.webp",
+      "src": "/assets/images/kitchen-designs.webp",
       "alt": "Kitchen Designs",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/16-1056x594.webp",
+      "src": "/assets/images/commercial-interior-designs.webp",
       "alt": "Commercial Interior Designs",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/0-400x400.webp",
+      "src": "/assets/images/4-lotus-interior.webp",
       "alt": "4 Lotus Interior",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/17-1280x720-800x450.webp",
+      "src": "/assets/images/bedroom-interior-design-3-thumb.webp",
       "alt": "Bedroom Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/18-1280x720-800x450.webp",
+      "src": "/assets/images/living-room-interior-design-6-thumb.webp",
       "alt": "Living Room Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/19-1280x720-800x450.webp",
+      "src": "/assets/images/bathroom-design-thumb.webp",
       "alt": "Bathroom Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/20-1280x720-800x450.webp",
+      "src": "/assets/images/kitchen-design-2-thumb.webp",
       "alt": "Kitchen Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/21-1280x720-800x450.webp",
+      "src": "/assets/images/mobile-store-interior-design-thumb.webp",
       "alt": "Mobile Store Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/22-1280x720-800x450.webp",
+      "src": "/assets/images/clinic-interior-design-2-thumb.webp",
       "alt": "Clinic Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/23-1280x720-800x450.webp",
+      "src": "/assets/images/retail-store-interior-design-thumb.webp",
       "alt": "Retail Store Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/24-1280x720-800x450.webp",
+      "src": "/assets/images/shop-interior-design-9-thumb.webp",
       "alt": "Shop Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/17-1280x720.webp",
+      "src": "/assets/images/bedroom-interior-design-3.webp",
       "alt": "Bedroom Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/18-1280x720.webp",
+      "src": "/assets/images/living-room-interior-design-6.webp",
       "alt": "Living Room Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/19-1280x720.webp",
+      "src": "/assets/images/bathroom-design.webp",
       "alt": "Bathroom Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/20-1280x720.webp",
+      "src": "/assets/images/kitchen-design-2.webp",
       "alt": "Kitchen Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/21-1280x720.webp",
+      "src": "/assets/images/mobile-store-interior-design.webp",
       "alt": "Mobile Store Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/22-1280x720.webp",
+      "src": "/assets/images/clinic-interior-design-2.webp",
       "alt": "Clinic Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/23-1280x720.webp",
+      "src": "/assets/images/retail-store-interior-design.webp",
       "alt": "Retail Store Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/24-1280x720.webp",
+      "src": "/assets/images/shop-interior-design-9.webp",
       "alt": "Shop Interior Design",
       "title": ""
     },
     {
-      "src": "https://4lotusinterior.in/assets/images/design-build.webp",
+      "src": "/assets/images/design-build.webp",
       "alt": "map",
       "title": ""
     }
@@ -582,7 +582,7 @@
         "cid-sNC6Hb2eDf"
       ],
       "headings": [],
-      "text": "Home Contact © Copyright 2026 - All Rights Reserved"
+      "text": "Home Contact \u00a9 Copyright 2026 - All Rights Reserved"
     }
   ],
   "links": [

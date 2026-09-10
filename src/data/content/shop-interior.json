@@ -6,20 +6,20 @@
     "title": "Shop Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Searching for expert shop interior designers in Delhi-NCR? 4 Lotus Interior offers specialized design, decoration, and renovation services for various retail stores, including garment, jewelry, footwear, electronics, and mobile shops.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/shop-interior-meta.webp",
+    "og_image": "/assets/images/shop-interior-meta.webp",
     "og_title": "Shop Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Shop Interior",
     "description": "The shop interior design process is intrinsically linked to the store's nature and the products it sells. Designing retail store interiors is a modern necessity, expertly handled by our interior designers and decorators who transform shop interiors. This complex process is tailored to the unique nature of each store: a retail shop requires a different design approach than a garment shop, which in turn differs from an automobile showroom. We deliver attractive, high-quality interiors that optimize space, which is often limited and densely stocked. Our shop interior designers add a distinct touch, creating artistic designs that enhance the store's appeal. We specialize in interiors for retail shops, saree shops, jewelry shops, footwear shops, garment shops, kids' readymade wear shops, crockery shops, electronics shops, mobile shops, display shops, chemist shops, medicine shops, and more.",
-    "image": "https://4lotusinterior.in/assets/images/197-1-480x640.webp",
+    "image": "/assets/images/luxury-shop-interior-design.webp",
     "image_alt": "Luxury Shop Interior Design"
   },
   "design_concept": {
     "title": "Shop Interior Design",
     "description": "When designing shop interiors, our designers deeply understand the store's nature and function to create a suitable design. A good shop interior designer creates artistic and modern designs that are relevant to the current times. The shop interior design process involves transforming the space through attractive decorations and designs, enhancing the store's beauty. We consider various elements like lighting, flooring, ceiling decoration, and functional features to create an appealing and practical space. We also incorporate future needs, security, and convenience into our designs, aiming for a developed and luxurious result. Our shop interior designers are proficient in creating these exceptional designs.",
-    "image": "https://4lotusinterior.in/assets/images/198-480x780.webp",
+    "image": "/assets/images/shop-interior-design-2.webp",
     "image_alt": "Shop Interior Design",
     "links": [
       "Shop Interior Design Consultant in Delhi-NCR",
@@ -37,26 +37,26 @@
         "title": "Shop Interior Designers",
         "subtitle": "Shop Interior Design",
         "description": "Our shop interior designers aim to create attractive and beautiful spaces by combining creative thinking and artistic elements. We assess the unique nature of each shop to design practical and visually appealing interiors.",
-        "icon": "https://4lotusinterior.in/assets/images/130-150x150.webp"
+        "icon": "/assets/images/expert-interior-designers-icon.webp"
       },
       {
         "title": "Shop Interior Decorators",
         "subtitle": "Shop Interior Reconstruction",
         "description": "Our shop interior decorators use their expertise and various decorations to create enchanting and artistic shop interiors. We transform spaces into experiential environments that are both attractive and shop-friendly.",
-        "icon": "https://4lotusinterior.in/assets/images/131-150x150.webp"
+        "icon": "/assets/images/skilled-interior-decorators-icon.webp"
       },
       {
         "title": "Shop Interior Contractors",
         "subtitle": "Shop Interior Renovation",
         "description": "Our experienced and skilled shop interior contractors prepare designs and material lists based on the shop's requirements. We use new technology and accessories to create beautiful, reliable, and durable interior decorations.",
-        "icon": "https://4lotusinterior.in/assets/images/132-150x150.webp"
+        "icon": "/assets/images/reliable-interior-contractors-icon.webp"
       }
     ]
   },
   "process": {
     "title": "Shop Interior Design & Make",
     "subtitle": "Shop Interior Designers, Decorators & Contractors in Delhi & Shop Interior Designers, Decorators Offer Shop Interior Design, Decor, Remodeling, Renovation Services in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -76,38 +76,38 @@
       "title": "Shop Interior Design",
       "role": "Shop Interior Designers",
       "description": "Each shop requires a unique interior design based on its retail function. Our shop interior designers understand the shop's nature and complete the design process with a focus on quality and security.",
-      "image": "https://4lotusinterior.in/assets/images/199-640x480.webp"
+      "image": "/assets/images/shop-interior-design-3.webp"
     },
     {
       "title": "Shop Interior Design Converted Into Shape",
       "role": "Shop Interior Decorators",
       "description": "Our skilled craftsmen execute the shop interior design based on the provided information and materials. We offer perfect services to transform shop interior design and decorations into reality, creating attractive spaces.",
-      "image": "https://4lotusinterior.in/assets/images/200-640x480.webp"
+      "image": "/assets/images/shop-interior-design-4.webp"
     }
   ],
   "gallery": [
     {
       "title": "Shop Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/201-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/201-1280x720-800x450.webp",
+      "image": "/assets/images/shop-interior-design-5.webp",
+      "thumb": "/assets/images/shop-interior-design-5-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Shop Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/202-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/202-1280x720-800x450.webp",
+      "image": "/assets/images/shop-interior-design-6.webp",
+      "thumb": "/assets/images/shop-interior-design-6-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Shop Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/203-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/203-1280x720-800x450.webp",
+      "image": "/assets/images/shop-interior-design-7.webp",
+      "thumb": "/assets/images/shop-interior-design-7-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Shop Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/204-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/204-1280x720-800x450.webp",
+      "image": "/assets/images/shop-interior-design-8.webp",
+      "thumb": "/assets/images/shop-interior-design-8-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -124,6 +124,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

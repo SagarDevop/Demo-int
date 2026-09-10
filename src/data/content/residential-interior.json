@@ -6,20 +6,20 @@
     "title": "Residential Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "meta_description": "Expert residential interior designers and decorators in Delhi-NCR offering complete design, decoration, and renovation services for homes, flats, and more.",
     "og_card": "summary_large_image",
-    "og_image": "https://4lotusinterior.in/assets/images/residential-interior-meta.webp",
+    "og_image": "/assets/images/residential-interior-meta.webp",
     "og_title": "Residential Interior Design & Renovation Services in Delhi-NCR | 4 Lotus Interior",
     "robots": "index, follow"
   },
   "hero": {
     "title": "Residential Interior Designer",
     "description": "We offer residential interior design services tailored to various budgets, understanding that financial plans may evolve as the project proceeds. A realistic budget is crucial for a successful project and client relationship. We assess the scope, style, and desired finish within your timeframe to ensure a practical plan. When enhancing your residential space, we select different items and apply consistent techniques to elevate your interior's elegance. From throws in varying shapes and sizes to color schemes and themes, we customize every detail to suit different rooms and your personal style.",
-    "image": "https://4lotusinterior.in/assets/images/86-890x501.webp",
+    "image": "/assets/images/residential-interior-design-31.webp",
     "image_alt": "Residential Interior Design"
   },
   "decorator_section": {
     "title": "Residential Interior Decorator",
     "description": "Begin by itemizing real costs, your decorating wish-list, and budget. For entire home projects, decide whether to tackle it by category or room, being realistic about the scope. Our residential interior decoration experts understand your needs and requirements, incorporating the latest trends and ideas. Our professionals are highly experienced in decorating entire residential spaces, from concept to final finishing. We ensure the highest quality, as \"Quality remains long after the price is forgotten.\" Contact us for more information.",
-    "image": "https://4lotusinterior.in/assets/images/87-890x501.webp",
+    "image": "/assets/images/residential-interior-design-32.webp",
     "image_alt": "Residential Interior Design",
     "links": [
       {
@@ -39,7 +39,7 @@
   "four_steps": {
     "title": "Residential Interior Design",
     "subtitle": "Residential Interior Designers, Decorators for the Residential Interior.",
-    "image": "https://4lotusinterior.in/assets/images/88-380x950.webp",
+    "image": "/assets/images/residential-interior-design-33.webp",
     "image_alt": "Residential Interior Design",
     "steps": [
       {
@@ -74,7 +74,7 @@
       "subtitle": "Home Interior Designing",
       "tagline": "Home Interior Designers & Decorators in Delhi",
       "description": "We are committed to giving your home interior a beautiful and attractive look, providing vibrant color and great beauty.",
-      "image": "https://4lotusinterior.in/assets/images/89-600x375.webp",
+      "image": "/assets/images/home-interior-design-2.webp",
       "image_alt": "Home Interior Design",
       "link": "/home-interior.html"
     },
@@ -82,7 +82,7 @@
       "name": "Bungalow Interior",
       "tagline": "Bungalow Interior Designers & Decorators in Delhi",
       "description": "Our workmanship ensures an attractive look for your bungalow interior, delivered at your convenience.",
-      "image": "https://4lotusinterior.in/assets/images/90-600x375.webp",
+      "image": "/assets/images/bungalow-interior-design-4.webp",
       "image_alt": "Bungalow Interior Design",
       "link": "/bungalow-interior.html"
     },
@@ -90,7 +90,7 @@
       "name": "Flat Interior",
       "tagline": "Flat Interior Designers & Decorators in Delhi",
       "description": "We optimize space usage to create beautifully attractive flat interiors.",
-      "image": "https://4lotusinterior.in/assets/images/91-600x375.webp",
+      "image": "/assets/images/flat-interior-design-4.webp",
       "image_alt": "Flat Interior Design",
       "link": "/flat-interior.html"
     },
@@ -98,7 +98,7 @@
       "name": "Apartment Interior",
       "tagline": "Apartment Interior Designers & Decorators in Delhi",
       "description": "We are always ready to provide beautiful interiors for apartments, enhancing the space's glow for every resident.",
-      "image": "https://4lotusinterior.in/assets/images/92-1-600x375.webp",
+      "image": "/assets/images/apartment-interior-design-4.webp",
       "image_alt": "Apartment Interior Design",
       "link": "/apartment-interior.html"
     },
@@ -106,7 +106,7 @@
       "name": "Penthouse Interior",
       "tagline": "Penthouse Interior Designers & Decorators in Delhi",
       "description": "We design captivating penthouse interiors that provide a relaxed and luxurious environment.",
-      "image": "https://4lotusinterior.in/assets/images/93-597x373.webp",
+      "image": "/assets/images/penthouse-interior-design-4.webp",
       "image_alt": "Penthouse Interior Design",
       "link": "/penthouse-interior.html"
     },
@@ -115,7 +115,7 @@
       "subtitle": "Villa Interior Designing",
       "tagline": "Villa Interior Designers & Decorators in Delhi",
       "description": "Our talent lies in providing interior beauty to villas, offering a time-friendly new look.",
-      "image": "https://4lotusinterior.in/assets/images/94-1-361x226.webp",
+      "image": "/assets/images/villa-interior-design-4.webp",
       "image_alt": "Villa Interior Design",
       "link": "/villa-interior.html"
     },
@@ -124,7 +124,7 @@
       "subtitle": "Farmhouse Interior Designing",
       "tagline": "Farmhouse Interior Designers & Decorators in Delhi",
       "description": "Our good designers transform farmhouse interiors into beautiful and functional spaces.",
-      "image": "https://4lotusinterior.in/assets/images/95-1-361x226.webp",
+      "image": "/assets/images/farmhouse-interior-design-4.webp",
       "image_alt": "Farmhouse Interior Design",
       "link": "/farmhouse-interior.html"
     }
@@ -132,7 +132,7 @@
   "design_and_make": {
     "title": "Residential Interior Design & Make",
     "subtitle": "Residential Interior Designers, Decorators & Contractors in Delhi & Residential Interior Designers Offer Residential Interior Design, Decor, Remodeling, Renovation Services in Delhi-NCR",
-    "image": "https://4lotusinterior.in/assets/images/12-1204x535.webp",
+    "image": "/assets/images/turnkey-interior-execution-process.webp",
     "image_alt": "Design Build Process",
     "tabs": [
       {
@@ -170,50 +170,50 @@
   "gallery": [
     {
       "title": "Bed Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/96-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/96-1280x720-800x450.webp",
+      "image": "/assets/images/bed-room-interior-design-9.webp",
+      "thumb": "/assets/images/bed-room-interior-design-9-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Dinning Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/97-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/97-1280x720-800x450.webp",
+      "image": "/assets/images/dinning-room-interior-design-7.webp",
+      "thumb": "/assets/images/dinning-room-interior-design-7-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Drawing Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/98-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/98-1280x720-800x450.webp",
+      "image": "/assets/images/drawing-room-interior-design-4.webp",
+      "thumb": "/assets/images/drawing-room-interior-design-4-thumb.webp",
       "tag": "Creative"
     },
     {
       "title": "Living Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/99-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/99-1280x720-800x450.webp",
+      "image": "/assets/images/living-room-interior-design-8.webp",
+      "thumb": "/assets/images/living-room-interior-design-8-thumb.webp",
       "tag": "Animated"
     },
     {
       "title": "Bed Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/100-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/100-1280x720-800x450.webp",
+      "image": "/assets/images/bed-room-interior-design.webp",
+      "thumb": "/assets/images/bed-room-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Study Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/101-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/101-1280x720-800x450.webp",
+      "image": "/assets/images/study-room-interior-design.webp",
+      "thumb": "/assets/images/study-room-interior-design-thumb.webp",
       "tag": "Awesome"
     },
     {
       "title": "Drawing Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/102-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/102-1280x720-800x450.webp",
+      "image": "/assets/images/drawing-room-interior-design.webp",
+      "thumb": "/assets/images/drawing-room-interior-design-thumb.webp",
       "tag": "Responsive"
     },
     {
       "title": "Kids Room Interior Design",
-      "image": "https://4lotusinterior.in/assets/images/103-1280x720.webp",
-      "thumb": "https://4lotusinterior.in/assets/images/103-1280x720-800x450.webp",
+      "image": "/assets/images/kids-room-interior-design.webp",
+      "thumb": "/assets/images/kids-room-interior-design-thumb.webp",
       "tag": "Animated"
     }
   ],
@@ -230,6 +230,6 @@
     "email": "contact@4lotusinterior.in",
     "timings": "Mon - Sat | 10 Am - 06 Pm",
     "map_link": "https://maps.app.goo.gl/6Z1tADm86C6oRxRh9",
-    "map_image": "https://4lotusinterior.in/assets/images/design-build.webp"
+    "map_image": "/assets/images/design-build.webp"
   }
 }

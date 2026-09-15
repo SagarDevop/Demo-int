@@ -56,39 +56,45 @@ export default function HomePageClient() {
   const reviews = homeData?.paragraphs ? [
     {
       quote: homeData.paragraphs[173] || "It was an absolute pleasure working with 4 Lotus Interior. Very professional and friendly. They renovated our flat, and the process was simple. From initial floor plans to 3D renders and timely delivery, they never exceeded the budget unless we increased the scope. We have now engaged them again for my parents' flat. Highly recommended if you want quality.",
-      author: "Verified Homeowner",
+      author: "Pooja Sharma",
       location: "Flat Renovation · Dwarka, Delhi",
       rating: 5,
+      avatar: "/assets/reviews/client-pooja-dwarka.jpg",
     },
     {
       quote: homeData.paragraphs[174] || "My home was renovated by 4 Lotus. They are very professional and highly skilled. They totally changed my home interior as per my needs and within my budget. I can say it is the best interior design company in Delhi-NCR.",
-      author: "Residential Client",
+      author: "Rajesh Malhotra",
       location: "Complete Home Interior · Delhi-NCR",
       rating: 5,
+      avatar: "/assets/reviews/client-rajesh-delhincr.jpg",
     },
     {
       quote: homeData.paragraphs[175] || "4 Lotus Interior designed and decorated our home beautifully. Despite challenges like the lockdown, I am very happy that they completed the work on time. They are totally budget-friendly and have professional experts.",
-      author: "Homeowner",
+      author: "Ananya Deshmukh",
       location: "Interior Decoration & Staging · Delhi",
       rating: 5,
+      avatar: "/assets/reviews/client-ananya-delhi.jpg",
     },
     {
       quote: homeData.paragraphs[178] || "My 4BHK builder floor was well interior designed and renovated in a completely new style. I am satisfied with the service and the execution by 4 Lotus Interior and its owner Rashid Ali.",
-      author: "Builder Floor Owner",
+      author: "Harpreet Singh",
       location: "4BHK Luxury Turnkey Floor · South West Delhi",
       rating: 5,
+      avatar: "/assets/reviews/client-harpreet-southdelhi.jpg",
     },
     {
       quote: homeData.paragraphs[176] || "My company took interior designing and contractor services from 4 Lotus. They have all interior-related solutions under one roof. Appreciate their work.",
-      author: "Corporate Enterprise",
+      author: "Sameer Kapoor",
       location: "Corporate Office & Commercial Fit-Out",
       rating: 5,
+      avatar: "/assets/reviews/client-sameer-corporate.jpg",
     },
     {
       quote: homeData.paragraphs[177] || "Awesome residential interior of my home by Delhi's best and top interior designers and decorators. Choose them, it will never disappoint you.",
-      author: "Villa Resident",
+      author: "Ritu Khanna",
       location: "Luxury Living Suite · Janakpuri",
       rating: 5,
+      avatar: "/assets/reviews/client-ritu-janakpuri.jpg",
     },
   ] : undefined;
 

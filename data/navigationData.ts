@@ -320,11 +320,6 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: "Contact",
-    url: "https://4lotusinterior.in/contact-us",
-    path: "/contact-us",
-  },
-  {
     label: "Source",
     children: [
       {
@@ -638,5 +633,10 @@ export const navigationData: NavItem[] = [
         path: "/sitemap",
       },
     ],
+  },
+  {
+    label: "Contact",
+    url: "https://4lotusinterior.in/contact-us",
+    path: "/contact-us",
   },
 ];

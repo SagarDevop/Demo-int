@@ -13,58 +13,71 @@ interface GoogleReviewsSectionProps {
 }
 
 export default function GoogleReviewsSection({ reviews: propReviews }: GoogleReviewsSectionProps = {}) {
+  const defaultAvatars = [
+    "/assets/reviews/client-pooja-dwarka.jpg",
+    "/assets/reviews/client-rajesh-delhincr.jpg",
+    "/assets/reviews/client-ananya-delhi.jpg",
+    "/assets/reviews/client-harpreet-southdelhi.jpg",
+    "/assets/reviews/client-sameer-corporate.jpg",
+    "/assets/reviews/client-ritu-janakpuri.jpg",
+  ];
+
   const defaultReviews = [
     {
       quote:
         "It was an absolute pleasure working with 4 Lotus Interior. Very professional and friendly. They renovated our flat, and the process was simple. From initial floor plans to 3D renders and timely delivery, they never exceeded the budget unless we increased the scope. We have now engaged them again for my parents' flat. Highly recommended if you want quality.",
-      author: "Verified Homeowner",
+      author: "Pooja Sharma",
       location: "Flat Renovation · Dwarka, Delhi",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      avatar: "/assets/reviews/client-pooja-dwarka.jpg",
     },
     {
       quote:
         "My home was renovated by 4 Lotus. They are very professional and highly skilled. They totally changed my home interior as per my needs and within my budget. I can say it is the best interior design company in Delhi-NCR.",
-      author: "Residential Client",
+      author: "Rajesh Malhotra",
       location: "Complete Home Interior · Delhi-NCR",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      avatar: "/assets/reviews/client-rajesh-delhincr.jpg",
     },
     {
       quote:
         "4 Lotus Interior designed and decorated our home beautifully. Despite challenges like the lockdown, I am very happy that they completed the work on time. They are totally budget-friendly and have professional experts.",
-      author: "Homeowner",
+      author: "Ananya Deshmukh",
       location: "Interior Decoration & Staging · Delhi",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+      avatar: "/assets/reviews/client-ananya-delhi.jpg",
     },
     {
       quote:
         "My 4BHK builder floor was well interior designed and renovated in a completely new style. I am satisfied with the service and the execution by 4 Lotus Interior and its owner Rashid Ali.",
-      author: "Builder Floor Owner",
+      author: "Harpreet Singh",
       location: "4BHK Luxury Turnkey Floor · South West Delhi",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+      avatar: "/assets/reviews/client-harpreet-southdelhi.jpg",
     },
     {
       quote:
         "My company took interior designing and contractor services from 4 Lotus. They have all interior-related solutions under one roof. Appreciate their work.",
-      author: "Corporate Enterprise",
+      author: "Sameer Kapoor",
       location: "Corporate Office & Commercial Fit-Out",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/men/46.jpg",
+      avatar: "/assets/reviews/client-sameer-corporate.jpg",
     },
     {
       quote:
         "Awesome residential interior of my home by Delhi's best and top interior designers and decorators. Choose them, it will never disappoint you.",
-      author: "Villa Resident",
+      author: "Ritu Khanna",
       location: "Luxury Living Suite · Janakpuri",
       rating: 5,
-      avatar: "https://randomuser.me/api/portraits/women/49.jpg",
+      avatar: "/assets/reviews/client-ritu-janakpuri.jpg",
     },
   ];
 
-  const allReviews = propReviews && propReviews.length > 0 ? propReviews : defaultReviews;
+  const rawReviews = propReviews && propReviews.length > 0 ? propReviews : defaultReviews;
+  const allReviews = rawReviews.map((rev, idx) => ({
+    ...rev,
+    avatar: rev.avatar || defaultAvatars[idx % defaultAvatars.length],
+  }));
 
   return (
     <section id="reviews" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">

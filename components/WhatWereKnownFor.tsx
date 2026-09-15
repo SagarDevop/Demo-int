@@ -1,71 +1,167 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "@/components/Image";
-import { Star, Home, ShoppingBag, Building2, Factory } from "lucide-react";
+import { Star, Home, ShoppingBag, Building2, Factory, LucideIcon } from "lucide-react";
+
+interface PillarItem {
+  title: string;
+  desc: string;
+  icon?: LucideIcon | any;
+  image?: string;
+  tag?: string;
+}
 
 interface WhatWereKnownForProps {
-  items?: {
-    title: string;
-    desc: string;
-    icon?: any;
-  }[];
+  items?: PillarItem[];
 }
 
 export default function WhatWereKnownFor({ items }: WhatWereKnownForProps) {
-  const defaultPillars = [
+  const [activePillarIndex, setActivePillarIndex] = useState<number | null>(null);
+
+  const defaultPillars: PillarItem[] = [
     {
       title: "Residential Interiors",
       desc: "We create living spaces that reflect your culture and lifestyle. Whether modern, western, or contemporary, our residential designs complement the ever-changing world while remaining uniquely yours. Every home we design shares a common thread: tailored comfort and style.",
       icon: Home,
+      image: "/assets/modern_apartment.jpg",
+      tag: "Bespoke Residences",
     },
     {
       title: "Retail Design & Storytelling",
       desc: "Retail design is storytelling. We combine creativity with commercial strategy to design retail outlets that optimize space and create engaging customer experiences. It's not just about looking good; it's about setting up your store to maximize sales and brand impact.",
       icon: ShoppingBag,
+      image: "/assets/luxury_lounge_finished.jpg",
+      tag: "Commercial Retail",
     },
     {
       title: "Corporate Workplaces",
       desc: "We design corporate spaces that work as strategic tools for your business. From furniture selection to finish details, we create successful workplace environments that leverage physical space to achieve your organizational goals and enhance productivity.",
       icon: Building2,
+      image: "/assets/corporate_office.jpg",
+      tag: "Strategic Workspaces",
     },
     {
       title: "Turnkey Solutions & Manufacturing",
       desc: "With over 15 years of experience, we have grown from a simple design firm into a comprehensive solutions provider. We are proud to play a leading role in architecture, interior design, renovation, remodeling, trading, and manufacturing.",
       icon: Factory,
+      image: "/assets/wood_millwork.jpg",
+      tag: "In-House Millwork",
     },
   ];
 
-  const icons = [Home, ShoppingBag, Building2, Factory];
-  const pillars = items && items.length > 0
+  const defaultImage = "/assets/rashid-owner-4-lotus-interior-design-expert.webp";
+
+  const fallbackIcons = [Home, ShoppingBag, Building2, Factory];
+  const fallbackImages = [
+    "/assets/modern_apartment.jpg",
+    "/assets/luxury_lounge_finished.jpg",
+    "/assets/corporate_office.jpg",
+    "/assets/wood_millwork.jpg",
+  ];
+  const fallbackTags = [
+    "Bespoke Residences",
+    "Commercial Retail",
+    "Strategic Workspaces",
+    "In-House Millwork",
+  ];
+
+  const pillars: PillarItem[] = items && items.length > 0
     ? items.map((it, idx) => ({
         title: it.title,
         desc: it.desc,
-        icon: it.icon || icons[idx % icons.length],
+        icon: it.icon || fallbackIcons[idx % fallbackIcons.length],
+        image: it.image || fallbackImages[idx % fallbackImages.length],
+        tag: it.tag || fallbackTags[idx % fallbackTags.length],
       }))
     : defaultPillars;
 
   return (
     <section id="studio" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-        {/* Left Column: Leadership & Heritage */}
-        <div className="lg:col-span-4 flex flex-col justify-between space-y-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        {/* Left Column: Leadership, Showcase Image & Heritage */}
+        <div className="lg:col-span-4 flex flex-col space-y-8">
           <div>
             <span className="text-xs md:text-sm font-semibold tracking-[0.2em] text-[#111111] uppercase block mb-6">
               EXCELLENCE IN ARCHITECTURE & INTERIORS
             </span>
 
-            {/* Crafted With Care Thumbnail Card */}
+            {/* Interactive Showcase Image Display */}
             <div className="space-y-3">
-              <span className="text-xs font-medium text-[#777777] tracking-wider uppercase">
-                Crafted With Care · Delhi-NCR
-              </span>
-              <div className="relative w-[140px] h-[180px] rounded-[4px] overflow-hidden border border-black/10 shadow-sm group">
-                <Image
-                  src="/assets/crafted_care_thumb.jpg"
-                  alt="4 Lotus Studio Interior Architecture Crafted With Care"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+              <div className="flex items-center justify-between text-xs font-medium text-[#777777] tracking-wider uppercase h-5 overflow-hidden">
+                <span className="truncate pr-2 transition-colors duration-300">
+                  {activePillarIndex !== null
+                    ? `Pillar 0${activePillarIndex + 1} · ${pillars[activePillarIndex]?.title}`
+                    : "Crafted With Care · Delhi-NCR"}
+                </span>
+                <span className="font-mono text-[11px] text-[#999999] shrink-0">
+                  {activePillarIndex !== null ? `0${activePillarIndex + 1} / 04` : "4 Lotus Studio"}
+                </span>
+              </div>
+
+              {/* Strictly Fixed-Height Showcase Container with Cinematic Cross-Fade Animation */}
+              <div className="relative w-full max-w-full sm:max-w-[420px] h-[420px] sm:h-[460px] lg:h-[480px] shrink-0 flex-none rounded-[6px] overflow-hidden border border-black/10 shadow-md bg-neutral-950 group">
+                {/* Default Image (Crafted With Care) */}
+                <div
+                  className={`absolute inset-0 w-full h-full transition-all duration-700 ease-out ${
+                    activePillarIndex === null
+                      ? "opacity-100 scale-100 z-10"
+                      : "opacity-0 scale-105 z-0 pointer-events-none"
+                  }`}
+                >
+                  <Image
+                    src={defaultImage}
+                    alt="4 Lotus Studio Interior Architecture Crafted With Care"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 420px"
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Pillar Specific Images */}
+                {pillars.map((pillar, idx) => (
+                  <div
+                    key={idx}
+                    className={`absolute inset-0 w-full h-full transition-all duration-700 ease-out ${
+                      activePillarIndex === idx
+                        ? "opacity-100 scale-100 z-10"
+                        : "opacity-0 scale-105 z-0 pointer-events-none"
+                    }`}
+                  >
+                    <Image
+                      src={pillar.image || defaultImage}
+                      alt={`4 Lotus Interior - ${pillar.title}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 420px"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+
+                {/* Subtle Luxury Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent z-20 pointer-events-none" />
+
+                {/* Floating Bottom Card Details */}
+                <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 z-30 flex items-end justify-between pointer-events-none">
+                  <div className="min-w-0 pr-2">
+                    <span className="text-[10px] font-semibold tracking-widest text-amber-300 uppercase block mb-1">
+                      {activePillarIndex !== null
+                        ? `Pillar 0${activePillarIndex + 1}`
+                        : "STUDIO HERITAGE"}
+                    </span>
+                    <h4 className="text-sm sm:text-base font-bold text-white tracking-wide leading-tight truncate">
+                      {activePillarIndex !== null
+                        ? pillars[activePillarIndex]?.title
+                        : "Crafted With Care · Delhi-NCR"}
+                    </h4>
+                  </div>
+                  <span className="text-[11px] font-medium text-white/90 bg-white/15 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 shrink-0">
+                    {activePillarIndex !== null
+                      ? pillars[activePillarIndex]?.tag
+                      : "15+ Yrs"}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -127,29 +223,71 @@ export default function WhatWereKnownFor({ items }: WhatWereKnownForProps) {
             </div>
           </div>
 
-          {/* The 4 Editorial Pillars */}
-          <div className="divide-y divide-black/[0.08]">
-            {pillars.map((item, index) => (
-              <div
-                key={index}
-                className="py-6 md:py-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-baseline hover:bg-black/[0.02] transition-colors px-2 rounded-[2px]"
-              >
-                <div className="sm:col-span-5 flex items-center gap-2.5">
-                  <item.icon className="w-4 h-4 text-black shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-[#111111]">
-                    {item.title}
-                  </h3>
+          {/* The 4 Editorial Pillars with Interactive Hover & Focus Trigger */}
+          <div
+            className="divide-y divide-black/[0.08]"
+            onMouseLeave={() => setActivePillarIndex(null)}
+          >
+            {pillars.map((item, index) => {
+              const IconComponent = item.icon;
+              const isActive = activePillarIndex === index;
+              return (
+                <div
+                  key={index}
+                  onMouseEnter={() => setActivePillarIndex(index)}
+                  onClick={() => setActivePillarIndex(index)}
+                  className={`py-6 md:py-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-baseline px-3 sm:px-4 rounded-[4px] cursor-pointer transition-colors duration-200 border-l-2 ${
+                    isActive
+                      ? "bg-black/[0.04] shadow-sm border-black"
+                      : "hover:bg-black/[0.02] border-transparent"
+                  }`}
+                >
+                  <div className="sm:col-span-5 flex items-center justify-between sm:justify-start gap-2.5">
+                    <div className="flex items-center gap-2.5">
+                      {IconComponent && (
+                        <IconComponent
+                          className={`w-4 h-4 shrink-0 transition-transform duration-300 ${
+                            isActive ? "text-black scale-125" : "text-[#555555]"
+                          }`}
+                        />
+                      )}
+                      <h3
+                        className={`text-base sm:text-lg font-bold transition-colors duration-300 ${
+                          isActive ? "text-black" : "text-[#111111]"
+                        }`}
+                      >
+                        {item.title}
+                      </h3>
+                    </div>
+                    <span
+                      className={`text-[11px] font-semibold tracking-wider uppercase transition-all duration-300 sm:hidden ${
+                        isActive ? "text-black opacity-100" : "opacity-0"
+                      }`}
+                    >
+                      Active
+                    </span>
+                  </div>
+                  <div className="sm:col-span-7 flex items-center justify-between gap-3">
+                    <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+                      {item.desc}
+                    </p>
+                    <span
+                      className={`hidden sm:inline-block text-base font-semibold text-black transition-all duration-300 shrink-0 ${
+                        isActive
+                          ? "translate-x-1 opacity-100"
+                          : "translate-x-0 opacity-0"
+                      }`}
+                    >
+                      →
+                    </span>
+                  </div>
                 </div>
-                <div className="sm:col-span-7">
-                  <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
     </section>
   );
 }
+

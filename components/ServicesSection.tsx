@@ -173,24 +173,24 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
       : commercialSectors;
 
   return (
-    <section id="services" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">
+    <section id="services" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08] dark:border-white/10">
       {/* Header */}
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
         <div>
-          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] uppercase block mb-3">
+          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] dark:text-[#A09E9B] uppercase block mb-3">
             TURNKEY INTERIOR SOLUTIONS
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] dark:text-white uppercase">
             We Handle Everything: Design & Renovation in Delhi-NCR
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <p className="max-w-md text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+          <p className="max-w-md text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed">
             Comprehensive interior makeover and renovation services in Delhi-NCR, Gurgaon & Noida for residential, retail, commercial, corporate, and hospitality sectors.
           </p>
           <Link
             href="/services"
-            className="text-xs font-bold uppercase tracking-wider text-black border-b border-black pb-1 hover:opacity-70 transition-opacity whitespace-nowrap"
+            className="text-xs font-bold uppercase tracking-wider text-black dark:text-white border-b border-black dark:border-white pb-1 hover:opacity-70 transition-opacity whitespace-nowrap"
           >
             All 24 Scopes ↗
           </Link>
@@ -198,7 +198,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
       </div>
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap items-center gap-2 mb-8 border-b border-black/[0.06] pb-4">
+      <div className="flex flex-wrap items-center gap-2 mb-8 border-b border-black/[0.06] dark:border-white/10 pb-4">
         {[
           { key: "turnkey", label: "Turnkey Civil & Technical Execution (12)" },
           { key: "residential", label: "Residential, Villas & Kitchens (6)" },
@@ -209,8 +209,8 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
             onClick={() => setActiveTab(tab.key as any)}
             className={`px-3.5 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-full transition-all text-center ${
               activeTab === tab.key
-                ? "bg-black text-white shadow-sm"
-                : "bg-white text-[#555555] border border-black/10 hover:border-black/30 hover:text-black"
+                ? "bg-black dark:bg-white text-white dark:text-black shadow-sm"
+                : "bg-white dark:bg-[#141414] text-[#555555] dark:text-neutral-300 border border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 hover:text-black dark:hover:text-white"
             }`}
           >
             {tab.label}
@@ -223,30 +223,30 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
         {currentList.map((svc, i) => (
           <div
             key={i}
-            className="group bg-white border border-black/[0.08] p-5 sm:p-7 md:p-8 rounded-[4px] flex flex-col justify-between min-h-[250px] card-hover-effect"
+            className="group bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 p-5 sm:p-7 md:p-8 rounded-[4px] flex flex-col justify-between min-h-[250px] card-hover-effect"
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-semibold tracking-widest text-[#999999] font-mono">
+                <span className="text-xs font-semibold tracking-widest text-[#999999] dark:text-neutral-500 font-mono">
                   {svc.num}
                 </span>
-                <span className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#F5F4F0] text-[#444444] font-medium border border-black/[0.04]">
+                <span className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#F5F4F0] dark:bg-white/10 text-[#444444] dark:text-neutral-300 font-medium border border-black/[0.04] dark:border-white/10">
                   {svc.tag}
                 </span>
               </div>
 
-              <h3 className="text-base sm:text-lg font-bold text-[#111111] tracking-tight group-hover:text-amber-800 transition-colors mb-2">
+              <h3 className="text-base sm:text-lg font-bold text-[#111111] dark:text-white tracking-tight group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors mb-2">
                 {svc.title}
               </h3>
-              <p className="text-xs sm:text-[13px] text-[#666666] font-light leading-relaxed">
+              <p className="text-xs sm:text-[13px] text-[#666666] dark:text-[#A09E9B] font-light leading-relaxed">
                 {svc.desc}
               </p>
             </div>
 
-            <div className="pt-5 mt-4 border-t border-black/[0.05]">
+            <div className="pt-5 mt-4 border-t border-black/[0.05] dark:border-white/10">
               <button
                 onClick={onOpenConsultation}
-                className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-black uppercase tracking-wider group-hover:gap-2 transition-all"
+                className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-black dark:text-white uppercase tracking-wider group-hover:gap-2 transition-all hover:text-amber-800 dark:hover:text-amber-400"
               >
                 <span>Consult For This Scope</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />

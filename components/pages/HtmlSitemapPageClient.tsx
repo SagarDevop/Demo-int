@@ -23,7 +23,7 @@ export default function HtmlSitemapPageClient() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+    <main className="min-h-screen bg-[#F8F7F5] dark:bg-[#0C0C0C] text-[#111111] dark:text-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white dark:selection:bg-white dark:selection:text-black">
       <SEO
         title={sitemapData?.seo?.title || "4 Lotus Interior HTML Sitemap | Complete Directory"}
         description={sitemapData?.seo?.meta_description || "Explore the complete hierarchical sitemap and URL inventory of 4 Lotus Interior architecture and design firm in Delhi-NCR."}
@@ -49,19 +49,19 @@ export default function HtmlSitemapPageClient() {
             return (
               <div
                 key={idx}
-                className="bg-white border border-black/[0.08] p-6 rounded-[6px] shadow-sm space-y-4"
+                className="bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 p-6 rounded-[6px] shadow-sm space-y-4"
               >
-                <div className="flex items-center gap-2 border-b border-black/[0.08] pb-3 text-black font-bold uppercase text-xs tracking-wider">
-                  <Folder className="w-4 h-4 text-amber-800" />
+                <div className="flex items-center gap-2 border-b border-black/[0.08] dark:border-white/10 pb-3 text-black dark:text-white font-bold uppercase text-xs tracking-wider">
+                  <Folder className="w-4 h-4 text-amber-800 dark:text-amber-400" />
                   <h3>{group.title}</h3>
                 </div>
 
-                <ul className="space-y-2 text-xs text-[#555555]">
+                <ul className="space-y-2 text-xs text-[#555555] dark:text-neutral-300">
                   {pagesInGroup.map((page) => (
                     <li key={page.slug || "home"}>
                       <Link
                         href={page.slug ? `/${page.slug}` : "/"}
-                        className="flex items-center justify-between py-1 hover:text-black hover:translate-x-1 transition-all group"
+                        className="flex items-center justify-between py-1 hover:text-black dark:hover:text-white hover:translate-x-1 transition-all group"
                       >
                         <span className="group-hover:font-medium">{page.label}</span>
                         <ArrowUpRight className="w-3 h-3 opacity-40 group-hover:opacity-100 shrink-0" />

@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -68,8 +68,16 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
+          }}
+        />
       </head>
-      <body className="bg-[#F8F7F5] text-[#111111] antialiased selection:bg-[#111111] selection:text-white">
+      <body
+        suppressHydrationWarning
+        className="bg-[#F8F7F5] dark:bg-[#0C0C0C] text-[#111111] dark:text-[#F8F7F5] antialiased selection:bg-[#111111] selection:text-white dark:selection:bg-white dark:selection:text-black"
+      >
         <InitialLoader />
         <ScrollToTop />
         {children}

@@ -153,7 +153,7 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: "Availability",
+    label: "Locations",
     children: [
       {
         label: "Delhi NCR Region",

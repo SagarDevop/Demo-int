@@ -99,7 +99,7 @@ export default function HomePageClient() {
   ] : undefined;
 
   return (
-    <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+    <main className="min-h-screen bg-[#F8F7F5] dark:bg-[#0C0C0C] text-[#111111] dark:text-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white dark:selection:bg-white dark:selection:text-black">
       <SEO
         title={pageTitle}
         description={metaDescription}

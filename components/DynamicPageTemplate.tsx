@@ -58,7 +58,7 @@ export default function DynamicPageTemplate({ page }: DynamicPageTemplateProps) 
 
   if (!richData) {
     return (
-      <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-center items-center p-12 text-center">
+      <main className="min-h-screen bg-[#F8F7F5] dark:bg-[#0C0C0C] text-[#111111] dark:text-[#F8F7F5] flex flex-col justify-center items-center p-12 text-center">
         <h1 className="text-2xl font-bold text-red-600 uppercase tracking-tight">Content Not Found</h1>
         <p className="text-sm text-neutral-600 mt-2">
           No JSON content found for slug: <code className="font-mono bg-neutral-200 px-1.5 py-0.5 rounded">{page.slug}</code>
@@ -116,7 +116,7 @@ export default function DynamicPageTemplate({ page }: DynamicPageTemplateProps) 
   );
 
   return (
-    <main className="min-h-screen bg-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white">
+    <main className="min-h-screen bg-[#F8F7F5] dark:bg-[#0C0C0C] text-[#111111] dark:text-[#F8F7F5] flex flex-col justify-between selection:bg-[#111111] selection:text-white dark:selection:bg-white dark:selection:text-black">
       {/* Dynamic SEO Meta Tags & Schema */}
       <SEO
         title={richData?.seo?.title || `${page.label} | 4 Lotus Interior Delhi`}

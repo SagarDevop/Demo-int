@@ -10,20 +10,20 @@ interface ProjectHighlightProps {
 export default function ProjectHighlight({ onOpenProjects }: ProjectHighlightProps) {
   return (
     <section id="studio" className="w-full py-16 md:py-20 px-4 md:px-10 max-w-[1440px] mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white border border-black/[0.08] rounded-[6px] p-6 md:p-12 overflow-hidden shadow-sm">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 rounded-[6px] p-6 md:p-12 overflow-hidden shadow-sm">
         {/* Left Column: Technical Blueprint Sketch & Description */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-6 md:space-y-8">
           <div className="space-y-3">
-            <span className="text-[11px] font-semibold tracking-[0.2em] text-[#666666] uppercase">
+            <span className="text-[11px] font-semibold tracking-[0.2em] text-[#666666] dark:text-[#A09E9B] uppercase">
               Transformation Case Study
             </span>
-            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#111111] uppercase">
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#111111] dark:text-white uppercase">
               Architectural Precision & Luxury Living
             </h3>
           </div>
 
           {/* Blueprint Technical Sketch */}
-          <div className="relative w-full h-[140px] md:h-[160px] bg-[#FAF9F6] border border-black/[0.06] rounded-[4px] p-4 flex items-center justify-center">
+          <div className="relative w-full h-[140px] md:h-[160px] bg-[#FAF9F6] dark:bg-[#1a1a1a] border border-black/[0.06] dark:border-white/10 rounded-[4px] p-4 flex items-center justify-center">
             <Image
               src="/assets/blueprint_sketch.svg"
               alt="4 Lotus Architectural Floor Plan and Dimension Layout"
@@ -33,21 +33,21 @@ export default function ProjectHighlight({ onOpenProjects }: ProjectHighlightPro
           </div>
 
           {/* Exact Text from Dribbble Reference */}
-          <p className="text-xs sm:text-sm md:text-base text-[#444444] font-normal leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-[#444444] dark:text-[#D4D2CD] font-normal leading-relaxed">
             Completed a comprehensive home transformation that defined 4 Lotus&apos;s material-led and timeless approach.
           </p>
 
           <div className="flex items-center gap-6">
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-black uppercase tracking-wider border-b border-black pb-1 hover:opacity-70 transition-opacity"
+              className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-black dark:text-white uppercase tracking-wider border-b border-black dark:border-white pb-1 hover:opacity-70 transition-opacity"
             >
               <span>Explore Portfolio ↗</span>
             </Link>
 
             <button
               onClick={onOpenProjects}
-              className="text-xs md:text-sm font-medium text-[#777777] uppercase tracking-wider hover:text-black transition-colors"
+              className="text-xs md:text-sm font-medium text-[#777777] dark:text-neutral-400 uppercase tracking-wider hover:text-black dark:hover:text-white transition-colors"
             >
               Quick Preview
             </button>
@@ -62,9 +62,9 @@ export default function ProjectHighlight({ onOpenProjects }: ProjectHighlightPro
             fill
             className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
           />
-          <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-[4px] flex items-center justify-between text-[11px] md:text-xs font-medium text-black tracking-wide border border-black/5">
+          <div className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-[#0C0C0C]/90 backdrop-blur-md px-4 py-2.5 rounded-[4px] flex items-center justify-between text-[11px] md:text-xs font-medium text-black dark:text-white tracking-wide border border-black/5 dark:border-white/10 shadow-md">
             <span>Residence & Lounge · South Delhi</span>
-            <Link href="/portfolio" className="text-black font-semibold hover:underline">
+            <Link href="/portfolio" className="text-black dark:text-white font-semibold hover:underline">
               View Specs ↗
             </Link>
           </div>

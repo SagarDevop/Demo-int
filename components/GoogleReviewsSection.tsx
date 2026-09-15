@@ -80,7 +80,7 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
   }));
 
   return (
-    <section id="reviews" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">
+    <section id="reviews" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08] dark:border-white/10">
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12">
         <div className="space-y-2">
@@ -90,11 +90,11 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
                 <Star key={i} className="w-4 h-4 fill-current" />
               ))}
             </div>
-            <span className="text-black text-sm font-semibold tracking-wide">
+            <span className="text-black dark:text-white text-sm font-semibold tracking-wide">
               4.9 Rating (81 Verified Google Reviews)
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] dark:text-white uppercase">
             WHAT OUR CLIENTS SAY
           </h2>
         </div>
@@ -102,7 +102,7 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
         <div className="flex items-center gap-5">
           <Link
             href="/reviews"
-            className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-black border-b border-black pb-1 hover:opacity-70 transition-opacity"
+            className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-black dark:text-white border-b border-black dark:border-white pb-1 hover:opacity-70 transition-opacity"
           >
             All Client Stories ↗
           </Link>
@@ -110,7 +110,7 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
             href="https://www.google.com/search?q=Lotus+Interior+in+South+Metro+Station+Dwarka+Road+Janakpuri+New+Delhi"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#666666] hover:text-black transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#666666] dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors"
           >
             <span>Google Reviews</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -124,7 +124,7 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
           {[...allReviews, ...allReviews].map((rev, idx) => (
           <div
             key={`${rev.author}-${idx}`}
-            className="review-card bg-white border border-black/[0.08] p-5 rounded-[4px] flex flex-col justify-between gap-4"
+            className="review-card bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 p-5 rounded-[4px] flex flex-col justify-between gap-4 shadow-sm"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">
@@ -133,27 +133,27 @@ export default function GoogleReviewsSection({ reviews: propReviews }: GoogleRev
                     <Star key={i} className="w-3.5 h-3.5 fill-current" />
                   ))}
                 </div>
-                <Quote className="w-5 h-5 text-black/15" />
+                <Quote className="w-5 h-5 text-black/15 dark:text-white/20" />
               </div>
-              <p className="text-xs sm:text-sm text-[#222222] font-normal leading-relaxed italic">
+              <p className="text-xs sm:text-sm text-[#222222] dark:text-[#E0DFDC] font-normal leading-relaxed italic">
                 &ldquo;{rev.quote}&rdquo;
               </p>
             </div>
 
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs text-[#777777]">
+            <div className="pt-4 border-t border-black/[0.06] dark:border-white/10 flex items-center justify-between text-xs text-[#777777] dark:text-neutral-400">
               <div className="flex items-center gap-2.5 min-w-0">
                 <img
                   src={rev.avatar}
                   alt="Client portrait"
-                  className="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-[#f1efe9]"
+                  className="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-[#f1efe9] dark:ring-white/10"
                   loading="lazy"
                 />
                 <div className="min-w-0">
-                  <p className="font-semibold text-black truncate">{rev.author}</p>
-                <p className="text-[11px] text-[#888888]">{rev.location}</p>
+                  <p className="font-semibold text-black dark:text-white truncate">{rev.author}</p>
+                  <p className="text-[11px] text-[#888888] dark:text-neutral-400">{rev.location}</p>
                 </div>
               </div>
-              <span className="flex items-center gap-1 text-emerald-600 font-medium text-[11px]">
+              <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium text-[11px]">
                 <CheckCircle className="w-3.5 h-3.5" />
                 Verified
               </span>

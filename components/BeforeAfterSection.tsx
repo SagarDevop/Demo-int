@@ -40,17 +40,17 @@ export default function BeforeAfterSection() {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">
+    <section className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08] dark:border-white/10">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] uppercase block mb-3">
+          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] dark:text-[#A09E9B] uppercase block mb-3">
             TRANSFORMATION PROOF
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] dark:text-white uppercase">
             Before & After Makeover
           </h2>
         </div>
-        <p className="max-w-md text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+        <p className="max-w-md text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed">
           Drag the slider horizontally to view the structural and aesthetic evolution of our luxury residence makeover in Delhi-NCR.
         </p>
       </div>
@@ -63,7 +63,7 @@ export default function BeforeAfterSection() {
         onMouseLeave={() => setIsDragging(false)}
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
-        className="relative w-full h-[320px] sm:h-[450px] md:h-[550px] rounded-[6px] overflow-hidden select-none cursor-ew-resize border border-black/10 shadow-lg"
+        className="relative w-full h-[320px] sm:h-[450px] md:h-[550px] rounded-[6px] overflow-hidden select-none cursor-ew-resize border border-black/10 dark:border-white/15 shadow-xl"
       >
         {/* AFTER Image (Full Layer Below) */}
         <div className="absolute inset-0">
@@ -111,9 +111,9 @@ export default function BeforeAfterSection() {
         </div>
       </div>
 
-      <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs text-[#777777] text-center">
+      <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs text-[#777777] dark:text-neutral-400 text-center">
         <span className="order-2 sm:order-1">← Slide Left for Before</span>
-        <span className="font-medium text-black order-1 sm:order-2">Interactive Comparison · Dwarka Residence Project</span>
+        <span className="font-medium text-black dark:text-white order-1 sm:order-2">Interactive Comparison · Dwarka Residence Project</span>
         <span className="order-3">Slide Right for After →</span>
       </div>
     </section>

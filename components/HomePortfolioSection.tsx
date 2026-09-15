@@ -101,16 +101,16 @@ export default function HomePortfolioSection({
   return (
     <section className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto space-y-12">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-black/[0.08] pb-8">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-black/[0.08] dark:border-white/10 pb-8">
         <div className="space-y-3 max-w-2xl">
-          <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-amber-900 uppercase">
+          <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-amber-800 dark:text-amber-400 uppercase">
             <Sparkles className="w-4 h-4" />
             <span>EXECUTED ARCHITECTURAL PORTFOLIO</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-[#111111] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-[#111111] dark:text-white tracking-tight">
             Curated Spaces & Living Suites
           </h2>
-          <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed">
             Explore a selection of our bespoke residences, villas, penthouses, and commercial headquarters designed and executed across Delhi-NCR.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function HomePortfolioSection({
         {onOpenProjects && (
           <button
             onClick={onOpenProjects}
-            className="px-6 py-3.5 bg-[#111111] text-white hover:bg-neutral-800 text-xs uppercase tracking-wider font-semibold rounded-[4px] transition-all shrink-0 flex items-center gap-2"
+            className="px-6 py-3.5 bg-[#111111] dark:bg-white dark:text-black text-white hover:bg-neutral-800 dark:hover:bg-neutral-200 text-xs uppercase tracking-wider font-semibold rounded-[4px] transition-all shrink-0 flex items-center gap-2 shadow-sm"
           >
             <span>Inspect All Blueprints & Plans</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -134,8 +134,8 @@ export default function HomePortfolioSection({
             onClick={() => setActiveCategory(cat)}
             className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-full transition-all text-center ${
               activeCategory === cat
-                ? "bg-[#111111] text-white shadow-sm"
-                : "bg-white text-[#555555] border border-black/10 hover:border-black/30 hover:text-black"
+                ? "bg-[#111111] dark:bg-white text-white dark:text-black shadow-sm"
+                : "bg-white dark:bg-[#141414] text-[#555555] dark:text-neutral-300 border border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 hover:text-black dark:hover:text-white"
             }`}
           >
             {cat}
@@ -148,49 +148,49 @@ export default function HomePortfolioSection({
         {filteredProjects.map((proj) => (
           <div
             key={proj.id}
-            className="bg-white border border-black/[0.08] rounded-[6px] overflow-hidden flex flex-col justify-between group hover:shadow-lg transition-all duration-300"
+            className="bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 rounded-[6px] overflow-hidden flex flex-col justify-between group hover:shadow-xl dark:hover:shadow-[0_20px_40px_rgba(0,0,0,0.8)] transition-all duration-300"
           >
             {/* Image Preview with Badges */}
-            <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
+            <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-900">
               <Image
                 src={proj.image}
                 alt={proj.title}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full">
+              <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full border border-white/10">
                 {proj.category}
               </div>
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-black text-[10px] font-mono font-bold px-2.5 py-1 rounded-full">
+              <div className="absolute top-4 right-4 bg-white/90 dark:bg-[#0C0C0C]/90 backdrop-blur-md text-black dark:text-white text-[10px] font-mono font-bold px-2.5 py-1 rounded-full border border-black/10 dark:border-white/15">
                 {proj.area}
               </div>
             </div>
 
             {/* Content Details */}
             <div className="p-5 sm:p-8 space-y-4">
-              <div className="flex items-center gap-1.5 text-xs text-[#777777]">
-                <MapPin className="w-3.5 h-3.5 text-amber-800" />
+              <div className="flex items-center gap-1.5 text-xs text-[#777777] dark:text-neutral-400">
+                <MapPin className="w-3.5 h-3.5 text-amber-800 dark:text-amber-400" />
                 <span>{proj.location}</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-bold uppercase text-[#111111] group-hover:text-amber-900 transition-colors">
+              <h3 className="text-xl sm:text-2xl font-bold uppercase text-[#111111] dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors">
                 {proj.title}
               </h3>
 
-              <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed">
                 {proj.description}
               </p>
 
               {/* Material Tags */}
               <div className="pt-2">
-                <span className="text-[10px] uppercase tracking-widest text-[#888888] font-semibold block mb-2">
+                <span className="text-[10px] uppercase tracking-widest text-[#888888] dark:text-neutral-400 font-semibold block mb-2">
                   Key Materials & Finishes:
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                   {proj.materials.map((mat, mIdx) => (
                     <span
                       key={mIdx}
-                      className="text-[11px] bg-[#FAF9F6] border border-black/[0.06] px-2.5 py-1 rounded-[2px] text-[#444444]"
+                      className="text-[11px] bg-[#FAF9F6] dark:bg-white/5 border border-black/[0.06] dark:border-white/10 px-2.5 py-1 rounded-[2px] text-[#444444] dark:text-neutral-300"
                     >
                       {mat}
                     </span>
@@ -199,18 +199,18 @@ export default function HomePortfolioSection({
               </div>
 
               {/* Card Action Buttons */}
-              <div className="pt-5 border-t border-black/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <div className="pt-5 border-t border-black/[0.06] dark:border-white/10 flex flex-wrap items-center justify-between gap-3">
                 <button
                   onClick={onOpenProjects}
-                  className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-black hover:text-amber-900 transition-colors"
+                  className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-black dark:text-white hover:text-amber-800 dark:hover:text-amber-400 transition-colors"
                 >
-                  <Eye className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-800 shrink-0" />
+                  <Eye className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-800 dark:text-amber-400 shrink-0" />
                   <span>View Project Drawings & Specs</span>
                 </button>
 
                 <button
                   onClick={onOpenConsultation}
-                  className="p-2 rounded-full bg-[#FAF9F6] border border-black/10 text-black hover:bg-black hover:text-white transition-colors shrink-0"
+                  className="p-2 rounded-full bg-[#FAF9F6] dark:bg-white/10 border border-black/10 dark:border-white/15 text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors shrink-0 shadow-sm"
                   aria-label="Request consultation for similar project"
                 >
                   <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

@@ -34,23 +34,23 @@ export default function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08]">
+    <section id="faq" className="w-full py-16 md:py-24 px-4 md:px-10 max-w-[1440px] mx-auto border-t border-black/[0.08] dark:border-white/10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         {/* Left Column Header */}
         <div className="lg:col-span-4 space-y-4">
-          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] uppercase block">
+          <span className="text-xs font-semibold tracking-[0.2em] text-[#666666] dark:text-[#A09E9B] uppercase block">
             FREQUENTLY ASKED QUESTIONS
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#111111] dark:text-white uppercase">
             Everything You Need To Know
           </h2>
-          <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed">
             Have a question about our design process, studio consultations, or turnkey execution? Here are answers to our most common client inquiries.
           </p>
           <div className="pt-4">
             <a
               href="tel:09810698082"
-              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black border-b border-black pb-1 hover:opacity-70 transition-opacity"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-black dark:text-white border-b border-black dark:border-white pb-1 hover:opacity-70 transition-opacity"
             >
               <span>Speak With Principal Architect ↗</span>
             </a>
@@ -58,7 +58,7 @@ export default function FaqSection() {
         </div>
 
         {/* Right Column Accordion */}
-        <div className="lg:col-span-8 divide-y divide-black/[0.08] bg-white border border-black/[0.08] rounded-[4px] px-6 sm:px-8">
+        <div className="lg:col-span-8 divide-y divide-black/[0.08] dark:divide-white/10 bg-white dark:bg-[#141414] border border-black/[0.08] dark:border-white/10 rounded-[4px] px-6 sm:px-8 shadow-sm">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
@@ -68,16 +68,16 @@ export default function FaqSection() {
                   className="w-full flex items-center justify-between text-left gap-4 group"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm sm:text-base font-bold text-[#111111] group-hover:text-amber-800 transition-colors">
+                  <span className="text-sm sm:text-base font-bold text-[#111111] dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors">
                     {faq.q}
                   </span>
-                  <span className="p-1 rounded-full bg-[#FAF9F6] border border-black/10 shrink-0 text-black">
+                  <span className="p-1 rounded-full bg-[#FAF9F6] dark:bg-white/10 border border-black/10 dark:border-white/15 shrink-0 text-black dark:text-white">
                     {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className="pt-3 pr-6 text-xs sm:text-sm text-[#555555] font-light leading-relaxed animate-fade-in">
+                  <div className="pt-3 pr-6 text-xs sm:text-sm text-[#555555] dark:text-[#D4D2CD] font-light leading-relaxed animate-fade-in">
                     {faq.a}
                   </div>
                 )}

@@ -43,7 +43,3 @@ extract_all_old_content.js
 old_robots.txt
 scratch/
 
-# Prevent loose static HTML files in root (only keep index.html SPA entry)
-/*.html
-!/index.html
-

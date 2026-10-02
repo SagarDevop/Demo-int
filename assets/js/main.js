@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log('4 Lotus Interior Static JS initialized.');
 
+  // Guarantee all images are visible (removing any leftover Next.js opacity-0 classes)
+  document.querySelectorAll('img').forEach(function(img) {
+    img.classList.remove('opacity-0');
+    img.classList.add('opacity-100');
+  });
+
   // --- Initial Preloader Progress & Fadeout ---
   var loader = document.querySelector('.initial-loader-overlay') || document.querySelector('[class*="z-[99999]"]');
   if (loader) {
